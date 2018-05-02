@@ -16,7 +16,7 @@
 header {
 	width: 100vw;
 	height: 100vh;
-	background: #111;
+	background: #f3f3f3;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -25,7 +25,8 @@ header {
 /*** Navigation Styles ***/
 nav {
 	width: 100vw;
-	height: 160px;
+	height: 100px;
+	/*background: #e70000;*/
 	background: #111;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -37,7 +38,7 @@ nav {
 nav.navShadow {
 	-webkit-box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
 					box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
-	height: 100px;
+	height: 70px;
 }
 nav.navShadow #word-mark {
 	opacity: 0;
@@ -169,7 +170,7 @@ li a {
 	-webkit-box-align: center;
 			-ms-flex-align: center;
 					align-items: center;
-	margin-top: 160px;
+	margin-top: 130px;
 }
 
 
@@ -186,7 +187,7 @@ section:nth-child(odd) {
 	background: #111;
 }
 section:nth-child(even) {
-	background: #d9d9d9;
+	background: #f3f3f3;
 }
 
 /*** Responsive Menu For Smaller Device ***/
