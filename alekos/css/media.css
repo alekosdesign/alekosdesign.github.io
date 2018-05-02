@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+	.text__header{
+		padding-top: 20px;
+	}
+	#section00 {
+		width: 100%;
+		height:100%;
+	}
+	
+	.price__img{
+		width: 70%;
+		margin: 0 15%;
+		padding-top: 70px;
+	}
+	.test__text p , #hero-section, .scroll{
+		display: none;
+	}
+	.offer__text{
+		width: 70%;
+	}
+}
+
+
+
+/*
+}*/
