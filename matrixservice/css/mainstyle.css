@@ -9,6 +9,9 @@ div{
 	-o-user-select: none;
 	user-select: none;
 }
+body, html {
+	height: 100%;
+}
 body{
 	-webkit-overflow-scrolling: touch
 	-webkit-text-size-adjust: none
@@ -23,6 +26,25 @@ a, h1, h2, h3, h4, li, ul, p{
 	text-decoration: none;
 	list-style: none;
 	line-height: 1.2em;
+}
+
+/*Parralax*/
+.parallax { 
+	background-image: url("../img/svag/bg3().jpg");
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.logo__parralax{
+	padding: 15%;
+	display: table;
+	width: -moz-max-content;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .my__container{
