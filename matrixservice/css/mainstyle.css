@@ -35,7 +35,7 @@ a, h1, h2, h3, h4, li, ul, p{
 	height: 100%;
 	width: 100%;
 	background-attachment: fixed;
-	background-position: right center;
+	background-position: left center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
