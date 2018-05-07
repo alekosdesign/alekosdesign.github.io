@@ -228,7 +228,6 @@ section:nth-child(even) {
 		width: 50%;
 		height: 80px;
 		float: left;
-		padding-left: 40px;
 		opacity: 0;
 		visibility: hidden;
 		margin-left: 0;
