@@ -4,7 +4,7 @@ $( () => {
 	$(window).scroll( () => {
 		var windowTop = $(window).scrollTop();
 		windowTop > 100 ? $('nav').addClass('navShadow') : $('nav').removeClass('navShadow');
-		windowTop > 100 ? $('ul').css('top','100px') : $('ul').css('top','80px');
+		windowTop > 100 ? $('ul').css('top','69px') : $('ul').css('top','80px');
 	});
 	
 	//Click Logo To Scroll To Top
@@ -30,7 +30,8 @@ $( () => {
 			$('ul').removeClass('showMenu');
 			$('#menu-toggle').removeClass('closeMenu');
 		});
-		$('section__blur').toggleClass('blur');
+		$('section').toggleClass('blur');
+		$('footer').toggleClass('blur');
 	});
 	
 });

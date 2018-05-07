@@ -170,7 +170,7 @@ li a {
 	-webkit-box-align: center;
 			-ms-flex-align: center;
 					align-items: center;
-	margin-top: 140px;
+	margin-top: 170px;
 }
 
 
@@ -191,7 +191,7 @@ section:nth-child(even) {
 }
 
 /*** Responsive Menu For Smaller Device ***/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 	#menu-toggle {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -207,7 +207,7 @@ section:nth-child(even) {
 		height: 0;
 		background: #111;
 		position: absolute;
-		top: 100px;
+		top: 80px;
 		-webkit-transform: translate(, );
 						transform: translate(, );
 		-webkit-box-shadow: 0 5px 30px -4px rgba(0, 0, 0, 0.2);
@@ -228,7 +228,6 @@ section:nth-child(even) {
 		width: 50%;
 		height: 80px;
 		float: left;
-		padding-left: 40px;
 		opacity: 0;
 		visibility: hidden;
 		margin-left: 0;

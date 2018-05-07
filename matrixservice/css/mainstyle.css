@@ -30,11 +30,11 @@ a, h1, h2, h3, h4, li, ul, p{
 }
 
 .blur {
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
 }
 
 /*Parralax*/
@@ -143,5 +143,32 @@ a, h1, h2, h3, h4, li, ul, p{
 	color: #111;
 }
 
+
+
+/*Footer*/
+#footer{
+	padding: 10px 0;
+	color: #d9d9d9;
+	background: #111;
+	text-decoration: none;
+	font-size: 14px;
+	z-index: 3;
+}
+.about{
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 0 10%;
+	display: flex;
+}
+.footer__item{
+	padding: 5px;
+/*	color: #d9d9d9;*/
+}
+.footer__item a{
+	color: #d9d9d9;
+}
+.footer__item p{
+	color: #d9d9d9;
 
 

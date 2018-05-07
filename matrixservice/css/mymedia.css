@@ -33,13 +33,17 @@
 	}
 	.time__banner{
 		background: #d9d9d9;
+		bottom: 10px;
 	}
 	#timedisplay{
 		color: #111;
 	}
+	.about{
+		display: inline;
+	}
 }
 @media screen and (max-width: 768px){
-	
+
 }
 @media screen and (max-width: 480px){
 	
