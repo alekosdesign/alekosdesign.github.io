@@ -160,7 +160,7 @@ li a {
 /*** Hero Section Styles ***/
 #hero-section {
 	width: 100vw;
-	height: calc(100vh - 160px);
+	height: calc(90vh - 200px);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -170,7 +170,7 @@ li a {
 	-webkit-box-align: center;
 			-ms-flex-align: center;
 					align-items: center;
-	margin-top: 130px;
+	margin-top: 140px;
 }
 
 
@@ -184,10 +184,10 @@ section {
 					justify-content: center;
 }
 section:nth-child(odd) {
-	background: #111;
+	background: #d9d9d9;
 }
 section:nth-child(even) {
-	background: #f3f3f3;
+	background: #111;
 }
 
 /*** Responsive Menu For Smaller Device ***/
@@ -207,7 +207,7 @@ section:nth-child(even) {
 		height: 0;
 		background: #111;
 		position: absolute;
-		top: 160px;
+		top: 100px;
 		-webkit-transform: translate(, );
 						transform: translate(, );
 		-webkit-box-shadow: 0 5px 30px -4px rgba(0, 0, 0, 0.2);

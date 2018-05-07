@@ -15,16 +15,20 @@
 	<meta name="msapplication-square70x70logo" content="img/icon/other-icon.png"/>
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/solid.css" integrity="sha384-VxweGom9fDoUf7YfLTHgO0r70LVNHP5+Oi8dcR4hbEjS8UnpRtrwTx7LpHq/MWLI" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/fontawesome.css" integrity="sha384-rnr8fdrJ6oj4zli02To2U/e6t1qG8dvJ8yNZZPsKHcU7wFK3MGilejY5R/cUc5kf" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/uikit.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="stylesheet" href="css/mymedia.css">
 
 </head>
-
 <body>
-
+	<!-- Иконка -->
+	<a class="icon__call" href="tel:+79147910982">
+		<i class="fas fa-phone fa-2x"></i>
+	</a>
 	<!-- Header -->
 	<header>
 		<!-- Bar -->
@@ -52,7 +56,7 @@
 					<li><a href="#screen__id"><p>Замена стекла</p></a></li>
 					<li><a href="#section01"><p>Ремонт телефонов</p></a></li>
 					<li><a href="#section02"><p>Ремонт ноутбуков</p></a></li>
-					<li><a href="#section03"><p>Контакты</p></a></li>
+					<li><a href="#section03"><p>О нас</p></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -63,7 +67,12 @@
 
 		<div id="hero-section" style="z-index: 0;">
 			<div class="parallax">
-				<img src="img/svag/mylogo_small.png" class="uk-position-center" width="50%" alt="">
+				<img src="img/svag/mylogo_small.png" class="uk-position-center img__header" alt="">
+				<img src="img/svag/mylogo_no_bgd.png" class="uk-position-center img__header__mob" alt="">
+			</div>
+			<div class="time__banner">
+
+				<div id="timedisplay"></div>
 			</div>
 		</div>
 	</header>
@@ -72,7 +81,7 @@
 
 
 	<!-- Screen -->
-	<section id="screen__id" style="padding: 20px 0 70px 0; z-index: 1">
+	<section id="screen__id" class="section__blur" style="padding: 20px 0 70px 0; z-index: 1">
 		<div class="container">
 			<div class="row">
 				<h2 style="text-align: center; padding-top: 40px;">Замена стекла на iPhone</h2>
@@ -115,7 +124,7 @@
 
 				</div>
 
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" uk-scrollspy="cls: uk-animation-fade; repeat: true">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" uk-scrollspy="cls: uk-animation-fade; repeat: true" style="padding-bottom: 40px;">
 					<center>
 						<div class="img__container uk-card uk-card-default uk-card-body">
 							<img src="img/svag/IphoneX-glass.png" style="text-align: center;"  alt="">
@@ -165,26 +174,25 @@
 
 
 
-		<section id="section01">
+		<section id="section01" class="section__blur">
 			<div id="heading">
 				<center><img src="img/svag/dev.jpg" width="50%" alt=""></center>
 			</div>
 		</section>
 
-		<section id="section02">
+		<section id="section02" class="section__blur">
 			<div id="heading">
 				<center><img src="img/svag/dev.jpg" width="50%" alt=""></center>
 			</div>
 		</section>
 
-		<section id="section03">
+		<section id="section03" class="section__blur">
 			<div id="heading">
-				<center><img src="img/svag/dev.jpg" width="50%" alt=""></center>
+				
 			</div>
 
 			<script src="js/jquery-3.3.1.min.js"></script>
 			<script  src="js/uikit.js"></script>
-			<script  src="js/uikit-icons.js"></script>
 			<script  src="js/index.js"></script>
 		</body>
 
