@@ -33,6 +33,7 @@
 	}
 	.time__banner{
 		background: #d9d9d9;
+		bottom: 10px;
 	}
 	#timedisplay{
 		color: #111;
