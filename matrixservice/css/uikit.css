@@ -274,7 +274,7 @@ h6,
  ========================================================================== */
 ul,
 ol {
-  padding-left: 30px;
+  padding: 0 30px;
 }
 /*
  * Reset margin for nested lists
@@ -1815,11 +1815,11 @@ select.uk-form-width-xsmall {
   /* 6 */
   text-transform: none;
   /* 7 */
-  display: inline-block;
+ /* display: inline-block;
   box-sizing: border-box;
   padding: 0 30px;
   vertical-align: middle;
-  font-size: 0.875rem;
+  font-size: 0.875rem;*/
   /* 8 */
   line-height: 38px;
   /* 9 */

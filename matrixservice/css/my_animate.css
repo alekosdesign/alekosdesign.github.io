@@ -1,0 +1,36 @@
+.icon__animate__call i, 
+.icon__animate__wa i, 
+.icon__animate__instagram i, 
+.icon__animate__vk i,
+.icon__animate__gis i, 
+.icon__animate__mail i{
+	transition: 0.3s;
+}
+.icon__animate__call i:hover, 
+.icon__animate__wa i:hover, 
+.icon__animate__instagram i:hover, 
+.icon__animate__vk i:hover,
+.icon__animate__gis i:hover, 
+.icon__animate__mail i:hover{
+	filter: drop-shadow(0 0 40px rgba(255,255,255,0.3));
+}
+.icon__animate__call i:hover{
+	color: #56AF02;
+}
+.icon__animate__wa i:hover{
+	color: #4D9E13;
+}
+.icon__animate__instagram i:hover{
+	background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.icon__animate__vk i:hover{
+	color: #4A76A8;
+}
+.icon__animate__gis i:hover{
+	color: #D64035;
+}
+.icon__animate__mail i:hover{
+	color: #3298CF;
+}

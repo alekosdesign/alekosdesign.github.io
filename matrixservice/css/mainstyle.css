@@ -37,6 +37,11 @@ a, h1, h2, h3, h4, li, ul, p{
 	filter: blur(2px);
 }
 
+/*Google map*/
+#map__google{
+	display: none;
+}
+
 /*Parralax*/
 .parallax { 
 	background-image: url("../img/svag/bg3().jpg");
@@ -69,11 +74,8 @@ a, h1, h2, h3, h4, li, ul, p{
 	font-family: sans-serif
 }
 .time__banner{
-	background: #111;
-	padding: 15px;
-	position: absolute;
-	bottom: 150px;
-	border-radius: 20px;
+	padding: 20px 0;
+	position: relative;
 }
 /*Bot*/
 .bottom{
@@ -90,13 +92,13 @@ a, h1, h2, h3, h4, li, ul, p{
 	position: fixed;
 	bottom: 15px;
 	right: 15px;
-	color: #4fa459;
+	color: #56AF02;
+	
 }
 .icon__call i{
 	position: relative;
 	padding:15%;
 }
-
 /*IMG*/
 .img__container{
 	width: 250px;
@@ -113,6 +115,18 @@ a, h1, h2, h3, h4, li, ul, p{
 	display: none;
 }
 
+.icon__color{
+	color: #d9d9d9;
+	text-align: center;
+}
+.item__icon{
+	padding: 20px 0;
+}
+.item__icon p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 10px;
+}
 /*Header*/
 #menu ul{
 	text-align: center;
@@ -127,6 +141,9 @@ a, h1, h2, h3, h4, li, ul, p{
 }
 
 /*Text edit*/
+.job__time{
+	color: #d9d9d9;
+}
 .text__center{
 	text-align: center;
 }
@@ -142,7 +159,10 @@ a, h1, h2, h3, h4, li, ul, p{
 .other__repaire a:hover{
 	color: #111;
 }
-
+.comm{
+	color: #d9d9d9;
+	background: 111;
+}
 
 
 /*Footer*/
@@ -163,9 +183,9 @@ a, h1, h2, h3, h4, li, ul, p{
 }
 .footer__item{
 	padding: 5px;
-/*	color: #d9d9d9;*/
 }
 .footer__item a{
+	text-decoration: none;
 	color: #d9d9d9;
 }
 .footer__item p{
