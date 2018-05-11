@@ -188,9 +188,7 @@ dl,
 pre,
 address,
 fieldset,
-figure {
-  margin: 0 0 20px 0;
-}
+figure {}
 /* Add margin if adjacent element */
 * + p,
 * + ul,

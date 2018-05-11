@@ -128,7 +128,7 @@ a, h1, h2, h3, h4, li, ul, p{
 	padding: 10px;
 }
 .mobile__iphone__x{
-	padding-bottom: 0;
+	padding-bottom: 30px;
 }
 /*Header*/
 #menu ul{
@@ -228,4 +228,96 @@ a, h1, h2, h3, h4, li, ul, p{
 .footer__item p{
 	color: #d9d9d9;
 
+}
+/*Repair*/
+.repair__table tr{
+	padding: 15px;
+}
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+thead, tr, th, td{
+	padding: 5px;
+	transition: 0.3s;
+}
+td{
+	padding: 1.5%;
+}
+.repair__section{
+	display: block;
+	position: relative;
+	padding-top: 100px;
+	background: #d9d9d9;
+}
+.repair__block__part{
+	display: inline-block;
+	position: relative;
+	padding: 5px;
+	background: #111;
+	border-radius: 20px;
+	margin: 0.7%
+}
+.repair__block__part a{
+	color: #d9d9d9;
+}
 
+.repair__title p{
+	font-size: 26px;
+}
+.repair__block{
+	cursor: pointer;
+	display: inline-block;
+	position: relative; 
+	text-align: center;
+	padding: 15px 15px 25px 15px ;
+}
+.repair__phone{
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+.repair__phone p{
+	margin: 2px 5px;
+}
+table{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.repair__table{
+	padding:0 10%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+.repair__table h4{
+	font-size: 24px;
+}
+
+.other__text__table{
+	font-size: 14px;
+	color:#2f2f2f;
+}
+.repair__table tr{
+	padding: 15px;
+}
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+thead, tr, th, td{
+	padding: 5px;
+	transition: 0.3s;
+}
+td{
+	padding: 1.5%;
+	border-bottom: 2px solid #eeeeee;
+}
+#block__iphone5__table, #block__iphone5s__table, #block__iphonese__table,
+#block__iphone6__table, #block__iphone6plus__table, #block__iphone6s__table,
+#block__iphone6splus__table, #block__iphone7__table, #block__iphone7plus__table,
+#block__iphone8__table, #block__iphone8plus__table, #block__iphonex__table{
+	background: #d9d9d9;
+}

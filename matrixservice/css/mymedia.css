@@ -72,5 +72,13 @@
 	}
 }
 @media screen and (max-width: 480px){
-	
+		.repair__block{
+		display: inline-grid;
+	}
+	#block__iphone5__table, #block__iphone5s__table, #block__iphonese__table,
+	#block__iphone6__table, #block__iphone6plus__table, #block__iphone6s__table,
+	#block__iphone6splus__table, #block__iphone7__table, #block__iphone7plus__table,
+	#block__iphone8__table, #block__iphone8plus__table, #block__iphonex__table{
+		display: inline-block;
+	}
 }
