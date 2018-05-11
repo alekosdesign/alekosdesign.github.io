@@ -1,0 +1,231 @@
+* {
+	box-sizing: border-box;
+}
+
+div{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+body, html {
+	height: 100%;
+}
+body{
+	-webkit-overflow-scrolling: touch
+	-webkit-text-size-adjust: none
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	background: #e3e3e3;
+	color: #111;
+
+}
+a, h1, h2, h3, h4, li, ul, p{
+	text-decoration: none;
+	list-style: none;
+	line-height: 1.2em;
+}
+
+.blur {
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+
+/*Google map*/
+#map__google{
+	display: none;
+}
+
+/*Parralax*/
+.parallax { 
+	background-image: url("../img/svag/bg3().jpg");
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.logo__parralax{
+	padding: 15%;
+	display: table;
+	width: -moz-max-content;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.my__container{
+	margin-right: auto;
+	margin-left: auto;
+}
+/*Time*/
+#timedisplay{
+	display: block;
+	text-align: center;
+	font-size: 32px;
+	color: #111;
+	font-family: sans-serif
+}
+.time__banner{
+	padding: 10px 0;
+	position: relative;
+}
+/*Bot*/
+.bottom{
+	display: block;
+	text-align: center;
+}
+.button-item {
+	display: inline-flex;
+	padding-bottom: 2em;
+}
+.icon__call{
+	display: none;
+	z-index: 2;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	color: #56AF02;
+	
+}
+.icon__call i{
+	position: relative;
+	padding:15%;
+}
+/*IMG*/
+.img__container{
+	width: 250px;
+	height: 395px;
+}
+.img__header{
+	padding: 5%;
+	width: 50%;
+	position: relative;
+	display: block;
+}
+.img__header__mob{
+	position: relative;
+	display: none;
+}
+
+.icon__color{
+	color: #111;
+	text-align: center;
+}
+.item__icon{
+	padding: 20px 0;
+}
+.item__icon p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 10px;
+}
+.mobile__iphone__x{
+	padding-bottom: 0;
+}
+/*Header*/
+#menu ul{
+	text-align: center;
+	white-space: nowrap
+}
+#word-mark p{
+	color: #d9d9d9;
+}
+#head-line{
+	text-align: center;
+	position: relative;
+}
+
+/*Text edit*/
+.job__time{
+	color: #111;
+	padding-bottom: 30px;
+}
+.text__center{
+	text-align: center;
+}
+.text__center h3, .text__center p, .text__center a{
+	text-decoration: none;
+	color: #111;
+}
+.other__repaire a{
+	color: #111;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.other__repaire a:hover{
+	color: #111;
+}
+.comm{
+	color: #d9d9d9;
+	background: #111;
+}
+/*Job*/
+.mobile__day{
+	display: none;
+	background: #111;
+	color: #d9d9d9;
+	border-radius: 20px;
+}
+.job{
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.job__day, .job__week{
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	border-radius: 25%;
+	padding: 0px 20px;
+	margin: 5px;
+	transition: 0.2s;
+}
+.job__day{
+	padding: 10px 0;
+	background: #69dd7d;
+}
+.job__day h3, .job__week h3{
+	color: #fff;
+	font-size: 24px;
+}
+.job__week{
+	padding: 10px 0;
+	background: #db432e;
+}
+/*Footer*/
+#footer{
+	padding: 10px 0;
+	color: #d9d9d9;
+	background: #111;
+	text-decoration: none;
+	font-size: 14px;
+	z-index: 3;
+}
+.about{
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 0 10%;
+	display: flex;
+}
+.footer__item{
+	padding: 5px;
+}
+.footer__item a{
+	text-decoration: none;
+	color: #d9d9d9;
+}
+.footer__item p{
+	color: #d9d9d9;
+
+

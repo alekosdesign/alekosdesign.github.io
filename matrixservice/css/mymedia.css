@@ -1,0 +1,76 @@
+@media screen and (min-width: 1921px){
+	
+}
+@media screen and (max-width: 1920px){
+	
+}
+@media screen and (min-width: 1601px){
+	
+}
+@media screen and (max-width: 1600px){
+	
+}
+@media screen and (max-width: 1368px){
+	
+}
+@media screen and (max-width: 968px){
+	.img__header{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 960px){
+	.icon__call{
+		display: block;
+	}
+	.parallax{
+		background:#111; 
+	}
+	.img__header__mob{
+		display: block;
+	}
+	.img__header{
+		display: none;
+	}
+	.about{
+		display: inline;
+	}
+}
+@media screen and (max-width: 768px){
+	#brand{
+		padding-left: 5%;
+	}
+	#menu{
+		padding-right: 5%;
+	}
+	#map__google{
+		display: block;
+	}
+	.mobile__day{
+		display: block;
+	}
+	.job__day, .job__week{
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		border-radius: 25%;
+		padding: 0;
+		margin: 1px;
+		transition: 0.2s;
+	}
+	.job__day h3, .job__week h3{
+		color: #fff;
+		font-size: 16px;
+	}
+	.time__banner{
+		display: none;
+	}
+	#timedisplay{
+		display: none;
+	}
+	.mobile__iphone__x{
+		padding-bottom: 40px;
+	}
+}
+@media screen and (max-width: 480px){
+	
+}
