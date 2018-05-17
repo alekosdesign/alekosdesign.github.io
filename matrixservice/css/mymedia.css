@@ -1,21 +1,33 @@
 @media screen and (min-width: 1921px){
-	
+	#screen__id{
+		padding: 20px 0 0;
+	}
 }
 @media screen and (max-width: 1920px){
-	
+	#screen__id{
+		padding: 20px 0 0;
+	}
 }
 @media screen and (min-width: 1601px){
-	
+	#screen__id{
+		padding: 20px 0 0;
+	}
 }
 @media screen and (max-width: 1600px){
-	
+	#screen__id{
+		padding: 20px 0 0;
+	}
 }
 @media screen and (max-width: 1368px){
-	
+	#screen__id{
+		padding: 20px 0 0;
+	}
 }
 @media screen and (max-width: 968px){
 	.img__header{
 		width: 100%;
+	}#screen__id{
+		padding: 20px 0 0;
 	}
 }
 @media screen and (max-width: 960px){
@@ -34,8 +46,14 @@
 	.about{
 		display: inline;
 	}
+	#screen__id{
+		padding: 20px 0 0;
+	}
 }
 @media screen and (max-width: 768px){
+	#screen__id{
+		padding: 96px 0 0;
+	}
 	#brand{
 		padding-left: 5%;
 	}
@@ -70,9 +88,18 @@
 	.mobile__iphone__x{
 		padding-bottom: 40px;
 	}
+	#block__iphone5__table, #block__iphone5s__table, #block__iphonese__table,
+	#block__iphone6__table, #block__iphone6plus__table, #block__iphone6s__table,
+	#block__iphone6splus__table, #block__iphone7__table, #block__iphone7plus__table,
+	#block__iphone8__table, #block__iphone8plus__table, #block__iphonex__table{
+		padding: 0 40px;
+	}
 }
 @media screen and (max-width: 480px){
-		.repair__block{
+	header{
+		height: 84%;
+	}
+	.repair__block{
 		display: inline-grid;
 	}
 	#block__iphone5__table, #block__iphone5s__table, #block__iphonese__table,
@@ -80,5 +107,6 @@
 	#block__iphone6splus__table, #block__iphone7__table, #block__iphone7plus__table,
 	#block__iphone8__table, #block__iphone8plus__table, #block__iphonex__table{
 		display: inline-block;
+		padding: 0 5px;
 	}
 }

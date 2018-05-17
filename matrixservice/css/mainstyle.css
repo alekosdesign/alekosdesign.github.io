@@ -19,7 +19,7 @@ body{
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
-	background: #e3e3e3;
+	background: #d9d9d9;
 	color: #111;
 
 }
@@ -28,15 +28,16 @@ a, h1, h2, h3, h4, li, ul, p{
 	list-style: none;
 	line-height: 1.2em;
 }
-
-.blur {
+/*.blur {
 	-webkit-filter: blur(2px);
 	-moz-filter: blur(2px);
 	-o-filter: blur(2px);
 	-ms-filter: blur(2px);
 	filter: blur(2px);
+}*/
+#screen__id{
+	z-index: 1
 }
-
 /*Google map*/
 #map__google{
 	display: none;
@@ -46,7 +47,7 @@ a, h1, h2, h3, h4, li, ul, p{
 .parallax { 
 	background-image: url("../img/svag/bg3().jpg");
 	position: absolute;
-	height: 100%;
+	height: 96%;
 	width: 100%;
 	background-attachment: fixed;
 	background-position: left center;
@@ -65,18 +66,7 @@ a, h1, h2, h3, h4, li, ul, p{
 	margin-right: auto;
 	margin-left: auto;
 }
-/*Time*/
-#timedisplay{
-	display: block;
-	text-align: center;
-	font-size: 32px;
-	color: #111;
-	font-family: sans-serif
-}
-.time__banner{
-	padding: 10px 0;
-	position: relative;
-}
+
 /*Bot*/
 .bottom{
 	display: block;
@@ -289,7 +279,7 @@ table{
 .repair__table{
 	padding:0 10%;
 	max-width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: -1px;
 }
 .repair__table h4{
 	font-size: 24px;
@@ -302,22 +292,22 @@ table{
 .repair__table tr{
 	padding: 15px;
 }
-tbody {
-	display: table-row-group;
-	vertical-align: middle;
-	border-color: inherit;
-}
-thead, tr, th, td{
-	padding: 5px;
-	transition: 0.3s;
-}
-td{
-	padding: 1.5%;
-	border-bottom: 2px solid #eeeeee;
-}
 #block__iphone5__table, #block__iphone5s__table, #block__iphonese__table,
 #block__iphone6__table, #block__iphone6plus__table, #block__iphone6s__table,
 #block__iphone6splus__table, #block__iphone7__table, #block__iphone7plus__table,
-#block__iphone8__table, #block__iphone8plus__table, #block__iphonex__table{
+#block__iphone8__table, #block__iphone8plus__table, #block__iphonex__table,
+#block__macbook__air__table,#block__macbook__pro__table,
+#block__imac__table, #block__macmini__table,#block__other__notebook__table{
 	background: #d9d9d9;
+	padding: 0 20%;
+}
+.text__remont__block{
+	display: block;
+	text-align: center;
+	color: #5f5f5f;
+	background: #d9d9d9;
+	padding: 40px 0 20px 0;
+}
+.hover__table__block p{
+	text-align: right;
 }
