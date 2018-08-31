@@ -1,41 +1,27 @@
 @media screen and (min-width: 1921px){
-	#screen__id{
-		padding: 20px 0 0;
-	}
+
 }
 @media screen and (max-width: 1920px){
-	#screen__id{
-		padding: 20px 0 0;
-	}
+
 }
 @media screen and (min-width: 1601px){
-	#screen__id{
-		padding: 20px 0 0;
-	}
+
 }
 @media screen and (max-width: 1600px){
-	#screen__id{
-		padding: 20px 0 0;
-	}
+
 }
 @media screen and (max-width: 1368px){
-	#screen__id{
-		padding: 20px 0 0;
-	}
+
 }
 @media screen and (max-width: 968px){
 	.img__header{
 		width: 100%;
-	}#screen__id{
-		padding: 20px 0 0;
 	}
 }
 @media screen and (max-width: 960px){
 	.icon__call{
 		display: block;
-	}
-	.parallax{
-		background:#111; 
+		background-image: none;
 	}
 	.img__header__mob{
 		display: block;
@@ -46,14 +32,17 @@
 	.about{
 		display: inline;
 	}
-	#screen__id{
-		padding: 20px 0 0;
+	.parallax{
+		background:#111; 
+	}
+	.icon__down{
+		bottom: -40%;
+		right: 0%;
+		color: #d9d9d9;
+		font-size: 4em;
 	}
 }
 @media screen and (max-width: 768px){
-	#screen__id{
-		padding: 96px 0 0;
-	}
 	#brand{
 		padding-left: 5%;
 	}
@@ -88,11 +77,24 @@
 	.mobile__iphone__x{
 		padding-bottom: 40px;
 	}
+	#block__macbook__air__table, #block__macbook__pro__table, #block__imac__table, 
+	#block__macmini__table, #block__other__notebook__table{
+		padding: 0 40px;
+	}
 	#block__iphone5__table, #block__iphone5s__table, #block__iphonese__table,
 	#block__iphone6__table, #block__iphone6plus__table, #block__iphone6s__table,
 	#block__iphone6splus__table, #block__iphone7__table, #block__iphone7plus__table,
 	#block__iphone8__table, #block__iphone8plus__table, #block__iphonex__table{
 		padding: 0 40px;
+	}
+	#primary{
+		padding: 100px 5% 5px;
+	}
+	.blog__item{
+		padding: 2%;
+	}
+	.blog__text__homepage{
+		width: 60%;
 	}
 }
 @media screen and (max-width: 480px){
@@ -102,11 +104,33 @@
 	.repair__block{
 		display: inline-grid;
 	}
+	#block__macbook__air__table, #block__macbook__pro__table, #block__imac__table, 
+	#block__macmini__table, #block__other__notebook__table{
+		display: inline-block;
+		padding: 0 5px 0 0;
+	}
 	#block__iphone5__table, #block__iphone5s__table, #block__iphonese__table,
 	#block__iphone6__table, #block__iphone6plus__table, #block__iphone6s__table,
 	#block__iphone6splus__table, #block__iphone7__table, #block__iphone7plus__table,
 	#block__iphone8__table, #block__iphone8plus__table, #block__iphonex__table{
 		display: inline-block;
-		padding: 0 5px;
+		padding: 80px 5px 0 0;
+	}
+	input, button, select, textarea{
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	.wpcf7-submit{
+		width: 100%;
+	}
+	span.wpcf7-list-item{
+		display: list-item;
+	}
+	#primary{
+		padding: 100px 2px 0 2px;
+	}
+	.blog__text__homepage{
+		width: 80%;
 	}
 }
