@@ -28,3 +28,24 @@
 .icon__animate__mail i:hover{
 	color: #3298CF;
 }
+@-webkit-keyframes dotmouseanim {
+	0% {
+		margin-top: 10px;
+		opacity: 1;
+	}
+	100% {
+		margin-top: 30px;
+		opacity: 0
+	}
+}
+
+@keyframes dotmouseanim {
+	0% {
+		margin-top: 10px;
+		opacity: 1;
+	}
+	100% {
+		margin-top: 30px;
+		opacity: 0
+	}
+}

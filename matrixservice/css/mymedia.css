@@ -35,14 +35,17 @@
 	.parallax{
 		background:#111; 
 	}
-	.icon__down{
-		bottom: -40%;
-		right: 0%;
-		color: #d9d9d9;
-		font-size: 4em;
-	}
 }
 @media screen and (max-width: 768px){
+	.dot__mouse{
+		background: #fff;
+	}
+	.mouse{
+		border: 2px solid #fff;
+	}
+	.text__menu{
+		display: block;
+	}
 	#brand{
 		padding-left: 5%;
 	}

@@ -43,6 +43,27 @@ a, h1, h2, h3, h4, li, ul, p, a:hover, a:focus{
 section {
 	height: auto !important;
 }
+.mouse{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 27px;
+	height: 44px;
+	border: 2px solid #111;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.dot__mouse{
+	margin: 40%;
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #111;
+	-webkit-animation: dotmouseanim 2s infinite;
+	  animation: dotmouseanim 2s infinite;
+}
+
 /*.blur {
 -webkit-filter: blur(2px);
 -moz-filter: blur(2px);
@@ -119,7 +140,7 @@ filter: blur(2px);
 	color: #db432e;
 }
 
-.bg__icon__down{
+/*.bg__icon__down{
 	
 }
 .icon__down{
@@ -133,7 +154,7 @@ filter: blur(2px);
 .icon__down i{
 	position: relative;
 	padding:15%;
-}
+}*/
 .icon__gallery{
 	color: #111;
 	transition: 0.3s;
@@ -183,6 +204,11 @@ filter: blur(2px);
 	padding-bottom: 30px;
 }
 /*Header*/
+.text__menu{
+	padding-right: 20px;
+	color: #d9d9d9;
+	display: none;
+}
 #menu li{
 	text-align: center;
 }
@@ -198,6 +224,10 @@ filter: blur(2px);
 }
 
 /*Text edit*/
+#time{
+	background-image: url("../img/svag/macbook-air-2.png");
+	width: 100%;
+}
 .job__time{
 	color: #111;
 	padding-bottom: 30px;
