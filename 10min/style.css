@@ -1,0 +1,139 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+section{
+	width: 100%;
+	height: 100vh;
+	background: url(img/bg.jpg) 40% 50% no-repeat;
+	background-size: cover;
+	display: table;
+	z-index: -1;
+}
+.container{
+	margin-top: 120px;
+}
+#parallax{
+	position: relative;
+}
+.container__section{
+	padding-top: 100px;
+	overflow: hidden;
+	width: 100%;
+	height: 70vh;
+	background: url(img/11.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	display: block;
+}
+.container__section__two{
+	padding-top: 100px;
+	overflow: hidden;
+	padding-top: 140px;
+	width: 100%;
+	height: 70vh;
+	background: url(img/12.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	display: block;
+}
+.container__section__tree{
+	padding-top: 100px;
+	overflow: hidden;
+	padding-top: 140px;
+	width: 100%;
+	height: 70vh;
+	background: url(img/13.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	display: block;
+}
+.container__section__four{
+	padding-top: 100px;
+	overflow: hidden;
+	padding-top: 140px;
+	width: 100%;
+	height: 70vh;
+	background: url(img/15.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	display: block;
+}
+.wrap h1, .wrap p{
+	margin: 0 auto;
+	background: rgba(0,0,0,.7);
+	width: 50%;
+	color: white;
+}
+nav{
+	text-align: center;
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 32px;
+	z-index: 2;
+	transition-duration: 0.5s;
+}
+.addnav{
+	background: rgba(255,255,255,.7);
+}
+li, ul{
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+nav ul li a{
+	padding: 10px;
+	color: black;
+	font-size: 16px;
+	font-family: Source Sans Pro;
+	font-weight: lighter;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: 0.3s;
+
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color: white;
+}
+h1{
+	z-index: 2;
+	color: white;
+	font-family: Source Sans Pro;
+	font-weight: 300;
+	font-size: 300%;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 0;
+}
+p{
+	z-index: 2;
+	color: white;
+	font-family: Source Sans Pro;
+	font-weight: lighter;
+	letter-spacing: 15px;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 10px;
+
+}
+@media (max-width: 768px){
+	nav ul li a{
+		font-size: 14px;
+		padding: 4px;
+		letter-spacing: 3px;
+	}
+	h1{
+		color: black;
+		font-size: 150%;
+		letter-spacing: 3px;
+	}
+	p{
+		color: black;
+		font-size: 16px;
+		letter-spacing: 3px;
+	}
+	.wrap{
+		padding: 5px;
+	}
+	}
+}
