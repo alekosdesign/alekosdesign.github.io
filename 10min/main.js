@@ -21,8 +21,16 @@ $(document).ready(function() {
 	});
 });
 
-
 function openMenu() {
 	document.getElementById('sidebar').classList.toggle('active')
 	document.getElementById('id-toggle-btn').classList.toggle('active-btn')
+}
+document.body.onload = function(){
+	setTimeout(function() {
+		var preloader = document.getElementById('page-preloader');
+		if(!preloader.classList.contains('done') )
+		{
+			preloader.classList.add('done');
+		}
+	}, 800); 
 }
