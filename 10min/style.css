@@ -92,6 +92,7 @@ section{
 
 }
 #sidebar.active > .mainmenu{
+	height: 50%;
 	display: block;
 }
 .mainmenu ul li a:hover{
