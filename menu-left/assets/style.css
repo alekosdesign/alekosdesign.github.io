@@ -2,7 +2,7 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
-	background-color: #a8efff;
+	/*background-color: #a8efff;*/
 	color: white;
 }
 
@@ -112,7 +112,7 @@ h1, h2, p, a{
 	transform: translate(-50%);
 	transition: all 0.5s;
 }
-#mainmenu ul ul:hover .line{
+#mainmenu ul li:hover .line{
 	width: 180px;
 }
 #logo{
@@ -141,9 +141,74 @@ h1, h2, p, a{
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
+.alone-img{
+	background-image: url(alone-min.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}
+.card{
+	background: #e3e3e3;
+/*	background-image: url(header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;*/
+}
+.container{
+	color: #252525;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.card-block{
+
+}
+.card-block img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.block-text img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: right;
+	border: 3px solid #252525;
+}
+
 @media (max-width: 748px) {
 	#text-top{
 		width: 60%;
+	}
+	#menuicon{
+		top: 20px;
+		right: 40px;
+	}
+	#mainmenu{
+		width: 150px;
+	}
+	#mainmenu ul{
+		top: 40%;
+	}
+	#close{
+		bottom: 50px;
+	}
+	.line{
+		width: 100px;
+		margin-top: 5px;
+	}
+	#mainmenu ul li:hover .line{
+		width: 150px;
+	}
+	#logo{
+		top: 20px;
+	}
+	#mainmenu ul li{
+		font-size: 14px;
+		margin: 15px;
 	}
 }
 @media (max-width: 596px) {
