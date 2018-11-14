@@ -5,6 +5,7 @@ body{
 	height: 100vh !important;
 	background: #252525;
 }
+
 li, ul{
 	text-align: center;
 	text-decoration: none;
@@ -91,8 +92,11 @@ nav{
 		opacity: 0;
 	}
 }
+
+
 /*Media*/
 @media (max-width: 768px){
+
 	.littel-text,.fa-caret-down{
 		display: none;
 	}
