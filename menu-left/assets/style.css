@@ -3,26 +3,35 @@ body{
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	/*background-color: #a8efff;*/
-	color: white;
+	color: #252525;
 }
 
 #bg-image{
-	background-image: url(alone-min.jpg);
+	background-image: url(headr.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	height: 100vh;	
 	z-index: -1;
 }
+#logo img{
+	width: 150px;
+	border-radius: 50%;
+}
+#text-top h2{
+	font-size: 6em;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #e2fdff;
+	z-index: 0;
+	text-shadow: 1px 1px 10px black, 0 0 1em #c4e7ec, 0 0 2em #c4e7ec;
+}
 h1, h2, p, a{
 
 }
-#logo h2{
-	font-family: Source Sans Pro;
-	font-weight: lighter;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
+
 #menuicon{
 	z-index: 1;
 	height: 25px;
@@ -85,6 +94,13 @@ h1, h2, p, a{
 	left: -300px;
 	transition: all 0.5s ease-in-out;
 }
+#mainmenu a{
+	color: white;
+}
+#mainmenu a:hover{
+	color: gray;
+	text-decoration: none;
+}
 #mainmenu ul{
 	list-style: none;
 	padding: 0;
@@ -99,7 +115,7 @@ h1, h2, p, a{
 #mainmenu ul li{
 	margin: 20px;
 }
-#mainmenu ul li:hover{
+#mainmenu ul li a:hover{
 	cursor: pointer;
 }
 .line{
@@ -112,14 +128,15 @@ h1, h2, p, a{
 	transform: translate(-50%);
 	transition: all 0.5s;
 }
-#mainmenu ul li:hover .line{
+#mainmenu ul li a:hover .line{
 	width: 180px;
 }
 #logo{
 	position: absolute;
-	top: 100px;
-	left: 50%;
-	transform: translate(-50%);
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
 }
 #close{
 	position: absolute;
@@ -132,43 +149,40 @@ h1, h2, p, a{
 }
 
 .blur{
-	filter: blur(2px);
+	filter: blur(5px);
 }
 #text-top{
-	width: 40%;
+	width: 35%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
-.alone-img{
-	background-image: url(alone-min.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	z-index: -1;
-}
-.card{
-	background: #e3e3e3;
-/*	background-image: url(header.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	z-index: -1;*/
-}
+
 .container{
-	color: #252525;
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-.card-block{
-
+.card-block h2{
+	text-transform: uppercase;
 }
 .card-block img{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
+}
+.card-block a{
+	text-transform: uppercase;
+	color: white;
+	transition: 0.3s;
+	padding: 5px;
+	border-radius: 5px;
+}
+.card-block a:hover{
+	text-decoration: none;
+	color: #ec674a;
+	background: black;
 }
 .block-text img{
 	width: 200px;
@@ -178,7 +192,67 @@ h1, h2, p, a{
 	float: right;
 	border: 3px solid #252525;
 }
+#card{
+	background: #0c0c13;
+	color: white;
+}
+#mini-info{
+	color: white;
+	/*background: #252525;*/
+	background-image: url(cyberpunk1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}
+#history{
+	color: white;
+	background: #252525;
+}
+#military{
+	color: white;
+	background-image: url(cyberpunk2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}
+#military img{
+	width: 250px;
+	float: right;
+}
 
+
+
+
+.ps p{
+	text-align: center;
+	color: gray;
+	font-size: 12px;
+	padding: 0;
+	margin:0;
+	margin-top: 20px;
+}
+
+footer{
+	color: white;
+	background: #252525;
+}
+footer .container{
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+footer a{
+	color: white;
+	transition: all 0.2s ease-in-out;
+	padding: 10px;
+	border-radius: 5px;
+}
+footer a:hover{
+	color: #2d5077;
+	text-decoration: none;
+	background: white;
+}
 @media (max-width: 748px) {
 	#text-top{
 		width: 60%;
@@ -194,7 +268,7 @@ h1, h2, p, a{
 		top: 40%;
 	}
 	#close{
-		bottom: 50px;
+		bottom: 70px;
 	}
 	.line{
 		width: 100px;
@@ -204,11 +278,18 @@ h1, h2, p, a{
 		width: 150px;
 	}
 	#logo{
-		top: 20px;
+		top: 35px;
+		left: 40%;
+	}
+	#logo img{
+		width: 100px;
 	}
 	#mainmenu ul li{
 		font-size: 14px;
 		margin: 15px;
+	}
+	#text-top h2 {
+		font-size: 3em;
 	}
 }
 @media (max-width: 596px) {
