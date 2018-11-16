@@ -96,7 +96,9 @@ nav{
 
 /*Media*/
 @media (max-width: 768px){
-
+	#desktop{
+		display: none;
+	}
 	.littel-text,.fa-caret-down{
 		display: none;
 	}
@@ -106,6 +108,7 @@ nav{
 	}
 }
 @media (max-width: 480px){
+
 	h1{
 		font-size: 16px;
 	}

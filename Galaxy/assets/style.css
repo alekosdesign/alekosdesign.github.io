@@ -5,6 +5,7 @@ body{
 	-moz-user-select: none; 
 	-ms-user-select: none; 
 	user-select: none; 
+	overflow: hidden;
 }
 #section-bg{
 	width: 100%;
@@ -19,7 +20,7 @@ body{
 #text h2{
 	font-family: Source Sans Pro;
 	font-weight: lighter;
-	font-size: 1em;
+	font-size: 2em;
 	text-transform: uppercase;
 	letter-spacing: 8px;
 	position: absolute;
@@ -28,8 +29,7 @@ body{
 	left: 50%;
 	transform: translateX(-50%);
 	font-size: 14px;
-	text-transform: 
-	z-index: 100;
+	z-index: 1500;
 }
 .bg_1_1{
 	position: absolute;
@@ -140,21 +140,21 @@ body{
 	}
 	.man {
 		width: 110%;
-		left: 70%;
-		transform: translateX(-40%);
+		width: 60%;
+		left: 50%;
 	}
 	.luna{
-		width: 70%;
+		width: 50%;
 	}
 	.planet{
 		left: 0;
-		top: 80%;
-		width: 65%;
+		top: 60%;
+		width: 45%;
 	}
 	.roket{
 		left: 5%;
-		top: 5%;
-		width: 55%;
+		top: 15%;
+		width: 35%;
 	}
 	.bg_2_1{
 		width: 45%;
