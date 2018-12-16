@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700');
+* {
+	box-sizing: border-box;
+}
+
+div{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+body{
+	-webkit-overflow-scrolling: touch
+	-webkit-text-size-adjust: none
+	padding: 0;
+	margin: 0;
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	background: #fafafa;
+	color: black;
+
+}
+a, h1, h2, h3, h4, li, ul, p{
+	text-decoration: none;
+	list-style: none;
+	line-height: 1.2em;
+	text-align: center;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+html { 
+	position:relative;
+	text-align: center;
+}
+.wrap{
+	flex: 1;
+	white-space: pre-line;
+	-ms-flex-preferred-size: auto;
+}
+section {
+	padding: 100px 20% 50px;
+	height: auto !important;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+/*Footer*/
+footer{
+	background: red;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#footer{
+	height: 50px;
+	width: 100%;
+	color: #d9d9d9;
+	font-size: 14px;
+}
+/*End Footer*/
+
+/*Header*/
+header{
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0,0,0,.0975);
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	-webkit-transition: height .2s ease-in-out;
+	transition: height .2s ease-in-out;
+	height: 77px;
+}
+.header__line{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 26px 20%;
+	position: relative;
+}
+.header__line a{
+	float: left;
+}
+.header__insta__vertical{
+	line-height: 77px;
+}
+.icon__insta, .text__insta{
+	display: contents;
+}
+.icon__insta img{
+	height: 20px;
+	width: 20px;
+}
+.text__insta img{
+	width: 110px;
+}
+.search__insta{
+	flex: 0 1 auto;
+	min-width: 125px;
+	width: 215px;
+}
+.search__insta input{
+	border: solid 1px #dbdbdb;
+	border-radius: 3px;
+	color: #262626;
+	outline: 0;
+	text-align: center;
+	padding: 3px 15px 3px 15px;
+	z-index: 2;
+}
+.icons__insta{
+	flex-direction: row
+}
+.icons__insta i{
+	margin-left: 30px;
+	font-size: 20px;
+	cursor: pointer;
+}
+/*end header*/
+
+/*Profile insta*/
+.profile__insta{
+	box-sizing: content-box;
+	padding: 60px 20px 0;
+	width: 100%;
+}
+.profile__image__insta img{
+	width: 152px;
+	height: 152px;
+	border-radius: 50%;
+	transition: 0.3s all;
+}
+.profile__image__insta a img:hover{
+	filter: grayscale(100);
+}
+.profile__name h2{
+	float: left;
+	color: black;
+	font-weight:200;
+	margin-bottom: 20px;
+	transition: 0.3s all;
+	padding: 3px;
+}
+.profile__name h2:hover{
+	color:#949494;
+	border-radius:10px;
+}
+.line__properties{
+	padding: 0;
+	font-size: 16px;
+	display: -webkit-inline-box;
+}
+.line__properties__block{
+	margin-right: 40px;
+}
+.description__profile__insta{
+	float: left;
+	text-align: left;
+	font-size: 16px;
+}
+.description__profile__insta h4,.description__profile__insta p{
+	text-align: left;
+}
+.description__profile__insta a{
+	text-decoration: none;
+	color: #003569;
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
+/*End profile*/
+
+/*Insta Feed*/
+
+#instafeed{
+	text-align: center;
+	margin-bottom: 100px;
+}
+.instafeed__link a{
+	height: 350px;
+	width: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+    background-repeat: no-repeat;
+	display: block;
+	padding: 0;
+	filter: grayscale(100) blur(1.5px);
+	transition: 0.4s all;
+	overflow: hidden;
+}
+.instafeed__link a:hover{
+	filter: grayscale(0) blur(0);
+	transform: scale(1.05);
+}
+.col-12,.col-sm-6,.col-md-4,.col-lg-4,.col-xl-4{
+	margin-bottom: 28px;
+	text-align: center;
+}
+/*End feed*/
+
+/*bottom panel*/
+.bottom__panel{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 44px;
+	z-index: 10;
+	top:auto;
+	background-color: #fff;
+	bottom: 0;
+}
+.bottom__panel__icons{
+	top:50%;
+    height: 100%;
+	transform: translateY(-50%);
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	font-size: 25px;
+	flex-direction: row;
+	padding: 10px 5%;
+
+}
+.bottom__panel__icons i{
+	cursor: pointer;
+	transition: 0.3s all;
+}
+.bottom__panel__icons i:hover{
+	color: #6d6d6d;
+}
