@@ -24,6 +24,8 @@ var gap = 90;
 
 // При нажатии на какую-либо кнопку
 document.addEventListener("keydown", moveUp);
+document.addEventListener("click", moveUp);
+
 
 function moveUp() {
  yPos -= 25;
@@ -53,7 +55,7 @@ function draw() {
 
  pipe[i].x--;
 
- if(pipe[i].x == 150) {
+ if(pipe[i].x == 110) {
  pipe.push({
  x : cvs.width,
  y : Math.floor(Math.random() * pipeUp.height) - pipeUp.height
