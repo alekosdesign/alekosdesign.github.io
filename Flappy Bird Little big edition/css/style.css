@@ -1,0 +1,17 @@
+body{
+	background: #252525;
+	position: relative;
+}
+h2{
+	font-family: sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+canvas{
+	max-width: 100%;
+	text-align: center;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
