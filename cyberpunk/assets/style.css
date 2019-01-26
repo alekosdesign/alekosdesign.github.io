@@ -2,7 +2,6 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
-	/*background-color: #a8efff;*/
 	color: #252525;
 }
 
@@ -28,10 +27,6 @@ body{
 	z-index: 0;
 	text-shadow: 1px 1px 10px black, 0 0 1em #c4e7ec, 0 0 2em #c4e7ec;
 }
-h1, h2, p, a{
-
-}
-
 #menuicon{
 	z-index: 1;
 	height: 25px;
@@ -161,8 +156,8 @@ h1, h2, p, a{
 
 .container{
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 .card-block h2{
 	text-transform: uppercase;
