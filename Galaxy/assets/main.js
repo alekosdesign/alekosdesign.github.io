@@ -14,15 +14,15 @@ $(document).ready(function() {
 	var bg=$('section');
 
 	bg.mousemove(function(e){
-		var valueX=(e.pageX * 1 / 25); 
-		var valueY=(e.pageY * 1 / 35); 
+		var valueX=(e.pageX * 1 / -35); 
+		var valueY=(e.pageY * 1 / -35); 
 
 		roket.css({
 			'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
 		});
 	});
 	bg.mousemove(function(e){
-		var valueX=(e.pageX * 1 / -15); 
+		var valueX=(e.pageX * 1 / -5); 
 		var valueY=(e.pageY * 1 / -5); 
 
 		man.css({
@@ -31,8 +31,8 @@ $(document).ready(function() {
 	});
 
 	bg.mousemove(function(e){
-		var valueX=(e.pageX * -1 / 5); 
-		var valueY=(e.pageY * -1 / 20); 
+		var valueX=(e.pageX * 1 / -20); 
+		var valueY=(e.pageY * 1 / -20); 
 
 		luna.css({
 			'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
@@ -40,27 +40,10 @@ $(document).ready(function() {
 	});
 
 	bg.mousemove(function(e){
-		var valueX=(e.pageX * -1 / 10); 
-		var valueY=(e.pageY * -1 / 15); 
+		var valueX=(e.pageX * 1 / -18); 
+		var valueY=(e.pageY * 1 / -18); 
 
 		planet.css({
-			'transform':'translate3d('+valueX+'px,'+valueY+'px,0) '
-		});
-	});
-
-	bg.mousemove(function(e){
-		var valueX=(e.pageX * -1 / -15); 
-		var valueY=(e.pageY * -1 / 15); 
-
-		bg_22.css({
-			'transform':'translate3d('+valueX+'px,'+valueY+'px,0) '
-		});
-	});
-	bg.mousemove(function(e){
-		var valueX=(e.pageX * -1 / 15); 
-		var valueY=(e.pageY * -1 / 15); 
-
-		bg_21.css({
 			'transform':'translate3d('+valueX+'px,'+valueY+'px,0) '
 		});
 	});
