@@ -13,4 +13,4 @@ $(document).ready(function() {
 		$("#main").fadeIn(200);
 		$("#openmenu").animate({left:"-10%"})
 	})
-}
+})
