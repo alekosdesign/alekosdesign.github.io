@@ -3,9 +3,9 @@ body{
 	margin: 0;
 	width: 100%;
 	height: 100vh !important;
-	background: #252525;
+	background: #e3e3e3;
+	position: relative;
 }
-
 li, ul{
 	text-align: center;
 	text-decoration: none;
@@ -21,7 +21,7 @@ p{
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-	color: #e3e3e3;
+	color: #252525;
 	z-index: 2;
 }
 h1{
@@ -34,25 +34,31 @@ h1{
 	position: fixed;
 	width: 100%;
 	text-align: center;
-	color: #e3e3e3;
+	color: #252525;
 	z-index: 2;
 }
 a{
 	font-size: 1.2em;
 	font-family: Source Sans Pro;
-	font-weight: lighter;
-	color: #e3e3e3;
+	font-weight: 100;
+	color: #252525;
 	text-transform: uppercase;
-	letter-spacing: 13px;
-	transition: 0.3s;
+	letter-spacing: 30px;
+	transition: 0.5s;
 	padding: 10px;
 	filter: blur(3px);
 	z-index: 1;
 }
 a:hover{
-	text-decoration: none;
-	list-style: none;
-	filter: blur(0);
+	background: none;
+    letter-spacing: 13px;
+    text-decoration: none;
+    list-style: none;
+    filter: blur(0);
+    border: 2px solid black;
+    padding: 20px;
+    color: black;
+    font-weight: 900;
 }
 nav{
 	width: 100%;
@@ -66,14 +72,6 @@ nav{
 	width: 100%;
 	height: 100vh;
 	display: table;
-}
-.image__bg{
-	z-index: -1;
-	filter: blur(5px);
-	width: 100%;
-	height: 100%;
-	background: url(bg.png) 40% 50% no-repeat;
-	background-size: cover;
 }
 .littel-text{
 	font-size: 10px;
