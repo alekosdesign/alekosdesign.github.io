@@ -1,0 +1,437 @@
+*{
+	font-family: 'Ubuntu', sans-serif;
+}
+html, body {
+	overflow: hidden;
+	height: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: calc(100% + 20px);
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+section{
+	padding: 100px 0;
+	height: auto !important;
+	position: relative;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+section h2{
+	font-size: 32px;
+	font-weight: bold;
+	padding-bottom: 60px;
+	text-align: center;
+	position: relative;
+}
+.wrap{
+	flex: 1;
+	white-space: pre-line;
+	-ms-flex-preferred-size: auto;
+}
+a:hover{
+	text-decoration: none;
+}
+.blue{
+	background-image: -moz-linear-gradient(45deg, rgb(2,93,186) 0%, rgb(54,171,255) 100%);
+	background-image: -webkit-linear-gradient(45deg, rgb(2,93,186) 0%, rgb(54,171,255) 100%);
+	background-image: -ms-linear-gradient(45deg, rgb(2,93,186) 0%, rgb(54,171,255) 100%);
+	color: white;
+}
+.blue__image:after{
+	z-index: 0;
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0.7;
+	background-image: -moz-linear-gradient(45deg, rgb(2,93,186) 0%, rgb(54,171,255) 100%);
+	background-image: -webkit-linear-gradient(45deg, rgb(2,93,186) 0%, rgb(54,171,255) 100%);
+	background-image: -ms-linear-gradient(45deg, rgb(2,93,186) 0%, rgb(54,171,255) 100%);
+}
+.blue__color{
+	background: #36abff;
+}
+header{
+	background: #252525;
+	height: 70px;
+	position: fixed;
+	display: inline-flex;
+	top: 0;
+	width: 100%;
+	text-transform: uppercase;
+	padding: 10px;
+	z-index: 500;
+}
+.padding__section{
+	padding: 100px 0;
+}
+.mainmenu{
+	text-align: center;
+	padding: 1em 0;
+	font-size: 14px;
+	left: 50%;
+	width: 80%;
+	position: absolute;
+	transform: translateX(-50%);
+}
+.mainmenu ul li{
+	list-style: none;
+	display: inline-block;
+	margin:0 10px;
+	font-weight: bold;
+}
+.mainmenu ul li a, .header__tel a{
+	color: white;
+	transition: 0.2s;
+}
+.mainmenu ul li a:hover, .header__tel a:hover{
+	color: #36abff;
+}
+.headr__logo img{
+	height: 50px;
+}
+.header__tel{
+	right: 10px;
+	position: absolute;
+}
+.header__tel a{
+	font-weight: bold;
+	font-size: 24px;
+}
+.first__section{
+	position: relative;
+	background: url(../img/X%20body.jpg);
+	min-height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.first__section img{
+	width: 100%;
+	z-index: -10;
+}
+
+.offer__logo{
+	z-index: 100;
+	font-size: 64px;
+	border: 2px solid white;
+	border-radius: 6px;
+	padding: 0 20px;
+	margin-bottom: 50px;
+	display: inline-block;
+	position: absolute;
+	left: 150px;
+	top: 150px;
+	color: white;
+}
+.offer{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	z-index: 100;
+	text-align: center; 
+}
+.offer h1{
+	font-size: 64px;
+	text-transform: uppercase;
+}
+.offer p{
+	font-size: 24px;
+}
+.offer a{
+	font-size: 24px;
+	border: 2px solid white;
+	border-radius: 6px;
+	padding: 10px 20px;
+	color: white;
+	line-height: 100px;
+	transition: 0.2s; 
+}
+.offer a:hover{
+	color: #36abff;
+	background: white;
+}
+.two__section .col-12,
+.two__section .col-sm-12,
+.two__section .col-md-6,
+.two__section .col-lg-6,
+.two__section .col-xl-6,
+.job__section .col-12,
+.job__section .col-sm-12,
+.job__section .col-md-6,
+.job__section .col-lg-6,
+.job__section .col-xl-6{
+	padding: 0;
+}
+.two__block__image{
+	z-index: 0;
+	text-align: left;
+	color: white;
+	position: relative;
+	background: url(../img/jacob-postuma-409826-unsplash.jpg);
+/*	overflow: hidden;*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.two__block{
+	position: relative;
+	padding: 100px 0 100px 20%;
+	z-index: 500;
+}
+.two__block h3, .two__block p{
+	color: white;
+}
+.feedback__two__block{
+	background: #36abff;
+	text-align: center;
+	padding: 100px 0;
+	margin: 0 auto;
+	color: white;
+}
+.feedback__two__block p{
+	font-size: 24px;
+	font-weight: bold;
+}
+.feedback__two__block input{
+	outline: none;
+	color: white;
+	background: none;
+	display: block;
+	transform: translateX(50%);
+	margin: 20px;
+	width: 50%;
+	border:0;
+	border-bottom: 2px solid white;
+}
+.feedback__two__block input::placeholder{
+	color: white;
+}
+.feedback__two__block button{
+	background: white;
+	color: #252525;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 6px;
+	text-align: center;
+	padding: 5px 35px;
+	outline: 0 !important;
+	border:0;
+	transition: 0.2s;
+}
+.feedback__two__block button:hover{
+	color: #36abff;
+}
+.ems__section p{
+	padding-top: 20px;
+	font-size: 18px;
+}
+.ems__section__image{
+	z-index: 100;
+	width: 470px;
+	height: 410px;
+	border-radius: 6px;
+}
+.ems__section__image__img{
+	border-radius: 6px;
+	width: 100%;
+	height: 100%;
+	background: url(../img/X%20body.jpg);
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.training__section{
+	text-align: center;
+}
+.training__card{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.training__card:after{
+	height: 100%;
+	width: 100%;
+	display: block;
+	content: '';
+	background:-moz-linear-gradient(90deg, rgb(61, 61, 61) 0%, rgba(255, 255, 255, 0) 100%);
+	background:-webkit-linear-gradient(90deg, rgb(61, 61, 61) 0%, rgba(255, 255, 255, 0) 100%);
+	background:-ms-linear-gradient(90deg, rgb(61, 61, 61) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.training__card img{
+	height: 130%;
+	z-index: -10;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.training__card h4{
+	width: 100%;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+}
+.xbody__section h2{
+	text-align: center;
+}
+.xbody__section p{
+	top: 50%;
+	position: absolute;
+	font-size: 20px;
+	transform: translateY(-50%);
+}
+.cardfour__section{
+	padding: 100px 0;
+	color: white;
+}
+.cardfour{
+	padding: 10px;
+	background: #6dc3ff;
+	height: 430px;
+	border-radius: 16px;
+	justify-content: space-between;
+}
+.cardfour h4{
+	font-size: 24px;
+	font-weight: bold;
+	width: 100%;
+}
+.cardfour p{
+	line-height: 1.3em;
+	top: 50%;
+	font-size: 16px;
+	position: absolute;
+	width: 80%;
+}
+.cardfour__num{
+	font-size: 42px;
+	font-weight: bold;
+}
+.cardfour__one{
+	background: #6dc3ff;
+}
+.cardfour__two{
+	background: #36acff;
+}
+.cardfour__tree{
+	background: #2593ea;
+}
+.cardfour__four{
+	background: #035dba;
+}
+
+.twomin__section{
+	color: white;
+	background: #2593ea;
+}
+.twomin__section img{
+	height: 125px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.twomin__section p{
+	font-size: 18px;
+}
+.videotreni__section{
+	color: white;
+	text-align: center;
+	background: #252525;
+}
+.videotreni__section video{
+	width: 50%;
+	border-radius: 6px;
+	margin-bottom: 60px;
+}
+.videotreni__section img{
+	margin-bottom: 20px;
+	height: 120px;
+}
+.videotreni__section p{
+	font-size: 18px;
+}
+.job__section{
+	color: white;
+	background: url(../img/bady-qb-215032-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.job__section:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #5cbbff;
+	opacity: 0.7;
+	position: absolute;
+}
+.job__card{
+	text-align: center;
+	background: #36abff;
+	height: 310px;
+	overflow: hidden;
+	position: relative;
+}
+.job__card img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}
+.job__card p{
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: bold;
+	position: absolute;
+	width: 70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.child__section h2{
+	text-align: left;
+}
+.child__section__image{
+	height: 410px;
+	width: 470px;
+	border-radius: 16px;
+	position: relative;
+	overflow: hidden;
+}
+.child__section__image img{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
