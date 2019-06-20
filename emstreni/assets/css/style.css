@@ -2,22 +2,23 @@
 	font-family: 'Ubuntu', sans-serif;
 }
 html, body {
-	overflow: hidden;
+/*	overflow: hidden;
 	height: 100%;
-	box-sizing: border-box;
+	width: 100%;
+	box-sizing: border-box;*/
 	margin: 0;
 	padding: 0;
 }
 body{
-	width: 100%;
-	overflow-y: auto;
+	max-width: 100%;
+/*	overflow-y: auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
-	flex-direction: column;
+	flex-direction: column;*/
 	margin: 0;
 }
 section{
@@ -31,7 +32,7 @@ section{
 section h2{
 	font-size: 32px;
 	font-weight: bold;
-	padding-bottom: 60px;
+	padding-bottom: 50px;
 	text-align: center;
 	position: relative;
 }
@@ -66,7 +67,7 @@ a:hover{
 .blue__color{
 	background: #36abff;
 }
-header{
+.header{
 	background: #252525;
 	height: 70px;
 	position: fixed;
@@ -76,6 +77,15 @@ header{
 	text-transform: uppercase;
 	padding: 10px;
 	z-index: 500;
+	transition: 0.2s;
+}
+.addheader{
+	height: 40px;
+	padding: 0;
+	text-align: center;
+}
+.mainmenu button{
+	display: none;
 }
 .padding__section{
 	padding: 100px 0;
@@ -105,8 +115,17 @@ header{
 .mainmenu ul li a:hover, .header__tel a:hover{
 	color: #36abff;
 }
-.headr__logo img{
-	height: 50px;
+.mainmenu__button{
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 10px;
+	line-height: 0;
+	color: white;
+}
+.header__logo img{
+	height: 100%;
 }
 .header__tel{
 	right: 10px;
@@ -137,7 +156,7 @@ header{
 	font-size: 64px;
 	border: 2px solid white;
 	border-radius: 6px;
-	padding: 0 20px;
+	padding: 0 10px;
 	margin-bottom: 50px;
 	display: inline-block;
 	position: absolute;
@@ -166,7 +185,7 @@ header{
 	font-size: 24px;
 	border: 2px solid white;
 	border-radius: 6px;
-	padding: 10px 20px;
+	padding: 5px 10px;
 	color: white;
 	line-height: 100px;
 	transition: 0.2s; 
@@ -186,6 +205,9 @@ header{
 .job__section .col-lg-6,
 .job__section .col-xl-6{
 	padding: 0;
+}
+.two__section{
+	overflow: hidden;
 }
 .two__block__image{
 	z-index: 0;
@@ -246,6 +268,9 @@ header{
 .feedback__two__block button:hover{
 	color: #36abff;
 }
+.ems__section h2{
+	text-align: left;
+}
 .ems__section p{
 	padding-top: 20px;
 	font-size: 18px;
@@ -275,6 +300,7 @@ header{
 	height: 300px;
 	border-radius: 6px;
 	overflow: hidden;
+	transition: 0.2s;
 }
 .training__card:after{
 	height: 100%;
@@ -292,6 +318,11 @@ header{
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+	transition: 0.2s;
+}
+.training__card:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 20px #00000073;
 }
 .training__card h4{
 	width: 100%;
@@ -323,6 +354,12 @@ header{
 	height: 430px;
 	border-radius: 16px;
 	justify-content: space-between;
+	transition: 0.2s;
+}
+.cardfour:hover{
+	box-shadow: 0 0 20px #00000073;
+	height: 110%;
+	border-radius: 8px;
 }
 .cardfour h4{
 	font-size: 24px;
@@ -407,6 +444,7 @@ header{
 	height: 310px;
 	overflow: hidden;
 	position: relative;
+	transition: 0.2s;
 }
 .job__card img{
 	position: absolute;
@@ -437,7 +475,7 @@ header{
 	overflow: hidden;
 }
 .child__section__image img{
-	width: 100%;
+	width: 130%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -472,7 +510,7 @@ header{
 	bottom: 10px;
 	text-align: right;
 }
-.special__block:before{
+.special__block:after{
 	height: 100%;
 	width: 100%;
 	display: block;
@@ -616,25 +654,57 @@ header{
 }
 
 footer{
+	padding: 60px 0;
 	width: 100%;
-	height: 300px;
 	position: relative;
 	background: #035dba;
 	color: white;
+}
+footer .feedback__two__block button{
+	margin-top: 20px;
 }
 .footer__block{
 	position: relative;
 }
 .feedback__footer{
 	background: #035dba;
-	padding: 0;
-	transform: translate(0%,-50%);
-	border-radius: 6px;
-	padding: 20px;
+	padding:0;
 }
 
 .feedback__footer input{
 	transform: none; 
 	margin: 20px auto;
 	width: 80%;
+}
+.footer__logo a img{
+	margin-top: 30px;
+	width: 100px;
+	position: relative;
+}
+.footer__logo{
+	text-align: center;
+	font-size: 14px;
+}
+.footer__social{
+	text-align: center;
+}
+.footer__social a{
+	color: white;
+	text-align: center;
+	font-size: 34px;
+	margin: 0 10px;
+	transition: 0.2s;
+}
+.footer__social a:hover{
+	color: #5aa7f7;
+}
+.footer__block__info{
+	text-transform: uppercase;
+}
+.footer__block__info a{
+	color: white;
+	transition: 0.2s;
+}
+.footer__block__info a:hover{
+	color: #5aa7f7;
 }

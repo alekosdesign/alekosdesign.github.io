@@ -1,3 +1,25 @@
+$(window).scroll(function() {
+	var height = $(window).scrollTop();
+	/*Если сделали скролл на 100px задаём новый класс для header*/
+	if(height > 350){
+
+		$('.header').addClass('addheader');
+	} else{
+		/*Если меньше 100px удаляем класс для header*/
+		$('.header').removeClass('addheader');
+	}
+
+});
+$(document).ready(function() {
+	var $page = $('html, body');
+	$('a[href*="#"]').click(function() {
+		$page.animate({
+			scrollTop: $($.attr(this, 'href')).offset().top
+		}, 1000);
+		return false;
+	});
+});
+
 // document.body.onload = function(){ 
 // 	setTimeout(function() { 
 // 		var preloader = document.getElementById('page-preloader'); 

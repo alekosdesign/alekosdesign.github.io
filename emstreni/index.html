@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>FitNFast</title>
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="keywords" content="ключевые слова">
-<meta name="description" content="Описание">
-<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<link rel="stylesheet" type="text/css" href="assets/css/media.css">
-<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
+	<meta charset="UTF-8">
+	<title>FitNFast</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="ключевые слова">
+	<meta name="description" content="Описание">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+<!-- fa -->
+	<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/brands.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/solid.min.css">
 </head>
 <body>
-<header>
-	<div class="headr__logo">
+<header class="header">
+	<div class="header__logo">
 		<a href="#"><img src="assets/svg/logo_black_fitnfast.svg"></a>
 	</div>
-	<div class="mainmenu">
-		<ul>
-			<li><a href="#">ems</a></li>
-			<li><a href="#">стоимость</a></li>
-			<li><a href="#">почему мы</a></li>
-			<li><a href="#">Преимущества</a></li>
-			<li><a href="#">отзывы</a></li>
-			<li><a href="#">контакты</a></li>
-		</ul>
+	<div class="mainmenu" id="mainmenu">
+		<button class="navbar-toggler mainmenu__button" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fas fa-bars"></i>
+		</button>
+		<div class="collapse navbar-collapse">
+			<ul id="navbar1" class="mainmenu__mob">
+				<li><a href="#">ems</a></li>
+				<li><a href="#">стоимость</a></li>
+				<li><a href="#">почему мы</a></li>
+				<li><a href="#">Преимущества</a></li>
+				<li><a href="#">отзывы</a></li>
+				<li><a href="#">контакты</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="header__tel">
 		<a href="#">272-72-02</a>
 	</div>
+	
 </header>
 <div class="wrap"></div>
 
@@ -235,7 +245,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<div class="job__card">
+				<div class="job__card job__card__mob">
 					<img src="assets/img/glenn-carstens-peters-203007-unsplash.jpg">
 				</div>				
 			</div>
@@ -250,12 +260,12 @@
 				</div>			
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<div class="job__card">
+				<div class="job__card job__card__mob">
 					<img src="assets/img/cold-call-communication-contact-3063.jpg">
 				</div>				
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<div class="job__card">
+				<div class="job__card job__card__mob">
 					<img src="assets/img/bowl-centimeter-delicious-1332189.jpg">
 				</div>				
 			</div>
@@ -270,18 +280,18 @@
 				</div>			
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<div class="job__card">
+				<div class="job__card job__card__mob">
 					<img src="assets/img/scott-webb-22697-unsplash.jpg">
 				</div>				
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<div class="job__card">
+				<div class="job__card job__card__mob">
 					<img src="assets/img/bruce-mars-559226-unsplash.jpg">
 				</div>				
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 				<div class="job__card">
-					<p>Оставьте заявку</p>
+					<p>Вы радуетесь своим достижениям</p>
 				</div>			
 			</div>
 		</div>
@@ -297,7 +307,7 @@
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 				<div class="child__section__image">
-					<img src="assets/img/WhatsApp Image 2019-06-15 at 16.38.36(1).jpeg">
+					<img src="assets/img/IMG_8748.JPG">
 				</div>
 			</div>
 		</div>
@@ -318,31 +328,23 @@
 						Вы получите 5 тренеровок бесплатно</div>
 					</div>
 				</div>
-				<div class="carousel-item" data-interval="2000">
+<!-- 				<div class="carousel-item" data-interval="2000">
 					<div class="special__block">
 						<img src="assets/img/X body.jpg" class="d-block w-100">
 						<p>Срок акции до 20.09.2019</p>
-						<div class="offer__special">Специальное предложение!<br>
-						Вы получите 5 тренеровок бесплатно</div>
+						<div class="offer__special">После каждой тренировки<br>
+						Жаренная курица</div>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<div class="special__block">
 						<img src="assets/img/scott-webb-22697-unsplash.jpg" class="d-block w-100">
-						<p>Срок акции до 20.09.2019</p>
-						<div class="offer__special">Специальное предложение!<br>
-						Вы получите 5 тренеровок бесплатно</div>
+						<p>Срок акции до 12.12.2022</p>
+						<div class="offer__special">Скидки<br>
+						До 50%</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
-			<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
 		</div>
 	</div>
 </section>
@@ -624,6 +626,12 @@
 						Звони прямо сейчас и записывайся
 						на тренировку по EMS системе!</p>
 				</div>
+				<div class="footer__social">
+					<p>Мы ждём вас!</p>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fas fa-phone-alt"></i></a>
+					<a href="#"><i class="fas fa-location-arrow"></i></a>
+				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 				<div class="footer__block">
@@ -637,15 +645,31 @@
 			</div>
 			<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
 				<div class="footer__block">
-					<p>Lorem ipsum dolor sit amet.</p>
+					<p class="footer__block__info">Адрес:<br>
+					ул. Всеволода Сибирцева 69а<br>
+					Пн-Сб с 9:00 д о 21:00<br><br>
+					телефон<br>
+					<a href="#">272-72-02</a><br>
+					<a href="#">+7(423)272-72-02</a><br><br>
+					Электронная почта<br>
+					<a href="#">email</a></p>
 				</div>
 			</div>
-			
 		</div>
+		<div class="footer__logo">
+					<a href="#">
+						<img src="assets/svg/logo_black_fitnfast.svg">
+					</a>
+					<p>FitNFast - Все права защищены.</p>
+				</div>
 	</div>
 </footer>
+<!-- js -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/all.min.js"></script>
+	<script src="assets/js/solid.min.js"></script>
+	<script src="assets/js/brands.min.js"></script>
 	<script src="assets/js/js.js"></script>
 </body>
 </html>

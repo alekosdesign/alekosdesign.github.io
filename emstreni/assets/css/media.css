@@ -10,7 +10,105 @@
 }
 @media screen and (max-width: 960px){
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
+	.header{
+		padding: 0;
+	}
+	.header__tel{
+		position: relative;
+		margin: 0 auto;
+	}
+	.mainmenu{
+		width: 100%;
+		padding: 0;
+		height: 100%;
+	}
+	.mainmenu button{
+		display: block;
+	}
+	.mainmenu ul li{
+		display: block;
+		background: #252525;
+		margin: 0;
+	}
+	.mainmenu .mainmenu__mob{
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 500;
+	}
+	.mainmenu .mainmenu__mob li a{
+		padding: 20px 0;
+		display: inline-block;
+	}
+	.offer__logo{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	section{
+		padding: 60px 0;
+	}
+	.feedback__two__block{
+		padding: 60px 0;
+	}
+	.two__block{
+		padding: 60px;
+		text-align: center;
+	}
+	.ems__section__image{
+		width: 100%;
+	}
+	.training__card{
+		margin: 30px 0px;
+	}
+	.xbody__section p{
+		position: relative;
+		text-align: center;
+	}
+	.cardfour{
+		position: relative;
+		margin: 20px 0px;
+		padding: 1em;
+	}
+	.twomin__section img{
+		position: relative;
+	}
+	.videotreni__section video{
+		width: 90%;
+	}
+	.videotreni__card{
+		margin: 20px 0;
+	}
+	.job__card__mob{
+		display: none;
+	}
+	.job__card{
+		height: 250px;
+	}
+	.job__card p{
+		width: 100%;
+	}
+	.child__section__image{
+		width: 100%;
+	}
+	.offer__special{
+		font-size: 30px;
+	}
+	.special__block p{
+		top: 15px;
+	}
+	.section__price .container{
+		margin: 0;
+	}
+	.table__price{
+		width: 140%;
+	}
+	.footer__block{
+		text-align: center;
+	}
+	footer{
+		padding: 20px 0;
+	}
 }
 @media screen and (max-width: 480px){
 }
