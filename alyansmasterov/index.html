@@ -467,20 +467,27 @@
 					<div class="calc__section">
 						<div class="calc__block">
 							<h4>Площадь квартиры, кв.м.</h4>
-							<input type="text" name="calc1" placeholder="48">
+							<input type="text" placeholder="0" id="area" onchange="demontajcalc();">
 						</div>
 						<div class="calc__block">
 							<h4>Демонтажные работы</h4>
 							<label class="calc__input">
-								<input type="checkbox" id="calc2">
+								<input type="checkbox" id="dismantling_1" onchange="demontajcalc();">
 								<div class="checkbox__text">Новостройка, демонтаж не требуется</div>
 							</label>
 							<label class="calc__input">
-								<input type="checkbox" id="calc2">
+								<input type="checkbox" id="dismantling_2" onchange="demontajcalc();">
 								<div class="checkbox__text">Вторичка, требуется зачистка стен, полов, потолков и т.д.</div>
 							</label>
 						</div>
-
+						<div class="calc__block">
+							<h4>Что то ещё</h4>
+							<input type="text" placeholder="0" id="other1" onchange="demontajcalc();">
+						</div>
+						<div class="calc__block">
+							<h4>Что то ещё</h4>
+							<input type="text" placeholder="0" id="other2" onchange="demontajcalc();">
+						</div>
 					</div>
 				</div>
 				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -489,8 +496,8 @@
 							<img src="asstets/img/90.jpg">
 							<p>Для точного расчёта стоимости Вы можете бесплатно вызвать сметчика-консультанта. Он сделает обмер помещения, обсудит с вами необходимые работы и применяемые материалы, подскажет как воплатить вашу мечту в реальность.<br>После этого, мы предоставим перечень выполняемых нами работ и строительных материалов для ремонта вашего объекта.<br></p>
 							<div class="calc__stroke">
-								<p>Итоговая цена:</p>
-								<span id="calctotal">0</span><p>рублей</p>
+								<p>Итоговая цена:
+								<span id="calctotal"> 0</span> рублей</p>
 							</div>
 						</div>
 
