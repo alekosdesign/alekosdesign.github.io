@@ -3,8 +3,8 @@ body{
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	color: #252525;
+	background: #252525;
 }
-
 #bg-image{
 	background-image: url(headr.jpg);
 	background-repeat: no-repeat;
