@@ -1,0 +1,286 @@
+@media screen and (max-width: 1920px){
+}
+@media screen and (min-width: 1601px){
+}
+@media screen and (max-width: 1600px){
+	.jobforme p{
+		font-size: 16px;
+	}
+	.partners a {
+		max-width: 300px;
+	}
+}
+@media screen and (max-width: 1368px){
+	.offer h1{
+		margin-bottom: 0;
+	}
+	.offer p{
+		margin: 0;
+		line-height: 1.4;
+	}
+	.offer__call p{
+		margin-top: 5px;
+	}
+	.header__logo a{
+		width: 50px;
+	}
+	.header__info{
+		font-size: 14px;
+	}
+	header{
+		height: 70px;
+	}
+	.offer__img{
+		width: 100%;
+		height: 50vh;
+	}
+	.partners a {
+		max-width: 250px;
+	}
+	.jobinfo__text{
+		display: flex;
+		margin: 0;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 960px){
+	section{
+		padding: 50px 0;
+	}
+	.jobinfo{
+		display: contents;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.jobinfo__img {
+		width: 100%;
+		float: none;
+	}
+	.header__info,.offer__img{
+		display: none;
+	}
+	.first__section{
+		height: 100%;
+	}
+	.jobinfo:nth-child(even){
+		float: none;
+	}
+	.jobinfo__text{
+		margin: 20px 0;
+		width: 100%;
+	}
+	.box__about__img{
+		width: auto;
+		display: flex;
+		justify-content: center;
+	}
+	.jobforme{
+		width: 100%;
+		background: rgba(255, 255, 255, 0.85);
+	}
+}
+@media screen and (max-width: 768px){
+	.box__about{
+		width: 100%;
+	}
+	.about__section{
+		flex-direction: column;
+	}
+	.box__jobforme img{
+		height: inherit;
+	}
+	.callback{
+		flex-flow: column;
+	}
+	.callback__input input[type="text"]{
+		width: 70%;
+	}
+	.google__info{
+		position: relative;
+		padding:40px 0px;
+		border-radius: 0;
+	}
+	.google__buttom, .google__buttom__call{
+		font-size: 18px;
+		padding: 0px 10px;
+	}
+	.google__info__icon{
+		margin-top: 20px;
+	}
+	.google__maps iframe{
+		display: none;
+	}
+	.google__maps{
+		border-radius: 0;
+	}
+	.footer__block{
+		flex-flow: column;
+	}
+	.footer__item{
+		margin: 15px 0;
+	}
+	.mainmenu{
+		display: none;
+	}
+	.mobilemenu, .hamburger{
+		display: block;
+	}
+	header{
+		display: flex;
+		justify-content: space-between;
+		background: #2c2c2c;
+	}
+	.gallary__page__item{
+		width: 300px;
+		height: 200px;
+	}
+	.partners__page{
+		justify-content: center;
+	}
+	footer{
+		padding: 40px 0;
+	}
+}
+@media screen and (max-width: 480px){
+	.partners__link a{
+		font-size: 18px;
+		padding: 10px 30px;
+	}
+	.partners span{
+		width: 42px;
+		height: 42px;
+		font-size: large;
+	}
+	.gallary__link{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		background: rgba(68, 199, 133, 0.79);
+		font-size: xx-large;
+	}
+	.gallary{
+		margin-bottom: 25px;
+	}
+	.callback{
+		border-radius: 0;
+	}
+	.partners__link{
+		margin-top: 20px;
+	}
+	.sectionshadow{
+		box-shadow: 0 0 30px 0 rgba(0,0,0,0.25);
+	}
+	section{
+		padding: 30px 0;
+	}
+	.offer p{
+		margin-bottom: 5px;
+		line-height: 1.472;
+		font-size: 16px;
+	}
+	.offer h1 {
+		text-align: center;
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+	.container{
+		margin: 0;
+		padding: 0;
+	}
+	.offer__call{
+		margin-top: 15px;
+	}
+	.first__section::before{
+		opacity: 1;
+		background: rgba(255, 255, 255, 0.92);
+	}
+	.jobforme p{
+		line-height: 1.3;
+		font-size: 14px;
+	}
+	.jobinfo__text p{
+		font-size: 16px;
+	}
+	.jobinfo__text .jobinfo__action, .jobinfo__text .red__text{
+		font-size: 18px;
+	}
+	.reviews__item{
+		margin: 0 30px;
+		padding: 15px;
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-content: center;
+	}
+	.callback .buttom{
+		margin-top: 20px;
+	}
+	.callback h3{
+		text-align: center;
+	}
+	footer{
+		padding: 10px 0;
+	}
+}
+@media screen and (max-width: 320px){
+	.offer{
+		position: relative;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 60px;
+	}
+	.offer p{
+		line-height: 1;
+	}
+	.offer__call {
+		display: flex;
+		margin-top: 15px;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+	}
+	.buttom{
+		font-size: 16px;
+		padding: 5px 15px;
+	}
+	.offer__call p{
+		font-size: 14px;
+	}
+	.text__center{
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+	.calc__section{
+		box-shadow: 0 0 16px 0 rgba(0,0,0,0.35);
+		padding: 30px 10px;
+	}
+	.calc__section .calc__block input[type="text"]{
+		width: 35%;
+		font-size: 14px;
+	}
+	.calc__info__block img{
+		margin-bottom: 0;
+	}
+	.calc__info__block{
+		padding: 0;
+	}
+	.google__info__icon div{
+		margin: 0 5px;
+	}
+}
+@media screen and (max-height: 550px){
+	.offer__call,.offer__img{
+		display: none;
+	}
+	.offer, .offer__img{
+		text-align: center;
+	}
+}

@@ -79,6 +79,7 @@ nav{
 .fa-caret-down{
 	animation: caretdown 2s infinite linear;
 }
+
 /*Anim*/
 @keyframes caretdown{
 	0%{
