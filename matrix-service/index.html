@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>Matrix-Service</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+</head>
+
+<body>
+<!-- <div class="logo" id="page-preloader">
+	<svg width="163" height="200" viewBox="0 0 815 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="815" height="1000">
+			<path d="M413.641 287.323C374.142 287.323 312.997 242.412 248.606 244.036C163.654 245.118 85.7361 293.276 41.9071 369.57C-46.2919 522.702 19.181 748.88 105.215 873.333C147.421 933.936 197.202 1002.11 263.216 999.95C326.525 997.244 350.333 958.827 427.169 958.827C503.464 958.827 525.108 999.95 592.204 998.327C660.382 997.244 703.67 936.641 745.335 875.498C793.492 805.154 813.513 736.976 814.596 733.188C812.973 732.647 682.026 682.326 680.403 530.818C679.321 404.2 783.753 343.597 788.623 340.892C729.102 253.775 637.656 244.036 605.731 241.871C522.402 235.377 452.601 287.323 413.641 287.323ZM554.327 159.624C589.498 117.419 612.766 58.4387 606.273 0C555.95 2.16439 495.347 33.5481 459.094 75.7537C426.628 113.089 398.491 173.151 406.067 230.508C461.799 234.837 519.156 201.829 554.327 159.624Z" fill="#131313"/>
+		</mask>
+		<g mask="url(#mask0)">
+			<rect x="50" width="756" height="351" fill="#11B35C"/>
+			<rect y="351" width="777" height="119" fill="#FFB638"/>
+			<rect x="-15" y="470" width="718" height="119" fill="#F8863E"/>
+			<rect y="589" width="776" height="119" fill="#F24A48"/>
+			<rect x="18" y="708" width="797" height="119" fill="#9F5896"/>
+			<rect x="73" y="827" width="703" height="173" fill="#0098CB"/>
+		</g>
+	</svg>
+</div> -->
+<header class="flex">
+	<div class="mw flex">
+		<a class="header__logo" href="#">
+			<img src="assets/img/logo.svg">
+		</a>
+		<div class="mobile__bot">
+			<span class="mobile__bot__top"></span>
+			<span class="mobile__bot__bot"></span>
+		</div>
+		<nav class="mainmenu">
+			<ul>
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Ремонт техники</a>
+				</li>
+				<li>
+					<a href="#">Полезные статьи</a>
+				</li>
+				<li>
+					<a href="#">Галерея</a>
+				</li>
+				<li>
+					<a href="#">Отзывы</a>
+				</li>
+				<li>
+					<a href="#">О нас</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="hero__container" uk-slideshow="autoplay: true" tabindex="-1">
+	 <ul class="uk-slideshow-items">
+		<!-- <li>
+			<div class="hero">
+				<div class="offer">
+					<h1>Ремонт iPhone во Владивостоке</h1>
+					<p>Мы занимаемся ремонтом техники Apple во Владивостоке. <br>Качественный ремонт вашего аппарата.</p>
+					<div class="cta">
+						<a href="#" class="button">Заказать звонок</a>
+						<a href="#" class="button button__border">Стоимость ремонта</a>
+					</div>
+				</div>
+				<img class="offer__img" src="assets/img/iphone.png">
+			</div>
+		</li> -->
+		<li>
+			<div class="hero hero__light">
+				<div class="offer">
+					<h1>Ремонт Macbook Pro во Владивостоке</h1>
+					<p>Мы занимаемся ремонтом техники Apple во Владивостоке. <br>Качественный ремонт вашего аппарата.</p>
+					<div class="cta">
+						<a href="#" class="button__dark">Заказать звонок</a>
+						<a href="#" class="button__dark button__border__dark">Стоимость ремонта</a>
+					</div>
+				</div>
+				<img class="offer__img" src="assets/img/macbookpro.png">
+			</div>
+		</li> 
+<!-- 		<li>
+			<div class="hero">
+				<div class="offer">
+					<h1>Ремонт Apple Watch во Владивостоке</h1>
+					<p>Мы занимаемся ремонтом техники Apple во Владивостоке. <br>Качественный ремонт вашего аппарата.</p>
+					<div class="cta">
+						<a href="#" class="button">Заказать звонок</a>
+						<a href="#" class="button button__border">Стоимость ремонта</a>
+					</div>
+				</div>
+				<img class="offer__img" src="assets/img/watch.png">
+			</div>
+		</li>
+		<li>
+			<div class="hero hero__light">
+				<div class="offer">
+					<h1>Ремонт Macbook Air во Владивостоке</h1>
+					<p>Мы занимаемся ремонтом техники Apple во Владивостоке. <br>Качественный ремонт вашего аппарата.</p>
+					<div class="cta">
+						<a href="#" class="button__dark">Заказать звонок</a>
+						<a href="#" class="button__dark button__border__dark">Стоимость ремонта</a>
+					</div>
+				</div>
+				<img class="offer__img" src="assets/img/air.png">
+			</div>
+		</li>  -->
+	</ul>
+
+	<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+	<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+</div>
+
+<section>
+	<h3 class="ct">Почему люди приходят к нам?</h3>
+	<div class="come flex">
+		<div class="come__item">
+			<img src="assets/img/icons-advant/easy.svg">
+			<b>Оригинальные запчасти</b>
+			<p>Мы всегда устанавливаем только оригинальные запчасти.</p>
+		</div>
+		<div class="come__item">
+			<img src="assets/img/icons-advant/chat.svg">
+			<b>Всегда на связи</b>
+			<p>Наши специалисты всегда готовый проконсультировать Вас удалённо.</p>
+		</div>
+		<div class="come__item">
+			<img src="assets/img/icons-advant/ok.svg">
+			<b>Гарантия</b>
+			<p>Мы настолько уверены в своих силах, что даем гарантию 3 месяца на все установленные запчасти и выполненные работы.</p>
+		</div>
+		<div class="come__item">
+			<img src="assets/img/icons-advant/data.svg">
+			<b>Скидки на последующие ремонты</b>
+			<p>После ремонта аппарата, мы всегда даём скидку на последующий ремонт 10%.</p>
+		</div>
+		<div class="come__item">
+			<img src="assets/img/icons-advant/60deg.svg">
+			<b>Всегда в короткое время</b>
+			<p>Устранение типовых неисправностей в течение 4 часов. Без переплаты.</p>
+		</div>
+		<div class="come__item">
+			<img src="assets/img/icons-advant/love.svg">
+			<b>Бесплатная диагностика</b>
+			<p>Диагностика Вашего сломанного устройства производится бесплатно, если Вы не откажетесь от ремонта.</p>
+		</div>
+	</div>
+</section>
+
+<section class="section__dark slider">
+
+	<div class="slider__item">
+		<img src="assets/img/item (1).png" alt="">
+		<a class="button button__border" href="#">Mac Mini</a>
+	</div>
+	<div class="slider__item">
+		<img src="assets/img/item (2).png" alt="">
+		<a class="button button__border" href="#">iMac</a>
+	</div>
+	<div class="slider__item">
+		<img src="assets/img/item (3).png" alt="">
+		<a class="button button__border" href="#">iPhone</a>
+	</div>
+	<div class="slider__item">
+		<img src="assets/img/item (4).png" alt="">
+		<a class="button button__border" href="#">Watch</a>
+	</div>
+	<div class="slider__item">
+		<img src="assets/img/item (5).png" alt="">
+		<a class="button button__border" href="#">iPad</a>
+	</div>
+</section>
+
+<div id="map" class="map">
+	<div class="map__info flex">
+		<div class="arrow">
+			<span></span>
+		</div>
+		<div class="map__info__item">
+			<b>Звоните нам по телефону:</b>
+			<a href="#"><img src="assets/img/icons/phone.svg">+7(423)271-09-82</a>
+		</div>
+		<div class="map__info__item">
+			<b>Пишите нам на WhatsApp:</b>
+			<a href="#"><img src="assets/img/icons/whatsapp.svg">+7(914)271-09-82</a>
+		</div>
+		<div class="map__info__item">
+			<b>Приезжайте к нам по адресу:</b>
+			<a href="#"><img src="assets/img/icons/map-pin.svg">ул. Алеутская д.24</a>
+		</div>
+		<div class="map__info__item">
+			<b>Мы работаем для вас:</b>
+			<p>ПН-ПТ 11:00 - 20:00</p>
+			<p>СБ-ВС 12:00 - 19:00</p>
+		</div>
+	</div>
+</div>
+
+<section class="section__dark">
+	<div class="prog flex">
+		<div class="prog__item flex">
+			<h2 class="prog__item__count">19847</h2>
+			<span></span>
+			<p>Телефонов восстановлены</p>
+		</div>
+		<div class="prog__item flex">
+			<h2 class="prog__item__count">8821</h2>
+			<span></span>
+			<p>Ноутбуков восстановлены</p>
+		</div>
+		<div class="prog__item flex">
+			<h2 class="prog__item__count">8</h2>
+			<span></span>
+			<p>Опыта работы</p>
+		</div>
+	</div>
+</section>
+
+
+
+<div class="blog flex">
+	<div class="blog__item">
+		<h3>Таких часов вы ещё не видели.</h3>
+		<p>На всегда включённом дисплее Retina циферблат отображается постоянно — и время видно всё время.</p>
+		<img src="assets/img/watch.png">
+		<a href="#">Прочитать подробнее</a>
+	</div>
+	<div class="blog__item">
+		<h3>Таких часов вы ещё не видели.</h3>
+		<p>На всегда включённом дисплее Retina циферблат отображается постоянно — и время видно всё время.</p>
+		<img src="assets/img/watch.png">
+		<a href="#">Прочитать подробнее</a>
+	</div>
+	<div class="blog__item">
+		<h3>Таких часов вы ещё не видели.</h3>
+		<p>На всегда включённом дисплее Retina циферблат отображается постоянно — и время видно всё время.</p>
+		<img src="assets/img/watch.png">
+		<a href="#">Прочитать подробнее</a>
+	</div>
+	<div class="blog__item">
+		<h3>Таких часов вы ещё не видели.</h3>
+		<p>На всегда включённом дисплее Retina циферблат отображается постоянно — и время видно всё время.</p>
+		<img src="assets/img/watch.png">
+		<a href="#">Прочитать подробнее</a>
+	</div>
+</div>
+
+
+<div class="feedback flex">
+	<div class="feedback__over flex">
+			<a href="#"><img src="assets/img/icons/phone-white.svg">+7(423)271-09-82</a>
+			<a href="#"><img src="assets/img/icons/whatsapp-white.svg">+7(914)271-09-82</a>
+			<a href="#"><img src="assets/img/icons/vk-social-white.svg">vk.com/matrixservice</a>
+			<a href="#"><img src="assets/img/icons/map-pin-white.svg">ул. Алеутская д.24</a>
+			<a href="#"><img src="assets/img/icons/instagram-fill-white.svg">@matrixservice</a>
+		</div>
+	<div class="feedback__item">
+		<button class="button__dark button__border__dark" id="feedback">Позвонить нам</button>
+		<img src="assets/img/Call2.png">
+	</div>
+	<div class="feedback__item">
+		<img src="assets/img/Call.png">
+		<button class="button__dark button__border__dark" id="contact">Заказать звонок</button>
+	</div>
+	<div class="feedback__form flex">
+		<form class="flex">
+			<h3>Вы можете заказать звонок</h3>
+			<input type="text" name="yourname" placeholder="Ваше имя">
+			<input type="text" name="yourphone" placeholder="Ваш номер телефона">
+			<button class="button button__border">Заказать звонок</button>
+		</form>
+	</div>
+</div>
+
+<section class="section__dark">
+	<div class="instafeed mw" id="instafeed">
+		<div class="insta__item flex">
+			<h3>Наш инстаграм</h3>
+			<a href="#"><img class="icon" src="assets/img/icons/instagram-fill-white.svg">@matrixservice</a>
+		</div>
+		<a class="insta__item" href="#"><img src="assets/img/Frame (1).jpg"></a>
+		<a class="insta__item" href="#"><img src="assets/img/Frame (4).jpg"></a>
+		<a class="insta__item" href="#"><img src="assets/img/Frame (3).jpg"></a>
+		<a class="insta__item" href="#"><img src="assets/img/Frame (2).jpg"></a>
+		<a class="insta__item" href="#"><img src="assets/img/Frame (4).jpg"></a>
+		<a class="insta__item" href="#"><img src="assets/img/Frame (3).jpg"></a>
+		<a class="insta__item" href="#"><img src="assets/img/Frame (2).jpg"></a>
+	</div>
+</section>
+
+
+
+<footer>
+	<div class="footer__item">
+		<b class="footer__bold">Меню сайта</b>
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Ремонт техники</a>
+				</li>
+				<li>
+					<a href="#">Полезные статьи</a>
+				</li>
+				<li>
+					<a href="#">Галерея</a>
+				</li>
+				<li>
+					<a href="#">Отзывы</a>
+				</li>
+				<li>
+					<a href="#">О нас</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="footer__item">
+		<b class="footer__bold">Контакты</b>
+		<a href="#"><img src="assets/img/icons/phone.svg">+7(423)271-09-82</a>
+		<a href="#"><img src="assets/img/icons/whatsapp.svg">+7(914)271-09-82</a>
+		<a href="#"><img src="assets/img/icons/vk-social.svg">vk.com/matrixservice</a>
+		<a href="#"><img src="assets/img/icons/map-pin.svg">ул. Алеутская д.24</a>
+		<a href="#"><img src="assets/img/icons/instagram-fill.svg">@matrixservice</a>
+	</div>
+	<div class="footer__item">
+		<b class="footer__bold">Режим работы</b>
+		<p>ПН-ПТ 11:00 - 20:00</p>
+		<p>СБ-ВС 12:00 - 19:00</p>
+		<p>ул. Алеутская д.24</p>
+		<p>Вход в арке, справой стороны
+		<br>Зелёная дверь.</p>
+	</div>
+</footer>
+
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/instafeed.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script>
+ymaps.ready(init);
+function init() {
+	var map = new ymaps.Map('map', {
+		center: [43.11788390,131.885746],
+		zoom: 17,
+		controls: ['zoomControl'],
+		behaviors: ['drag']
+	});
+	var placemark = new ymaps.Placemark([43.117892,131.883257],{
+		hintContent: '<div class="map__balloon"><h3><img src="assets/img/logo.svg">Matrix-Service</h3><b>Режим работы</b><p>ул. Алеутская д.24</p><p>Вход в арке, справой стороны<br>Зелёная дверь.</p></div>'
+
+	},{
+		iconLayout: 'default#image',
+		iconImageHref: 'assets/img/mylogo_no_bgd.png',
+		iconImageSize: [94, 54]
+	});
+
+	map.geoObjects.add(placemark);
+}
+</script>
+</body>
+
+</html>             
+
