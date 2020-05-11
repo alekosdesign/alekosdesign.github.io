@@ -91,6 +91,12 @@
 		width: calc(100%/2);
 		margin: 0;
 	}
+	.uk-position-small{
+		display: none;
+	}
+	.feedback__form form input{
+		border-radius: 0;
+	}
 }
 @media screen and (max-width:640px){
 	header{
@@ -193,7 +199,14 @@
 		flex-direction: column;
 	}
 	.footer__item{
-		margin: 20px 50px;
+		margin: 10px 50px;
+	}
+	.map__info{
+		width: 100%;
+		transform: initial;
+	}
+	.footer__item nav ul li, .footer__item a, .footer__item p{
+		padding: 3px 0;
 	}
 }
 @media screen and (max-width:320px){
