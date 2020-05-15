@@ -261,7 +261,7 @@ header{
 	z-index: 50;
 	color: white;
 	width: 50%;
-	margin-left: 5%;
+	margin-left: 7%;
 }
 .offer__img{
 	position: absolute;
@@ -541,10 +541,7 @@ header{
 	background: #FAFAFA;
 	position: relative;
 }
-.blog__item img{
-	max-width: 100%;
-	max-height: 450px;
-}
+
 .blog__item h3, .blog__item p{
 	margin-bottom: 15px;
 }
@@ -552,13 +549,22 @@ header{
 	width: 70%;
 }
 .blog__item a{
-	position: absolute;
-	bottom: 5px;
-	right: 5px;
-	border-radius: 5px 5px 0 0;
-	background: #fafafa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	flex-direction: column;
 	z-index: 10;
 	text-decoration: none;
+}
+.blog__item a p{
+	color: #1e87f0;
+}
+.blog__item a img{
+	max-width: 100%;
+	max-height: 450px;
+	padding-top: 20px;
 }
 /*Instafeed*/
 .instafeed{
