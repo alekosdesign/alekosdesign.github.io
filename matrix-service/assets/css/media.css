@@ -13,6 +13,9 @@
 	.blog__item img{
 		max-height: 350px;
 	}
+	.modal__form{
+		width: 50%;
+	}
 }
 @media screen and (max-width:1024px){
 	.offer{
@@ -96,6 +99,9 @@
 	}
 	.feedback__form form input{
 		border-radius: 0;
+	}
+	.modal__form{
+		width: 70%;
 	}
 }
 @media screen and (max-width:640px){
@@ -207,6 +213,13 @@
 	.footer__item nav ul li, .footer__item a, .footer__item p{
 		padding: 3px 0;
 	}
+	.modal__form{
+		width: 100%;
+	}
+	.modal__item:after{
+		    background: linear-gradient(270deg, #131313 0%, rgba(0, 0, 0, 0.71) 100%);
+	}
 }
 @media screen and (max-width:320px){
+	
 }

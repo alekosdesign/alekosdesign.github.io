@@ -3,28 +3,17 @@ document.body.onload = function(){
 		var preloader = document.getElementById('page-preloader'); 
 		if(!preloader.classList.contains('done') ) 
 		{ 
-			preloader.classList.add('done'); 
+			preloader.classList.add('done');
+			$("body").css("overflow","auto");
+
 		} 
 	}, 500); 
 };
-$(document).ready(function() {
-	new Instafeed({
-		get: "user",
-		userId: "1245509771",
-		limit: "4",
-		resolution: "standard_resolution",
-		template: '<a href="{{link}}" class="insta__item" target="_blank"><img src="{{image}}" alt=""></a>',
-		accessToken: "1245509771.1677ed0.4602b4742d6b4faab162e3f0559bf9f5"
-	}).run()
-})
-
-
 $(document).ready(function(){
 	$('.slider').slick({
 		centerMode: true,
 		centerPadding: '60px',
 		slidesToShow: 3,
-		arrows: false,
 		responsive: [
 		{
 			breakpoint: 1680,
@@ -98,8 +87,6 @@ $(window).scroll(function() {
 	}
 });
 
-
-
 $(document).ready(function() {
 	$(".prog__item__count").each(function() {
 		$(this).prop("Counter", 0).animate({
@@ -111,5 +98,18 @@ $(document).ready(function() {
 				$(this).text(Math.ceil(e))
 			}
 		})
+	})
+});
+// Modal
+$(document).ready(function(){
+	$('body').on('click','#modal',function(){
+		$('.modal').fadeIn(300);
+		$('.modal__overlay').fadeIn(300);
+		$('body').css("overflow","hidden");
+	}),
+	$('.cross, .modal__overlay').click(function(){
+		$('.modal').fadeOut(300);
+		$('.modal__overlay').fadeOut(300);
+		$('body').css("overflow","auto");
 	})
 });

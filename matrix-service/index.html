@@ -71,7 +71,7 @@
 					<h1>Ремонт iPhone во Владивостоке</h1>
 					<p>Мы занимаемся ремонтом техники Apple во Владивостоке. <br>Качественный ремонт вашего аппарата.</p>
 					<div class="cta">
-						<a href="#" class="button">Заказать звонок</a>
+						<a id="modal" class="button">Заказать звонок</a>
 						<a href="#" class="button button__border">Стоимость ремонта</a>
 					</div>
 				</div>
@@ -84,7 +84,7 @@
 					<h1>Ремонт Macbook Pro во Владивостоке</h1>
 					<p>Мы занимаемся ремонтом техники Apple во Владивостоке. <br>Качественный ремонт вашего аппарата.</p>
 					<div class="cta">
-						<a href="#" class="button__dark">Заказать звонок</a>
+						<a id="modal" class="button__dark">Заказать звонок</a>
 						<a href="#" class="button__dark button__border__dark">Стоимость ремонта</a>
 					</div>
 				</div>
@@ -97,7 +97,7 @@
 					<h1>Ремонт Apple Watch во Владивостоке</h1>
 					<p>Мы занимаемся ремонтом техники Apple во Владивостоке. <br>Качественный ремонт вашего аппарата.</p>
 					<div class="cta">
-						<a href="#" class="button">Заказать звонок</a>
+						<a id="modal" class="button">Заказать звонок</a>
 						<a href="#" class="button button__border">Стоимость ремонта</a>
 					</div>
 				</div>
@@ -110,7 +110,7 @@
 					<h1>Ремонт Macbook Air во Владивостоке</h1>
 					<p>Мы занимаемся ремонтом техники Apple во Владивостоке. <br>Качественный ремонт вашего аппарата.</p>
 					<div class="cta">
-						<a href="#" class="button__dark">Заказать звонок</a>
+						<a id="modal" class="button__dark">Заказать звонок</a>
 						<a href="#" class="button__dark button__border__dark">Стоимость ремонта</a>
 					</div>
 				</div>
@@ -227,7 +227,31 @@
 	</div>
 </section>
 
-
+<div class="feedback flex">
+	<div class="feedback__over flex">
+			<a href="#"><img src="assets/img/icons/phone-white.svg">+7(423)271-09-82</a>
+			<a href="#"><img src="assets/img/icons/whatsapp-white.svg">+7(914)271-09-82</a>
+			<a href="#"><img src="assets/img/icons/vk-social-white.svg">vk.com/matrixservice</a>
+			<a href="#"><img src="assets/img/icons/map-pin-white.svg">ул. Алеутская д.24</a>
+			<a href="#"><img src="assets/img/icons/instagram-fill-white.svg">@matrixservice</a>
+		</div>
+	<div class="feedback__item">
+		<button class="button__dark button__border__dark" id="feedback">Позвонить нам</button>
+		<img src="assets/img/Call2.png">
+	</div>
+	<div class="feedback__item">
+		<img src="assets/img/Call.png">
+		<button class="button__dark button__border__dark" id="contact">Заказать звонок</button>
+	</div>
+	<div class="feedback__form flex">
+		<form class="flex">
+			<h3>Вы можете заказать звонок</h3>
+			<input type="text" name="yourname" placeholder="Ваше имя">
+			<input type="text" name="yourphone" placeholder="Ваш номер телефона">
+			<button class="button button__border">Заказать звонок</button>
+		</form>
+	</div>
+</div>
 
 <div class="blog flex">
 	<div class="blog__item">
@@ -262,56 +286,7 @@
 			<img src="assets/img/watch.png">
 		</a>
 	</div>
-<!-- 	<div class="blog__item">
-		<h3>Таких часов вы ещё не видели.</h3>
-		<p>На всегда включённом дисплее Retina циферблат отображается постоянно — и время видно всё время.</p>
-		<a href="#">Прочитать подробнее</a>
-		<img src="assets/img/watch.png">
-	</div> -->
 </div>
-
-
-<div class="feedback flex">
-	<div class="feedback__over flex">
-			<a href="#"><img src="assets/img/icons/phone-white.svg">+7(423)271-09-82</a>
-			<a href="#"><img src="assets/img/icons/whatsapp-white.svg">+7(914)271-09-82</a>
-			<a href="#"><img src="assets/img/icons/vk-social-white.svg">vk.com/matrixservice</a>
-			<a href="#"><img src="assets/img/icons/map-pin-white.svg">ул. Алеутская д.24</a>
-			<a href="#"><img src="assets/img/icons/instagram-fill-white.svg">@matrixservice</a>
-		</div>
-	<div class="feedback__item">
-		<button class="button__dark button__border__dark" id="feedback">Позвонить нам</button>
-		<img src="assets/img/call-2.png">
-	</div>
-	<div class="feedback__item">
-		<img src="assets/img/call-1.png">
-		<button class="button__dark button__border__dark" id="contact">Заказать звонок</button>
-	</div>
-	<div class="feedback__form flex">
-		<form class="flex">
-			<h3>Вы можете заказать звонок</h3>
-			<input type="text" name="yourname" placeholder="Ваше имя">
-			<input type="text" name="yourphone" placeholder="Ваш номер телефона">
-			<button class="button button__border">Заказать звонок</button>
-		</form>
-	</div>
-</div>
-
-<section class="section__dark">
-	<div class="instafeed mw" id="instafeed">
-		<div class="insta__item flex">
-			<h3>Наш инстаграм</h3>
-			<a href="#"><img class="icon" src="assets/img/icons/instagram-fill-white.svg">@matrixservice</a>
-		</div>
-		<a class="insta__item" href="#"><img src="assets/img/Frame (1).jpg"></a>
-		<a class="insta__item" href="#"><img src="assets/img/Frame (4).jpg"></a>
-		<a class="insta__item" href="#"><img src="assets/img/Frame (3).jpg"></a>
-		<a class="insta__item" href="#"><img src="assets/img/Frame (2).jpg"></a>
-		<a class="insta__item" href="#"><img src="assets/img/Frame (4).jpg"></a>
-		<a class="insta__item" href="#"><img src="assets/img/Frame (3).jpg"></a>
-		<a class="insta__item" href="#"><img src="assets/img/Frame (2).jpg"></a>
-	</div>
-</section>
 
 
 
@@ -359,8 +334,24 @@
 	</div>
 </footer>
 
-
-
+<div class="modal__overlay"></div>
+<div class="modal">
+	<div class="modal__item">
+		<div class="cross">
+			<span></span>
+		</div>
+		<div class="modal__form flex">
+			<h1>Диагностика — бесплатно!</h1>
+			<form>
+				<p>Мы не зарабатываем на боли клиентов в отличие от кустарных мастерских — цену ремонта озвучим только после диагностики Вашего устройства</p>
+				<input type="text" name="yourphone" placeholder="Ваш номер телефона">
+				<button class="button button__border">Записаться</button>
+				<p class="text__bold">Перезвоним и запишем на диагностику в удобное время</p>
+			</form>
+		</div>
+		<img src="assets/img/modal.jpg">
+	</div>
+</div>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/instafeed.min.js"></script>

@@ -1,3 +1,6 @@
+body{
+	overflow: hidden;
+}
 *,body,header,p, ul, ol, dl, pre, address, fieldset, figure{
 	padding: 0;
 	margin: 0;
@@ -8,6 +11,9 @@ ul{
 }
 *{
 	font-family: 'Ubuntu';
+}
+::-webkit-scrollbar {
+    width: 0;
 }
 .flex{
 	display: flex;
@@ -540,6 +546,8 @@ header{
 	margin: 15px;
 	background: #FAFAFA;
 	position: relative;
+	overflow: hidden;
+	transition: 1s;
 }
 
 .blog__item h3, .blog__item p{
@@ -565,39 +573,17 @@ header{
 	max-width: 100%;
 	max-height: 450px;
 	padding-top: 20px;
+	transition: 0.7s;
+	z-index: -1;
+	position: relative;
+	bottom: 0;
 }
-/*Instafeed*/
-.instafeed{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+.blog__item:hover{
+	filter: drop-shadow(0 0 20px rgba(0,0,0,0.2));
 }
-
-.insta__item{
-	height: 200px;
-	width: calc(90%/4);
-	overflow: hidden;
-	margin: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+.blog__item:hover a img{
+	transform: scale(1.15) translate(0px, 20%)
 }
-.insta__item h3, .insta__item a{
-	color: white;
-	text-decoration: none;
-}
-.insta__item img{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-}
-.insta__item .icon{
-	max-width: 14px;
-	max-height: 14px;
-	margin-right: 5px;
-}
-
 /*Feedback*/
 .feedback{
 	width: 100%;
@@ -736,4 +722,141 @@ footer{
 .footer__item a:hover::after{
 	content: '';
 	width: 100%;
+}
+/*Cross*/
+.cross{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 18px;
+	height: 18px;
+	z-index: 500;
+	cursor: pointer;
+}
+
+.cross span{
+	position: absolute;
+	top: 45%;
+	right: 0;
+	width: 18px;
+	height: 1px;
+	position: absolute;
+	background: white;
+	transition: 0.3s;
+	transform: rotate(45deg);
+}
+.cross span:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 1px;
+	display: block;
+	background: white;
+	transform: rotate(90deg);
+}
+
+/*Modal*/
+
+.modal__overlay{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 5000;
+}
+.modal{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	height: 80%;
+	border-radius: 6px;
+	filter: drop-shadow(0 0 20px rgba(0,0,0,0.6));
+	overflow: hidden;
+	z-index: 6000;
+}
+.modal__overlay, .modal{
+	display: none;
+}
+.modal__item img{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 6px;
+}
+.modal__item{
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+	filter: drop-shadow(0 0 20px rgba(0,0,0,0.6));
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.modal__item img{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 6px;
+}
+.modal__form{
+	width: 40%;
+	flex-direction: column;
+	z-index: 10;
+	margin: 15px;
+}
+.modal__form p{
+	color: white;
+	margin-top: 20px;
+}
+.text__bold{
+	font-weight: bold;
+	width: 50%;
+	text-align: center;
+}
+.modal__form form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.modal__item:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: linear-gradient(270deg, #131313 0%, rgba(0, 0, 0, 0) 100%);
+}
+.modal__form h1{
+	text-align: right;
+}
+.modal__form form input{
+	background: transparent;
+	border: none;
+	color: white;
+	margin: 30px 0;
+	border-bottom: 3px solid white;
+	outline: none;
+	text-indent: 5px;
+	line-height: 1.5em;
+}
+.modal__form form input::placeholder{
+	padding: 5px 10px;
+	color: white;
 }
