@@ -63,7 +63,7 @@
 	</div>
 </header>
 
-<div class="hero__container" uk-slideshow="autoplay: true" tabindex="-1">
+<div class="hero__container" uk-slideshow="autoplay: false" tabindex="-1">
 	 <ul class="uk-slideshow-items">
 		<li>
 			<div class="hero">
@@ -359,25 +359,7 @@
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/scripts.js"></script>
 <script>
-ymaps.ready(init);
-function init() {
-	var map = new ymaps.Map('map', {
-		center: [43.11788390,131.885746],
-		zoom: 17,
-		controls: ['zoomControl'],
-		behaviors: ['drag']
-	});
-	var placemark = new ymaps.Placemark([43.117892,131.883257],{
-		hintContent: '<div class="map__balloon"><h3><img src="assets/img/logo.svg">Matrix-Service</h3><b>Режим работы</b><p>ул. Алеутская д.24</p><p>Вход в арке, справой стороны<br>Зелёная дверь.</p></div>'
 
-	},{
-		iconLayout: 'default#image',
-		iconImageHref: 'assets/img/mylogo_no_bgd.png',
-		iconImageSize: [94, 54]
-	});
-
-	map.geoObjects.add(placemark);
-}
 </script>
 </body>
 

@@ -5,27 +5,63 @@ document.body.onload = function(){
 		{ 
 			preloader.classList.add('done');
 			$("body").css("overflow","auto");
-
+			setTimeout( function(){
+				$('.done').detach();
+			},500)
 		} 
 	}, 500); 
 };
+if ($(window).width()<620){
+	$('.arrow, .feedback__item').detach();
+};
+if ($(window).width()>620){
+	ymaps.ready(init);
+};
+function init() {
+	var map = new ymaps.Map('map', {
+		center: [43.11788390,131.885746],
+		zoom: 17,
+		controls: ['zoomControl'],
+		behaviors: ['drag']
+	});
+	var placemark = new ymaps.Placemark([43.117892,131.883257],{
+		hintContent: '<div class="map__balloon"><h3><img src="assets/img/logo.svg">Matrix-Service</h3><b>Режим работы</b><p>ул. Алеутская д.24</p><p>Вход в арке, справой стороны<br>Зелёная дверь.</p></div>'
+
+	},{
+		iconLayout: 'default#image',
+		iconImageHref: 'assets/img/mylogo_no_bgd.png',
+		iconImageSize: [94, 54]
+	});
+
+	map.geoObjects.add(placemark);
+
+};
 $(document).ready(function(){
 	$('.slider').slick({
-		centerMode: true,
+		centerMode: false,
 		centerPadding: '60px',
-		slidesToShow: 3,
+		slidesToShow: 5,
 		responsive: [
 		{
-			breakpoint: 1680,
+			breakpoint: 2048,
 			settings: {
-				arrows: false,
+				arrows: true,
 				centerMode: true,
 				centerPadding: '40px',
 				slidesToShow: 3
 			}
 		},
 		{
-			breakpoint: 768,
+			breakpoint: 1280,
+			settings: {
+				arrows: true,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 3
+			}
+		},
+		{
+			breakpoint: 769,
 			settings: {
 				arrows: true,
 				centerMode: true,
@@ -70,8 +106,8 @@ $(document).ready(function(){
 $(document).ready(function() {
 	var windowWidth = $(window).width();
 	$('.hero').mousemove(function(event) {
-		var moveX = (($(window).width() / 2) - event.pageX) * 0.02;
-		var OffermoveX = (($(window).width() / 2) - event.pageX) * 0.04;
+		var moveX = (($(window).width() / 2) - event.pageX) * 0.01;
+		var OffermoveX = (($(window).width() / 2) - event.pageX) * 0.02;
 		$('.hero .offer').css('transform', 'translate(' + OffermoveX + 'px, 0px)');
 		$('.hero .offer__img').css('transform', 'translate(' + moveX + 'px,0px)');
 	})
@@ -80,6 +116,7 @@ $(document).ready(function() {
 // Menu
 $(window).scroll(function() {
 	var height = $(window).scrollTop();
+
 	if (height > 50) {
 		$('header').addClass('scroll')
 	} else {
