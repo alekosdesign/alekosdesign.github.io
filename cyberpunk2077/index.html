@@ -44,7 +44,76 @@
 	</div>
 	<img class="bg__about" src="assets/img/1231.jpg" alt="">
 </section>
+<!--  -->
 
+<div class="hero">
+	<div class="release">
+		<h1>Cyberpunk 2077</h1>
+		<!-- <div class="date">ДАТА ВЫХОДА: 19 НОЯБРЯ 2020</div> -->
+		<div class="btn">
+			<a href="#">ОФОРМИТЕ ПРЕДЗАКАЗ_</a>
+
+		</div>
+		<p>ЖАХНУТЬ ЭТО ДЕРЬМО!</p>
+	</div>
+	<img src="assets/img/razor-top-black-5ce84ff9.svg" class="hero__razor" alt="">
+</div>
+
+<section class="about__seciton">
+	<div class="about">
+		<h2>НАЙТ-СИТИ ИЗМЕНИТ ВАС НАВСЕГДА</h2>
+		<img src="assets/img/separator-text-76372ca3.svg" alt="">
+		<p>Cyberpunk 2077 — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Вы играете за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Вы сможете менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где ваши поступки влияют на ход сюжета и всё, что вас окружает.</p>
+		<img class="razer__yellow" src="assets/img/razor-bottom-yellow-d44fb6b7.svg" alt="">
+	</div>
+	<img class="bg__about" src="assets/img/1231.jpg" alt="">
+</section>
+<div class="hero">
+	<div class="release">
+		<h1>Cyberpunk 2077</h1>
+		<!-- <div class="date">ДАТА ВЫХОДА: 19 НОЯБРЯ 2020</div> -->
+		<div class="btn">
+			<a href="#">ОФОРМИТЕ ПРЕДЗАКАЗ_</a>
+
+		</div>
+		<p>ЖАХНУТЬ ЭТО ДЕРЬМО!</p>
+	</div>
+	<img src="assets/img/razor-top-black-5ce84ff9.svg" class="hero__razor" alt="">
+</div>
+
+<section class="about__seciton">
+	<div class="about">
+		<h2>НАЙТ-СИТИ ИЗМЕНИТ ВАС НАВСЕГДА</h2>
+		<img src="assets/img/separator-text-76372ca3.svg" alt="">
+		<p>Cyberpunk 2077 — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Вы играете за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Вы сможете менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где ваши поступки влияют на ход сюжета и всё, что вас окружает.</p>
+		<img class="razer__yellow" src="assets/img/razor-bottom-yellow-d44fb6b7.svg" alt="">
+	</div>
+	<img class="bg__about" src="assets/img/1231.jpg" alt="">
+</section>
+<div class="hero">
+	<div class="release">
+		<h1>Cyberpunk 2077</h1>
+		<!-- <div class="date">ДАТА ВЫХОДА: 19 НОЯБРЯ 2020</div> -->
+		<div class="btn">
+			<a href="#">ОФОРМИТЕ ПРЕДЗАКАЗ_</a>
+
+		</div>
+		<p>ЖАХНУТЬ ЭТО ДЕРЬМО!</p>
+	</div>
+	<img src="assets/img/razor-top-black-5ce84ff9.svg" class="hero__razor" alt="">
+</div>
+
+<section class="about__seciton" id="scrolltopmap">
+	<div class="about">
+		<h2>НАЙТ-СИТИ ИЗМЕНИТ ВАС НАВСЕГДА</h2>
+		<img src="assets/img/separator-text-76372ca3.svg" alt="">
+		<p>Cyberpunk 2077 — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Вы играете за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Вы сможете менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где ваши поступки влияют на ход сюжета и всё, что вас окружает.</p>
+		<img class="razer__yellow" src="assets/img/razor-bottom-yellow-d44fb6b7.svg" alt="">
+	</div>
+	<img class="bg__about" src="assets/img/1231.jpg" alt="">
+</section>
+
+<!--  -->
 <section>
 	<div class="slider">
 		<div class="item">
@@ -62,10 +131,27 @@
 	</div>
 </section>
 
-
+<section>
+	<div id="logo">
+		
+	</div>
+</section>
 
 
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+	var section = $('#scrolltopmap');
+	var sectionTop = section.offset().top;
+	$(window).bind('scroll', function (){
+		var windowsTop = $(this).scrollTop();
+		if (windowsTop > sectionTop){
+			$('#logo').html('<img src="assets/img/logo.jpg" alt="">');
+			console.log('Done');
+			$(window).unbind('scroll');
+		}
+	});
+</script>
 </body>
 </html>
