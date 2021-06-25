@@ -102,6 +102,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	color: white;
 	text-transform: uppercase;
 	background: rgb(37 37 37 / 80%);

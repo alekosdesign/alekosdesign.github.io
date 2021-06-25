@@ -13,7 +13,7 @@ window.onload = function(){
 		// document.querySelector('#sidemenu').style.box-shadow = '0 0 20px black';
 	}
 
-
+// Время на первом экране
 	// Проверка на время и рабочие часы или нет
 	var thistime = new Date(),
 		curr_hour = thistime.getHours(),
@@ -36,9 +36,9 @@ window.onload = function(){
 	// Дни недели
 	var date = new Date(),
 		weekday = date.getDay()
-		spanday = document.getElementById('thisday'),
-		spanweek = document.getElementById('weekday');
+		spanday = document.getElementById('thisday');
 
+	document.getElementById('year').innerHTML = date.getFullYear();
 	if (weekday <= '5'){
 		this.console.log('Рабочие дни');
 		var weekdays = 'Рабочие дни';
@@ -46,7 +46,6 @@ window.onload = function(){
 		this.console.log('Выходные выходные')
 		var weekdays = 'Выходные выходные';
 	}
-
 
 	// Проверка на день недели
 	function thisdaysweek(){
@@ -66,5 +65,28 @@ window.onload = function(){
 			spanday.innerHTML = 'Воскресенье';
 		}
 	}
+	function thisdaysweekcolor(){
+		if (weekday <= '5'){
+			spanday.style.color = 'green';
+		} else {
+			spanday.style.color = 'red';
+		}
+	}
+	thisdaysweekcolor();
 	thisdaysweek();
+
+// Галерея ховер
+	
+
+
+
+
+
+
+
+
 }
+
+
+
+
