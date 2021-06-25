@@ -5,7 +5,56 @@
 	margin: 0;
 	max-width: 100%;
 }
-
+/*#spratat{
+	position: absolute;
+	z-index: 3500;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#spratat button {
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	background: #252525;
+	color: white;
+	height: 250px;
+	width: 300px;
+	transition: 0.3s;
+	box-shadow: 0 0 20px #252525;
+}
+#spratat button:hover{
+	background: #202020;
+	box-shadow: 0 0 40px #252525;
+}
+#zapret{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	color: white;
+	background: black;
+	text-align: center;
+}
+#zapret p{
+	margin: 20%;
+}
+#zapret button{
+	outline: none;
+	border: none;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: black;
+	height: 50px;
+	width: 300px;
+	transition: 0.3s;
+	color: white;
+}
+#zapret button:hover{
+	box-shadow: 0 0 40px rgba(255,255,255,0.3);
+	color: red;
+}*/
 h1, h2, h3{
 	font-weight: bold;
 }

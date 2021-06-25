@@ -8,6 +8,32 @@ $(window).scroll(function(){
 	}
 });
 
+// $(document).ready(function(){
+// 	document.getElementById('open').onclick = function(){
+// 		localStorage.setItem('say','open');
+// 		document.getElementById('spratat').style.display = 'none';
+// 	};
+// 	document.getElementById('close').onclick = function(){
+// 		localStorage.setItem('say','close');
+// 		// window.location.href = 'http://google.com';
+// 		document.getElementById('zapret').style.display = 'block';
+// 	};
+
+// 	if (localStorage.getItem('say') == 'open'){
+// 		document.getElementById('spratat').style.display = 'none';
+// 	}
+// 	else if (localStorage.getItem('say') == 'close'){
+// 		document.getElementById('zapret').style.display = 'block';
+// 	};
+
+// 	document.getElementById('izmena').onclick = function(){
+// 		delete localStorage['say'];
+// 		document.getElementById('zapret').style.display = 'none';
+// 	};
+// });
+
+
+
 $(document).ready(function() {
 	var $page = $('html, body');
 	$('a[href*="#"]').click(function() {
