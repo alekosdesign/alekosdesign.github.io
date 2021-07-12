@@ -75,6 +75,8 @@ window.onload = function(){
 	thisdaysweekcolor();
 	thisdaysweek();
 
+
+
 // Галерея ховер
 	
 
@@ -87,6 +89,77 @@ window.onload = function(){
 
 }
 
+// Скрытие и раскрытие пароля
+function togglePassword(){
+	var input__password = document.querySelector('.password'),
+		icon__password = document.querySelector('.login__form__password__icon');
+	if ( input__password.type === 'password' ){
+		input__password.type = 'text';
+		icon__password.classList.add('selected');
+	}
+	else {
+		input__password.type = 'password';
+		icon__password.classList.remove('selected');
+	}
+}
 
 
+// Генератор паролей
 
+// function generationPassword(lenght, charset){
+// 	let generationPasswordlet = "";
+
+// 	for (let i = 0; i < lenght; i++){
+// 		generationPasswordlet += charset[
+// 			Math.floor(
+// 				Math.random() * charset.lenght
+// 			)
+// 		];
+// 	}
+// 	return generationPasswordlet;
+// }
+// innerHTML.querySelector(generationPasswordlet);
+// generationPassword (5, "abcdfeg012345");
+
+// Калькулятор
+const skolkoNum = document.getElementById('skolko_num'),
+	skoltoRange = document.getElementById('skolko_range'),
+	stoitNum = document.getElementById('stoit_num'),
+	stoitRange = document.getElementById('stoit_range'),
+	dva = document.getElementById('dva'),
+	chetiry = document.getElementById('chetiry'),
+	desit = document.getElementById('desit'),
+	poltos = document.getElementById('poltos'),
+	allPrice = document.getElementById('all_price');
+
+const inputRange = document.getElementById('calculate__input__range');
+
+const sell = document.getElementsByClassName('skidka');
+
+const assingValera = () => {
+	skolkoNum.value = skoltoRange.value;
+	stoitNum.value = stoitRange.value;
+}
+assingValera();
+
+
+const precent = [
+	{
+		name: 'dva',
+		precent: 2
+	},
+	{
+		name: 'chetiry',
+		precent: 4
+	},
+	{
+		name: 'desit',
+		precent: 10
+	},
+	{
+		name: 'poltos',
+		precent: 50
+	}
+]
+let sellPrecent = precent[0].precent
+console.log(sellPrecent);

@@ -38,6 +38,18 @@ ul{
 	position: fixed;
 	z-index: 5000;
 }
+.logo svg rect{
+	transition: all 1s ease-in-out;
+	animation: logosvg 5s infinite;
+}
+@keyframes logosvg {
+	0%, 100%{
+		height: 0;
+	}
+	50%{
+		height: 100%;
+	}
+}
 .done{
 	opacity: 0;
 }

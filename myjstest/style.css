@@ -16,25 +16,6 @@ header{
 	overflow: hidden;
 	border: 1px solid red;
 }
-/*#logo{
-	display: block;
-	height: 100%;
-}
-#logo img{
-	object-fit: cover;
-	height: 100%;
-}
-#mainmenu ul{
-	display: flex;
-}
-#mainmenu ul li{
-	display: flex;
-	margin: 0 20px;
-}
-#mainmenu ul li a{
-	text-decoration: none;
-	color: white;
-}*/
 #sidemenu{
 	background: white;
 	display: flex;
@@ -88,7 +69,8 @@ header{
 	align-items: center;
 }
 .hero img{
-	position: fixed;
+	/* position: fixed; */
+	position: absolute;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -109,6 +91,53 @@ header{
 	backdrop-filter: blur(4px);
 	box-shadow: 0 0 20px black;
 }
+.login__form{
+}
+.login__form__login, .login__form__password{
+	display: flex;
+	border-radius: 20px;
+	width: 100%;
+	height: 55px;
+	align-items: center;
+	margin: 10px;
+	padding: 10px;
+}
+.login__form__login input, .login__form__password input{
+	background: transparent;
+	border:none;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	text-indent: 20px;
+	color: white;
+	outline: 0;
+	font-size: 14px;
+}
+.login__form__password__icon{
+	cursor: pointer;
+	transition: all .4s ease;
+	width: 32px;
+	height: 32px;
+	padding: 3px 6px;
+	right: 15px;
+	position: relative;
+}
+.login__form__password__icon img{
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	object-fit: cover;
+	top: auto;
+	left: auto;
+	z-index: 20;
+}
+.login__form__password__icon.selected{
+	background: #2d2d2d;
+}
+::-webkit-input-placeholder{
+	color: #b2becd;
+}
+
 
 .gallary{
 	width: 100%;
@@ -137,14 +166,99 @@ header{
 	/*filter: grayscale(100);*/
 }
 
+.glitch__section, #generation__password{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.glitch{
+	font-size: 60px;
+	color: white;
+	transition: 0.3s;
+}
+.glitch:hover{
+	animation: glitch 0.3s linear infinite;
+}
+@keyframes glitch {
+	0, 100%{
+		text-shadow: -10px 0 0 #00d9d4,
+						-10px 0 0 #f00;
+	}
+	25%{
+		text-shadow: 10px 0 0 #00d9d4,
+						-10px 0 0 #f00;
+	}
+	50%{
+		text-shadow: 10px 0 0 #00d9d4,
+						-10px 0 0 #f00;
+	}
+	75%{
+		text-shadow: 10px 0 0 #00d9d4,
+						10px 0 0 #f00;
+	}
+}
+.overflow{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+}
+.overflow__text{
+	position: absolute;
+	right: 35%;
+	top: 25%;
+	width: 0;
+	height: 150px;
+	background: white;
+	overflow: hidden;
+	transition: 0.3s ease;
+	display: block;
+}
+.overflow__image1,.overflow__image2{
+	width: 300px;
+	height: 300px;
+	transition: 0.3s;
+}
+.overflow__image1{
+	background: url('img/travelblog.jpeg') center / cover;
+	z-index: -1;
+	transform: translateX(150px);
+	clip-path: polygon(50% 0, 65% 50%, 50% 100%, 0 100%, 0 50%, 0 0);
+}
+.overflow__image2{
+	background: url('img/travelblog.jpeg') center / cover;
+	transform: translateX(-150px);
+	clip-path: polygon(100% 0, 100% 50%, 100% 100%, 50% 100%, 65% 50%, 50% 0);
 
-
-
-
-
-
-
-
+}
+.overflow__text p{
+	margin: 5rem 0;
+}
+.overflow:hover .overflow__image1{
+	transform: translateX(100px);
+}
+.overflow:hover .overflow__image2{
+	transform: translateX(-100px);
+}
+.overflow:hover .overflow__text{
+	width: 350px;
+}
+.calculate{
+	height: 100vh;
+	width: 100%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.calculate__input__wrapper {
+	margin: 20px;
+}
 
 
 

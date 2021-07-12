@@ -3,10 +3,10 @@ document.body.onload = function(){
 		var preloader = document.getElementById('page-preloader'); 
 		if(!preloader.classList.contains('done') ) 
 		{ 
-			preloader.classList.add('done');
+			preloader.classList.add('done1');
 			$("body").css("overflow","auto");
 			setTimeout( function(){
-				$('.done').detach();
+				// $('.done').detach();
 			},500)
 		} 
 	}, 500); 

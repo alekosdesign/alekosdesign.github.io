@@ -27,10 +27,75 @@
 		<h1><span id="time"></span></h1>
 		<h2><span id="thisday"></span></h2>
 		<h2><span id="year"></span></h2>
-		<!-- <h2><span id="year"></span></h2> -->
+		<div class="login__form">
+			<div class="login__form__login">
+				<input type="text" placeholder="Login">
+			</div>
+			<div class="login__form__password">
+				<input class="password" type="password" placeholder="password">
+				<div class="login__form__password__icon" onclick="togglePassword()">
+					<img src="img/eye.svg" alt="eye">
+				</div>
+			</div>
+		</div>
 	</div>
 	<img src="img/5116.jpg" alt="">
 </div>
+<section class="glitch__section">
+	<h1 class="glitch">Glitch Effect</h1>
+</section>
+
+<section class="overflow">
+	<div class="overflow__text">
+		<h3>Heading</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias animi labore recusandae</p>
+	</div>
+	<div class="overflow__image1"></div>
+	<div class="overflow__image2"></div>
+</section>
+
+
+
+<!-- Calculate -->
+<section class="calculate">
+	<div class="calculate__input__wrapper">
+		<div class="calculate__input__title">Сколько надо?</div>
+		<div class="calculate__input__input">
+			<input type="numbers" value="2" id="skolko_num">
+		</div>
+		<div class="calculate__input__input">
+			<input class="calculate__input__range" type="range" min="2" max="24" value="2" step="2" id="skolko_range">
+		</div>
+	</div>
+	<div class="calculate__input__wrapper">
+		<div class="calculate__input__title">Че стоит?</div>
+		<div class="calculate__input__input">
+			<input type="numbers" value="100000" id="stoit_num">
+		</div>
+		<div class="calculate__input__input">
+			<input class="calculate__input__range" type="range" min="100000" max="5000000" value="100000" step="100000" id="stoit_range">
+		</div>
+	</div>
+	<div class="calculate__input__wrapper">
+		<div class="skidka">
+			<div class="skidka__title">Скок скидки надо?</div>
+			<button class="skidka" date-name="dva">2%</button>
+			<button class="skidka" date-name="chetiry">4%</button>
+			<button class="skidka" date-name="desit">10%</button>
+			<button class="skidka" date-name="poltos">50%</button>
+		</div>
+	</div>
+	<div class="calculate__input__wrapper">
+		<div class="sum">
+			<div class="sell__title">Общая стоимость</div>
+			<div class="sell__price" id="all_price">0<span>P.</span></div>
+		</div>
+	</div>
+</section>
+
+
+
+
 
 <section>
 	<div class="gallary">
@@ -51,6 +116,10 @@
 		</div>
 	</div>
 </section>
+
+
+
+
 
 </body>
 </html>
