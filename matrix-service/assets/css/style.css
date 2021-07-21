@@ -37,17 +37,81 @@ ul{
 	transition: 0.5s;
 	position: fixed;
 	z-index: 5000;
+	flex-direction: column;
 }
 .logo svg rect{
 	transition: all 1s ease-in-out;
 	animation: logosvg 5s infinite;
 }
+.logo svg rect:nth-child(2) {
+	animation-delay: 0.1s;
+}
+.logo svg rect:nth-child(3) {
+	animation-delay: 0.2s;
+}
+.logo svg rect:nth-child(4) {
+	animation-delay: 0.3s;
+}
+.logo svg rect:nth-child(5) {
+	animation-delay: 0.4s;
+}
+.logo svg rect:nth-child(6) {
+	animation-delay: 0.5s;
+}
 @keyframes logosvg {
 	0%, 100%{
-		height: 0;
+		width: 0;
 	}
 	50%{
-		height: 100%;
+		width: 100%;
+	}
+}
+.logo__text{
+	transform: translate(-22%, 0%);
+	overflow: auto;
+	animation: startlogo 1s ease;
+	opacity: 1;
+}
+@keyframes startlogo {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.logo__text text{
+	margin-top: 30px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3rem;
+	transition: all 3s ease-in-out;
+	animation: dash 5s linear forwards, filling 4s ease-in forwards;
+	animation-delay: 2s;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	overflow: auto;
+}
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+  
+  @keyframes filling {
+	0{
+		fill: white;
+		fill-opacity: 0;
+	}
+	80%{
+		fill-opacity: 0;
+		text-shadow:0 0 0px white;
+	}
+	100% {
+		fill: white;
+		fill-opacity: 1;
+		text-shadow:0 0 40px rgba(255,255,255,0.2);
 	}
 }
 .done{

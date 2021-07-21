@@ -6,10 +6,10 @@ document.body.onload = function(){
 			preloader.classList.add('done1');
 			$("body").css("overflow","auto");
 			setTimeout( function(){
-				// $('.done').detach();
+				$('.done').detach();
 			},500)
 		} 
-	}, 500); 
+	}, 4500); 
 };
 if ($(window).width()<620){
 	$('.arrow, .feedback__item').detach();
