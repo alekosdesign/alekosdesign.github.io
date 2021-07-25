@@ -1,3 +1,27 @@
+// document.body.onload = function(){ 
+// 	setTimeout(function() { 
+// 		var preloader = document.getElementById('page-preloader'); 
+// 		if(!preloader.classList.contains('done') ) 
+// 		{ 
+// 			preloader.classList.add('done');
+// 			$("body").css("overflow","auto");
+// 			setTimeout( function(){
+// 				// $('.done').detach();
+// 			},500)
+// 		} 
+// 	}, 500); 
+// };
+
+// $(window).on('load', function() {
+// 	$('#page-preloader').fadeOut().end().delay(12000).fadeOut('slow');
+//   });
+
+// Mouse
+
+
+
+
+
 window.onload = function(){
 	document.querySelector('#sidemenu').onmouseover = menuShow;
 	document.querySelector('#sidemenu').onmouseout = menuHide;
@@ -12,6 +36,10 @@ window.onload = function(){
 		document.querySelector('#sidemenu').style.right = '-30vw';
 		// document.querySelector('#sidemenu').style.box-shadow = '0 0 20px black';
 	}
+const logo = document.querySelectorAll("#animate__svg path");
+for (let i = 0; i <logo.length; i++){
+	console.log(`Длина ${i} будет ${logo[i].getTotalLength()}`);
+}
 
 // Время на первом экране
 	// Проверка на время и рабочие часы или нет
@@ -136,11 +164,11 @@ const inputRange = document.getElementById('calculate__input__range');
 
 const sell = document.getElementsByClassName('skidka');
 
-const assingValera = () => {
-	skolkoNum.value = skoltoRange.value;
-	stoitNum.value = stoitRange.value;
-}
-assingValera();
+// const assingValera = () => {
+// 	skolkoNum.value = skoltoRange.value;
+// 	stoitNum.value = stoitRange.value;
+// }
+// assingValera();
 
 
 const precent = [
@@ -162,4 +190,48 @@ const precent = [
 	}
 ]
 let sellPrecent = precent[0].precent
-console.log(sellPrecent);
+// console.log(sellPrecent);
+
+
+// Progress
+window.onload=function(){
+	const progress = document.getElementById('progress'),
+		prev = document.getElementById('progress__btnPrev'),
+		next = document.getElementById('progress__btnNext'),
+		circles = document.querySelectorAll('.circle');
+	let currentValue = 1;
+	next.addEventListener('click', function(){
+		currentValue++;
+		if (currentValue > circles.length){
+			currentValue = circles.length;
+		}
+		update();
+	});
+	prev.addEventListener('click', function(){
+		currentValue--;
+		if (currentValue < circles.length){
+			currentValue = circles.length;
+		}
+		update();
+	});
+
+	function update(){
+		circles.forEach((circles, index) => {
+			if (index < currentValue){
+				circles.classList.add('active');
+			} else {
+				circles.classList.remove('active');
+			}
+		});
+		const actives = document.querySelectorAll('.active');
+		progress.style.width = ((actives.length -1 ) / (circles.length - 1)) * 100 + '%';
+		if (currentValue === circles.length){
+			next.disabled = true;
+		} else if (currentValue <= 1){
+			prev.disabled = true;
+		} else {
+			next.disabled = false;
+			prev.disabled = false;
+		}
+	}
+}
