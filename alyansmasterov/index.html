@@ -16,15 +16,43 @@
 <link rel="stylesheet" type="text/css" href="asstets/css/media.css">
 </head>
 <body>
-
+	<script src="../assets/jquery.js"></script>
+	<script src="../assets/TweenMax.min.js"></script>
+	<script>
+		$(function() {
+			$('a').click(function(e){
+				e.preventDefault();
+				$('body').addClass('out');
+				var t = $(this);
+				setTimeout(function(){ location.href = t.attr('href'); }, 1500);
+			});
+		});
+	</script>
+	<style>
+	.out {
+		filter: blur(5px);
+		transition-duration: 1s;
+		opacity: 0;
+	}
+	</style>
+	<script>
+		$(function() {
+			$('a').click(function(e){
+				e.preventDefault();
+				$('body').addClass('out');
+				var t = $(this);
+				setTimeout(function(){ location.href = t.attr('href'); }, 900);
+			});
+		});
+	</script>
 <!-- <div id="spratat">
 	<button id="open">Открыть сайт</button>
 	<button id="close">Нет 18</button>
 </div> -->
-<div id="zapret">
+<!-- <div id="zapret">
 	<p>Федеральный закон от 23 февраля 2013 года № 15-ФЗ «Об охране здоровья граждан от воздействия окружающего табачного дыма и последствий потребления табака» (ранее Законопроект № 163560-6) — закон, вводящий полный запрет курения во всех закрытых общественных местах в соответствии с Рамочной конвенцией ВОЗ по борьбе против табака.</p>
 	<button id="izmena">Я достиг 18 лет</button>
-</div>
+</div> -->
 <header>
 <div class="header__logo">
 	<a href="index.html">
@@ -602,7 +630,6 @@
 		<p class="copyright">АльянсМастеров ВЛ 2005-2019</p>
 	</footer>
 
-	<script src="asstets/js/jquery.js"></script>
 	<script src="asstets/js/bootstrap.js"></script>
 	<script src="asstets/js/bootstrap.bundle.js"></script>
 	<script src="asstets/js/uikit.min.js"></script>

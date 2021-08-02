@@ -8,8 +8,38 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div id="cursor"></div>
-<div id="aura"></div>
+	<script src="../assets/jquery.js"></script>
+	<script src="../assets/TweenMax.min.js"></script>
+	<script>
+		$(function() {
+			$('a').click(function(e){
+				e.preventDefault();
+				$('body').addClass('out');
+				var t = $(this);
+				setTimeout(function(){ location.href = t.attr('href'); }, 1500);
+			});
+		});
+	</script>
+	<style>
+	.out {
+		/* filter: blur(1px); */
+		transition-duration: 1s;
+		opacity: 0;
+	}
+	</style>
+	<script>
+		$(function() {
+			
+			$('a').click(function(e){
+				e.preventDefault();
+				$('body').addClass('out');
+				var t = $(this);
+				setTimeout(function(){ location.href = t.attr('href'); }, 900);
+			});
+		});
+	</script>
+<!-- <div id="cursor"></div>
+<div id="aura"></div> -->
 
 <!-- <div id="page-preloader">
 	<div id="animate__svg">
@@ -43,7 +73,7 @@
 <div id="sidemenu">
 	<button id="sidemenu-but"></button>
 	<ul>
-		<li><a href="#">Home</a></li>
+		<li><a href="../index.html">Home</a></li>
 		<li><a href="#">Portfolio</a></li>
 		<li><a href="#">Contact</a></li>
 		<li><a href="#">About</a></li>
@@ -78,7 +108,7 @@
 		</h1>
 	</div>
 </section>
-<section>
+<section id="gallary">
 	<div class="gallary">
 		<div class="gallary-item">
 			<div class="gallary-item-img" style="background-image: url(img/371.jpg)"></div>
@@ -117,6 +147,15 @@
 		</div>
 	</div>
 </section>
+
+
+
+<section></section>
+
+
+
+
+
 <!-- <section class="glitch__section">
 	<h1 class="glitch">Glitch Effect</h1>
 </section> -->

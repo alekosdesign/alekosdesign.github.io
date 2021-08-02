@@ -15,8 +15,36 @@
 </head>
 
 <body>
-
-
+	<script src="../assets/jquery.js"></script>
+	<script src="../assets/TweenMax.min.js"></script>
+	<script>
+		$(function() {
+			$('a').click(function(e){
+				e.preventDefault();
+				$('body').addClass('out');
+				var t = $(this);
+				setTimeout(function(){ location.href = t.attr('href'); }, 1500);
+			});
+		});
+	</script>
+	<style>
+	.out {
+		filter: blur(5px);
+		transition-duration: 1s;
+		opacity: 0;
+	}
+	</style>
+	<script>
+		$(function() {
+			$('a').click(function(e){
+				e.preventDefault();
+				$('body').addClass('out');
+				var t = $(this);
+				setTimeout(function(){ location.href = t.attr('href'); }, 900);
+			});
+		});
+	</script>
+	
 	<header class="card-header">
 
 		<div class="top-line">
