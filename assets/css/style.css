@@ -13,6 +13,28 @@ body{
 	transition-duration: 1s;
 	opacity: 0;
 }
+.cursor{
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	z-index: 999;
+	pointer-events: none;
+	mix-blend-mode: difference;
+}
+.cursor-f {
+	width: var(--size);
+	height: var(--size);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("images/cursor_round.png");
+	background-size: cover;
+	mix-blend-mode: difference;
+	pointer-events: none;
+	opacity: 0.5;
+}
 .plug{
 	display: flex;
 	justify-content: center;

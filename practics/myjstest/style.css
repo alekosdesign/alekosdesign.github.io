@@ -300,8 +300,6 @@ header{
 	backdrop-filter: blur(4px);
 	box-shadow: 0 0 20px black;
 }
-.login__form{
-}
 .login__form__login, .login__form__password{
 	display: flex;
 	border-radius: 20px;

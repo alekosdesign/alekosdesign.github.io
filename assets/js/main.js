@@ -32,3 +32,4 @@ $(function() {
 		setTimeout(function(){ location.href = t.attr('href'); }, 900);
 	});
 });
+
