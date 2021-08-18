@@ -43,3 +43,12 @@
 // 	cursor.removeClass("active");
 // 	follower.removeClass("active");
 // });
+
+
+// var darktheme = document.querySelector("#theme");
+// darktheme.onclick = function(){
+//     document.body.classList.toggle("darktheme");
+    // if (document.body.classList.contains("darktheme")){
+    // 	 darktheme.syle(color:red);
+    // }
+// }
