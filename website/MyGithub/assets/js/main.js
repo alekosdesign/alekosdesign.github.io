@@ -52,3 +52,5 @@
     // 	 darktheme.syle(color:red);
     // }
 // }
+var text = $('.button__line');
+text.substr(0, 3).syle(color:red);
