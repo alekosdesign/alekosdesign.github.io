@@ -2,7 +2,7 @@
 > If you are not familiar with me, then read this post.
 > At the end you will find a small gift from me :)
 
-## Let's..........
+## GO?
 Let's get acquainted, My name is Alex, I am 26 years old, engaged in design and creation of sites.
 Back in 2008, discovered Photoshop, it was an ancient CS4. What he did not seem friendly, but I tried using the "spear" method to understand it.
 
@@ -21,16 +21,16 @@ Few know, but now I am engaged in the creation of sites, graphic design, so you 
 - Photo styling
 
 
-```My work can look:```
+## ```My work can look:```
 - [instagram.com/alekosdesign/](https://instagram.com/alekosdesign/)
 - [behance.net/alekosdesign](https://behance.net/alekosdesign)
 
 
-```You can write to me at the link:```
+## ```You can write to me at the link:```
 - [vk.com/alekos_design](https://vk.me/alekos_design)
 - [alekosdesign@gmail.com](alekosdesign@gmail.com)
 
-If we have known each other for a long time, I would ask you to repost this post :)
+### If we have known each other for a long time, I would ask you to repost this post :)
 # Have a nice day:)
 
 
