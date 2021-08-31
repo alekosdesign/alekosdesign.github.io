@@ -37,10 +37,81 @@
 	</div>
 </div>
 
-
-<div class="datk__theme">
-
+<div id="modal__feedback">
+	<div class="modal__feedback">
+		<div class="feedback__title flex">
+			<div class="feedback__top">
+				<h2>Остались вопросы?</h2>
+				<p>Мы можем с 90% уверенностью продиагностировать по телефону поломку</p>
+			</div>
+			<span>Наши менеджеры вам перезвонят</span>
+		</div>
+		<div class="feedback flex">
+			<div class="feedback__block flex">
+				<form action="#">
+					<input id="text" type="text" required placeholder="Как к вам обращаться?">
+					<input id="tel" type="text" required placeholder="На какой номер вам перезвонить?">
+					<input id="text" type="text" required placeholder="Какой у вас вопрос?">
+				</form>
+				<button class="btn">Перезвоните мне</button>
+			</div>
+		</div>
+		<div class="feedback__bg">
+			<img src="assets/img/feedback bg.png" alt="">
+		</div>
+		<span class="modal__feedback__close"><img src="assets/img/icons/close-white.svg" alt=""></span>
+	</div>
 </div>
+
+
+<div id="modal__login">
+	<div class="modal__feedback">
+		<div class="feedback__title flex">
+			<div class="feedback__top">
+				<h2>Личный кабинет</h2>
+			</div>
+		</div>
+		<div class="feedback flex">
+			<div class="feedback__block modal__login flex">
+				<form action="#">
+					<input id="text" type="email" required placeholder="Ваша электронная почта">
+					<input id="tel" type="password" required placeholder="Введите ваш пароль">
+				</form>
+				<a class="red__text" href="#">Забыли пароль?</a>
+				<button class="btn">Войти</button>
+				<span class="red__text" id="open__modal__reg">Впервые у нас? Зарегистрироваться</span>
+			</div>
+		</div>
+		<span class="modal__feedback__close"><img src="assets/img/icons/close-white.svg" alt=""></span>
+	</div>
+</div>
+
+<div id="modal__reg">
+	<div class="modal__feedback">
+		<div class="feedback__title flex">
+			<div class="feedback__top">
+				<h2>Регистрация</h2>
+			</div>
+		</div>
+		<div class="feedback flex">
+			<div class="feedback__block modal__login flex">
+				<form action="#">
+					<input id="first-name" type="text" required placeholder="Введите ваше имя">
+					<input id="last-name" type="text" required placeholder="Введите вашу фамилию">
+					<input id="tel" type="text" required placeholder="Введите ваш номер телефона">
+					<input type="email" required placeholder="Ваша электронная почта*">
+					<input type="password" required placeholder="Введите ваш пароль *">
+					<input type="password" required placeholder="Подтвердите пароль *">
+				</form>
+				<a class="red__text" href="#">Забыли пароль?</a>
+				<button class="btn">Войти</button>
+				<span class="red__text" id="open__modal__login">Уже регистрировались? Войти</span>
+			</div>
+		</div>
+		<span class="modal__feedback__close"><img src="assets/img/icons/close-white.svg" alt=""></span>
+	</div>
+</div>
+
 
 
 <header>
@@ -103,13 +174,16 @@
 	</div>
 </header>
 
+
+
+
 <div class="hero__slider flex">
 	<div class="hero flex">
 		<div class="container">
 			<div class="row">
 				<div class="title flex col-md-6">
-					<h1>Запчасти и комплектующие для гидравлики</h1>
-					<a class="btn black" href="#">Наличее запчастей</a>
+					<h1>Слайдер #1</h1>
+					<a class="btn black" id="open__modal__feedback" style="border: 2px solid #F32D1A;" href="#">Узнать о наличее запчастей</a>
 					<p>Ремонт и комплектация гидравлических систем высокого давления. Запчасти для спецтехники. Навесное оборудование.</p>
 					<a class="link" href="#">Открыть каталог</a>
 				</div>
@@ -119,24 +193,42 @@
 			<img src="assets/img/hero bg.jpg" alt="">
 		</div>
 		<img class="hero__molot" src="assets/img/molot.png" alt="">
+		<span class="hero__prebg" style="background: #F32D1A;"></span>
 	</div>
 	<div class="hero flex">
 		<div class="container">
 			<div class="row">
 				<div class="title flex col-md-6">
-					<h1>Запчасти и комплектующие для гидравлики</h1>
-					<a class="btn black" href="#">Наличее запчастей</a>
+					<h1>Слайдер #2</h1>
+					<a class="btn black" id="open__modal__feedback" style="border: 2px solid #f17933;" href="#">Узнать о наличее запчастей</a>
 					<p>Ремонт и комплектация гидравлических систем высокого давления. Запчасти для спецтехники. Навесное оборудование.</p>
-					<a class="link" href="#">Открыть каталог</a>
+					<a id="open__modal__feedback" class="link" href="#">Узнать о наличее запчастей</a>
 				</div>
 			</div>
 		</div>
 		<div class="hero__bg">
 			<img src="assets/img/hero bg.jpg" alt="">
 		</div>
-		<img class="hero__molot" src="assets/img/molot.png" alt="">
+		<img class="hero__molot" src="assets/img/feedback bg.png" alt="">
+		<span class="hero__prebg" style="background: #f17933;"></span>
 	</div>
-	
+	<div class="hero flex">
+		<div class="container">
+			<div class="row">
+				<div class="title flex col-md-6">
+					<h1>Слайдер #3</h1>
+					<a class="btn black" id="open__modal__feedback" style="border: 2px solid #e7d139;" href="#">Узнать о наличее запчастей</a>
+					<p>Ремонт и комплектация гидравлических систем высокого давления. Запчасти для спецтехники. Навесное оборудование.</p>
+					<a id="open__modal__feedback" class="link" href="#">Узнать о наличее запчастей</a>
+				</div>
+			</div>
+		</div>
+		<div class="hero__bg">
+			<img src="assets/img/hero bg.jpg" alt="">
+		</div>
+		<img class="hero__molot" src="assets/img/kovsh.png" alt="">
+		<span class="hero__prebg" style="background: #e7d139;"></span>
+	</div>
 </div>
 
 
@@ -148,44 +240,66 @@
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<div class="buy">
+					<button class="btn">Купить</button>
+					<div class="desc link">Подробнее</div>
+				</div>
 			</a>
 			<a class="offer__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<div class="buy">
+					<button class="btn">Купить</button>
+					<div class="desc link">Подробнее</div>
+				</div>
 			</a>
 			<a class="offer__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<div class="buy">
+					<button class="btn">Купить</button>
+					<div class="desc link">Подробнее</div>
+				</div>
 			</a>
 			<a class="offer__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<div class="buy">
+					<button class="btn">Купить</button>
+					<div class="desc link">Подробнее</div>
+				</div>
 			</a>
 			<a class="offer__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<div class="buy">
+					<button class="btn">Купить</button>
+					<div class="desc link">Подробнее</div>
+				</div>
 			</a>
 			<a class="offer__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<div class="buy">
+					<button class="btn">Купить</button>
+					<div class="desc link">Подробнее</div>
+				</div>
 			</a>
 			<a class="offer__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<div class="buy">
+					<button class="btn">Купить</button>
+					<div class="desc link">Подробнее</div>
+				</div>
 			</a>
+			
 			
 		</div>
 	</div>
@@ -300,49 +414,49 @@
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<button class="btn">Купить</button>
 			</a>
 			<a class="catalog__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<button class="btn">Купить</button>
 			</a>
 			<a class="catalog__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<button class="btn">Купить</button>
 			</a>
 			<a class="catalog__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<button class="btn">Купить</button>
 			</a>
 			<a class="catalog__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<button class="btn">Купить</button>
 			</a>
 			<a class="catalog__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<button class="btn">Купить</button>
 			</a>
 			<a class="catalog__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<button class="btn">Купить</button>
 			</a>
 			<a class="catalog__item flex" href="#">
 				<img src="assets/img/1.jpg" alt="">
 				<h3>Измеритель потока (расходомер) однопотоковый</h3>
 				<span>8 500 ₽</span>
-				<button class="btn">Купить за 8 500 ₽</button>
+				<button class="btn">Купить</button>
 			</a>
 			
 		</div>
@@ -419,9 +533,9 @@
 		<div class="feedback flex">
 			<div class="feedback__block flex">
 				<form action="#">
-					<input type="text" placeholder="Как к вам обращаться?">
-					<input type="text" placeholder="На какой номер вам перезвонить?">
-					<input type="text" placeholder="Какой у вас вопрос?">
+					<input id="text" type="text" placeholder="Как к вам обращаться?">
+					<input id="tel" type="text" placeholder="На какой номер вам перезвонить?">
+					<input id="text" type="text" placeholder="Какой у вас вопрос?">
 				</form>
 				<button class="btn">Перезвоните мне</button>
 			</div>
@@ -583,6 +697,7 @@
 
 
 	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/jquery.maskedinput.js"></script>
 	<script src="assets/js/lightbox.js"></script>
 	<script src="assets/js/slick.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
