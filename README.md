@@ -22,12 +22,13 @@ Few know, but now I am engaged in the creation of sites, graphic design, so you 
 
 
 ```My work can look:```
-- instagram.com/alekosdesign/
-- behance.net/alekosdesign
+- [instagram.com/alekosdesign/](https://instagram.com/alekosdesign/)
+- [behance.net/alekosdesign](https://behance.net/alekosdesign)
+
 
 ```You can write to me at the link:```
-- vk.me/alekos_design
-- alekosdesign@gmail.com
+- [vk.com/alekos_design](https://vk.me/alekos_design)
+- [alekosdesign@gmail.com](alekosdesign@gmail.com)
 
 If we have known each other for a long time, I would ask you to repost this post :)
 # Have a nice day:)
