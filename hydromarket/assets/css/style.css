@@ -25,12 +25,11 @@ ul, li, a{
 	color: var(--black-color);
 	text-decoration: none;
 }
-
 section{
 	width: 100%;
 	height: 100%;
 	position: relative;
-	margin: 90px 0;
+	margin: 90px auto;
 }
 .flex{
 	display: flex;
@@ -81,9 +80,6 @@ section{
 .extra__bold{
 	font-size: 55px;
 	font-weight: 800;
-}
-.container{
-	position: relative;
 }
 h1{
 	font-size: 42px;
@@ -159,7 +155,14 @@ input:active{
 .slick-list{
 	padding: 10px 0;
 }
-/*  */
+.container{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	transition: 0.5s ease-in-out;
+}
+
+/* Header */
 header{
 	position: fixed;
 	top: 0;
@@ -172,6 +175,7 @@ header{
 }
 .header__top, .header__bottom{
 	margin-top: 5px;
+	transition: 0.3s ease-in-out;
 }
 .header__logo{
 	max-width: 86px;
@@ -252,6 +256,7 @@ header{
 .menu{
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 .mainmenu ul{
 	display: flex;
@@ -268,6 +273,7 @@ header{
 	padding: 0;
 	height: 100%;
 	border: none;
+	position: relative;
 }
 
 .header__profile__login{
@@ -275,29 +281,76 @@ header{
 	height: 58px;
 	color: var(--white-color);
 	background: var(--black-lite-color);
+	cursor: pointer;
 	transition: 0.3s ease-in-out;
+	position: relative;
+	z-index: 550;
 }
 .header__profile__login span{
 	padding-left: 10px;
 }
+.but__personal{
+	position: absolute;
+	width: 100%;
+	height: fit-content;
+	background: var(--white-color);
+	bottom: 0px;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	z-index: 501;
+	transition: 0.3s ease-in-out;
+}
+.active__but__personal{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	bottom: -60px;
+}
+.but__personal span{
+	color: var(--red-color);
+	margin: 5px;
+	font-size: 16px;
+	text-align: center;
+	padding: 0;
+}
+.but__personal span:hover{
+	text-decoration:underline;
+}
 .header__profile__login:hover{
 	background: var(--black-color);
 }
+
 .header__profile__cart{
 	background: var(--red-color);
 	padding: 15px;
 	height: 100%;
 	max-height: 58px;
+	z-index: 550;
 	transition: 0.3s ease-in-out;
 }
 .header__profile__cart:hover{
 	background: var(--red-dark-color);
 }
 .scroll{
-	top: -10%;
+	padding-top: 0;
+}
+.scroll .header__top{
+	height: 0;
+}
+.scroll .container{
+	max-width: 100%;
+	transition-delay: 1s;
+}
+.scroll .header__top,.scroll  .header__bottom{
+	margin-top: 0;
 }
 
-
+.catalog__list{
+	position: fixed;
+	padding: 5px;
+	border: 1px solid blue;
+	background: gray;
+	z-index: 560;
+}
 
 /* hero */
 
@@ -305,6 +358,7 @@ header{
 	height: 70vh;
 	position: relative;
 	max-height: 600px;
+	overflow: hidden;
 }
 .title{
 	width: 50%;
@@ -352,7 +406,6 @@ header{
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* background: var(--red-color); */
 	z-index: -2;
 }
 /* slick-prev slick-arrow */
@@ -364,7 +417,7 @@ header{
 }
 .hero__slider .slick-arrow{
 	position: absolute;
-	background: var(--red-color);
+	background: var(--black-color);
 	z-index: 50;
 	left: auto;
 	top: auto;
@@ -373,21 +426,36 @@ header{
 	bottom: -32px;
 	right: 0px;
 	transition: 0.3s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s ease-in-out;
 }
 .hero__slider .slick-prev{
 	right: 64px;
 }
 .hero__slider .slick-arrow:hover{
-	background: var(--black-color);
+	background: var(--red-color);
 }
+.hero__slider .slick-arrow img{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	object-fit: none;
+}
+
 /* Offer */
 .offer{
 	position: relative;
 	font-size: 16px;
+	padding: 10px 0;
 }
 .offer__item{
 	position: relative;
-	max-width: calc(80vw/4);
+	/* max-width: calc(80vw/4); */
 	min-height: 305px;
 	height: 100%;
 	padding: 10px;
@@ -731,6 +799,7 @@ header{
 	justify-content: space-between;
 	max-height: 230px;
 	flex-wrap: nowrap;
+	overflow: hidden;
 }
 .gallary a{
 	width: 100%;
@@ -806,6 +875,10 @@ footer{
 	margin-bottom: 15px;
 }
 .footer__logo{
+	width: 100%;
+}
+.footer__logo img:last-child{
+	display: none;
 	width: 100%;
 }
 .footer__item a{
