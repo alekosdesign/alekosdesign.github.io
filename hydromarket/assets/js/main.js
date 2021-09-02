@@ -269,10 +269,11 @@ window.addEventListener("DOMContentLoaded", function() {
 	}
 })();
 $(function() {
-	$('a').click(function(e){
+	var out = $('a').not('#gallary a');
+	out.click(function(e){
 		e.preventDefault();
 		$('body').addClass('out');
 		var t = $(this);
-		setTimeout(function(){ location.href = t.attr('href'); }, 900);
+		setTimeout(function(){ location.href = t.attr('href'); }, 300);
 	});
 });

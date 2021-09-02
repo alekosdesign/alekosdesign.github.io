@@ -63,3 +63,28 @@
 .product__section__item__price__item li{
 	list-style: disc;
 }
+
+@media screen and (max-device-width: 1024px){
+	.product__section{
+		grid-template-columns: 1fr 2fr;
+		grid-row-gap: 20px;
+		grid-column-gap: 20px;
+	}
+}
+@media screen and (max-device-width: 940px){
+	
+}
+@media screen and (max-device-width: 769px){
+	.product__section{
+		grid-row-gap: 10px;
+		grid-column-gap: 10px;
+	}
+}
+@media screen and (max-device-width: 560px){
+	.product__section{
+		grid-template-columns: 1fr;
+	}
+}
+@media screen and (max-device-width: 425px){
+
+}

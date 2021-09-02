@@ -50,7 +50,7 @@
     // maxHeight: 600,
     positionFromTop: 50,
     resizeDuration: 700,
-    showImageNumberLabel: true,
+    showImageNumberLabel: false,
     wrapAround: false,
     disableScrolling: false,
     /*
@@ -257,7 +257,7 @@
     var top  = $window.scrollTop() + this.options.positionFromTop;
     var left = $window.scrollLeft();
     this.$lightbox.css({
-      top: top /2 + '%',
+      top: top + 'px',
       left: left + 'px'
     }).fadeIn(this.options.fadeDuration);
 

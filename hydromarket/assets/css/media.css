@@ -68,6 +68,9 @@
 	.container{
 		max-width: none;
 	}
+	.fits{
+		grid-template-columns: 1fr 1fr;
+	}
 }
 @media screen and (max-device-width: 769px){
 	.container{
