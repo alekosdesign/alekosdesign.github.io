@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Гидравлический супермаркет</title>
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css"> -->
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="assets/css/lightbox.css">
 	<link rel="stylesheet" href="assets/css/slick.css">
 
@@ -17,6 +16,8 @@
 	<link rel="stylesheet" href="assets/css/404.css">
 
 	<link rel="stylesheet" href="assets/css/animation.css">
+
+
 </head>
 <body>
 <!-- PageLoader -->
@@ -40,6 +41,7 @@
 			</svg>				
 		</span>
 	</div>
+
 </div>
 
 	<div id="modal__feedback">
@@ -101,18 +103,12 @@
 			<div class="feedback flex">
 				<div class="feedback__block modal__login flex">
 					<form action="#">
-						<input type="text" id="first-name" required placeholder="Введите ваше имя">
-						<input type="text" id="last-name" required placeholder="Введите вашу фамилию">
-						<input type="text" id="tel" required placeholder="Введите ваш номер телефона">
+						<input id="first-name" type="text" required placeholder="Введите ваше имя">
+						<input id="last-name" type="text" required placeholder="Введите вашу фамилию">
+						<input id="tel" type="text" required placeholder="Введите ваш номер телефона">
 						<input type="email" required placeholder="Ваша электронная почта*">
 						<input type="password" required placeholder="Введите ваш пароль *">
-						<input type="password" required placeholder="Введите повторно пароль *">
-						<div class="form-check flex">
-							<input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-							<label class="form-check-label" for="invalidCheck2">
-							  Примите условия и соглашения
-							</label>
-						</div>
+						<input type="password" required placeholder="Подтвердите пароль *">
 					</form>
 					<a class="red__text" href="#">Забыли пароль?</a>
 					<button class="btn">Войти</button>
@@ -129,7 +125,7 @@
 <header>
 	<div class="container">
 		<div class="header__top flex">
-			<a class="header__logo" href="index.html">
+			<a class="header__logo" href="#">
 				<img src="assets/img/logo.svg" alt="">
 			</a>
 			<input type="text" placeholder="Поиск">
@@ -156,25 +152,15 @@
 		</div>
 		<div class="header__bottom flex">
 			<div class="menu">
-					<button class="btn btn__catalog flex" data-bs-toggle="dropdown" aria-expanded="false">
-						<div class="menu__burger flex">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-						<p id="catalog">Каталог</p>
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-					</ul>
+				<button class="btn btn__catalog flex">
+					<div class="menu__burger flex">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<p id="catalog">Каталог</p>
+				</button>
+				<!-- Каталог -->
 				<div class="mainmenu">
 					<ul>
 						<li><a href="#">Специальное предложение</a></li>
@@ -184,7 +170,6 @@
 					</ul>
 				</div>
 			</div>
-			
 			<div class="header__profile flex" >
 				<div class="header__profile__login flex">
 					<img src="assets/img/icons/login.svg" alt="">
@@ -203,463 +188,19 @@
 	</div>
 </header>
 
-
-
-
-<div class="hero__slider flex">
-	<div class="hero flex">
-		<div class="container">
-			<div class="row">
-				<div class="title flex col-md-6">
-					<h1>Слайдер #1</h1>
-					<span class="btn black" id="open__modal__feedback" style="border: 2px solid #F32D1A;">Узнать о наличее запчастей</span>
-					<p>Ремонт и комплектация гидравлических систем высокого давления. Запчасти для спецтехники. Навесное оборудование.</p>
-					<a class="link" href="catalog.html">Открыть каталог</a>
-				</div>
-			</div>
-		</div>
-		<div class="hero__bg">
-			<img src="assets/img/hero bg.jpg" alt="">
-		</div>
-		<img class="hero__molot" src="assets/img/molot.png" alt="">
-		<span class="hero__prebg" style="background: #F32D1A;"></span>
-	</div>
-	<div class="hero flex">
-		<div class="container">
-			<div class="row">
-				<div class="title flex col-md-6">
-					<h1>Слайдер #2</h1>
-					<span class="btn black" id="open__modal__feedback" style="border: 2px solid #f17933;">Узнать о наличее запчастей</span>
-					<p>Ремонт и комплектация гидравлических систем высокого давления. Запчасти для спецтехники. Навесное оборудование.</p>
-					<a class="link" href="catalog.html">Открыть каталог</a>
-				</div>
-			</div>
-		</div>
-		<div class="hero__bg">
-			<img src="assets/img/hero bg.jpg" alt="">
-		</div>
-		<img class="hero__molot" src="assets/img/feedback bg.png" alt="">
-		<span class="hero__prebg" style="background: #f17933;"></span>
-	</div>
-	<div class="hero flex">
-		<div class="container">
-			<div class="row">
-				<div class="title flex col-md-6">
-					<h1>Слайдер #3</h1>
-					<span class="btn black" id="open__modal__feedback" style="border: 2px solid #e7d139;">Узнать о наличее запчастей</span>
-					<p>Ремонт и комплектация гидравлических систем высокого давления. Запчасти для спецтехники. Навесное оборудование.</p>
-					<a class="link" href="catalog.html">Открыть каталог</a>
-				</div>
-			</div>
-		</div>
-		<div class="hero__bg">
-			<img src="assets/img/hero bg.jpg" alt="">
-		</div>
-		<img class="hero__molot" src="assets/img/kovsh.png" alt="">
-		<span class="hero__prebg" style="background: #e7d139;"></span>
+<div class="error flex">
+	<div class="error__404">
+		<svg width="760" viewBox="0 0 760 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M196.431 263.543V325.905C196.431 330.745 195.86 333.735 194.719 334.874C193.863 336.298 191.01 337.01 186.16 337.01H150.64C145.79 337.01 142.794 336.156 141.653 334.447C140.797 333.023 140.369 330.176 140.369 325.905V263.543H9.84295C5.84871 263.543 3.13833 263.116 1.71182 262.261C0.570606 261.122 0 258.702 0 255V224.673C0 221.541 0.713257 218.978 2.13977 216.985C3.56628 214.707 4.9928 212.429 6.41931 210.151C28.1023 176.834 49.6427 143.233 71.0404 109.347C92.4381 75.1759 114.549 41.8593 137.373 9.39697C138.8 7.11892 140.226 5.69514 141.653 5.12561C143.365 4.27135 145.647 3.84422 148.5 3.84422H187.872C193.007 3.84422 195.718 4.84087 196.003 6.83416C196.288 8.5427 196.431 10.8208 196.431 13.6683V211.005H231.523C235.803 211.005 238.371 211.432 239.226 212.286C240.368 213.141 240.938 215.988 240.938 220.829V254.146C240.938 258.987 240.225 261.834 238.799 262.688C237.657 263.258 235.232 263.543 231.523 263.543H196.431ZM64.1931 211.005H140.369V93.5427L64.1931 211.005Z" fill="#F32D1A"/>
+			<path d="M384.921 340C365.806 340 349.259 335.871 335.279 327.613C321.299 319.64 309.744 308.25 300.614 293.442C291.77 278.635 285.208 260.838 280.929 240.05C276.649 218.978 274.509 195.628 274.509 170C274.509 158.61 275.08 146.508 276.221 133.693C277.362 120.879 279.359 108.208 282.212 95.6784C285.351 83.1491 289.488 71.1893 294.623 59.799C300.044 48.1239 306.749 37.8727 314.737 29.0452C323.011 20.2177 332.854 13.2412 344.266 8.11557C355.963 2.70519 369.515 0 384.921 0C400.328 0 413.737 2.70519 425.149 8.11557C436.561 13.2412 446.262 20.2177 454.25 29.0452C462.524 37.8727 469.228 48.1239 474.364 59.799C479.499 71.1893 483.494 83.2915 486.347 96.1055C489.485 108.635 491.625 121.307 492.766 134.121C493.907 146.935 494.478 158.894 494.478 170C494.478 195.628 492.338 218.836 488.059 239.623C483.779 260.41 477.074 278.35 467.945 293.442C459.1 308.25 447.831 319.64 434.136 327.613C420.442 335.871 404.037 340 384.921 340ZM384.921 55.5276C377.789 55.5276 371.084 57.3786 364.808 61.0804C358.531 64.7822 352.968 71.1893 348.117 80.3015C343.553 89.129 339.844 100.946 336.991 115.754C334.423 130.276 333.139 148.358 333.139 170C333.139 191.926 334.423 210.293 336.991 225.1C339.844 239.623 343.553 251.298 348.117 260.126C352.968 268.953 358.531 275.218 364.808 278.92C371.084 282.621 377.789 284.472 384.921 284.472C392.054 284.472 398.759 282.621 405.035 278.92C411.312 275.218 416.733 268.953 421.298 260.126C426.148 251.298 429.857 239.623 432.424 225.1C435.277 210.293 436.704 191.926 436.704 170C436.704 148.358 435.277 130.276 432.424 115.754C429.857 100.946 426.148 89.129 421.298 80.3015C416.733 71.1893 411.312 64.7822 405.035 61.0804C398.759 57.3786 392.054 55.5276 384.921 55.5276Z" fill="#F32D1A"/>
+			<path d="M715.493 263.543V325.905C715.493 330.745 714.922 333.735 713.781 334.874C712.925 336.298 710.072 337.01 705.222 337.01H669.702C664.852 337.01 661.856 336.156 660.715 334.447C659.859 333.023 659.431 330.176 659.431 325.905V263.543H528.905C524.91 263.543 522.2 263.116 520.774 262.261C519.632 261.122 519.062 258.702 519.062 255V224.673C519.062 221.541 519.775 218.978 521.202 216.985C522.628 214.707 524.055 212.429 525.481 210.151C547.164 176.834 568.704 143.233 590.102 109.347C611.5 75.1759 633.611 41.8593 656.435 9.39697C657.862 7.11892 659.288 5.69514 660.715 5.12561C662.426 4.27135 664.709 3.84422 667.562 3.84422H706.934C712.069 3.84422 714.78 4.84087 715.065 6.83416C715.35 8.5427 715.493 10.8208 715.493 13.6683V211.005H750.585C754.865 211.005 757.432 211.432 758.288 212.286C759.429 213.141 760 215.988 760 220.829V254.146C760 258.987 759.287 261.834 757.86 262.688C756.719 263.258 754.294 263.543 750.585 263.543H715.493ZM583.255 211.005H659.431V93.5427L583.255 211.005Z" fill="#F32D1A"/>
+		</svg>
+		<h4>Страница не найдена</h4>
+		<p>Не правильно набран адрес,или такой страницы на сайте больше не существует</p>
+		<a href="#">Главная / Каталог</a>
 	</div>
 </div>
 
-
-<section>
-	<div class="container">
-		<h2>Специальное предложение</h2>
-		<div class="offer">
-			<a class="offer__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<div class="buy">
-					<button class="btn">Купить</button>
-					<div class="desc link">Подробнее</div>
-				</div>
-			</a>
-			<a class="offer__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<div class="buy">
-					<button class="btn">Купить</button>
-					<div class="desc link">Подробнее</div>
-				</div>
-			</a>
-			<a class="offer__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<div class="buy">
-					<button class="btn">Купить</button>
-					<div class="desc link">Подробнее</div>
-				</div>
-			</a>
-			<a class="offer__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<div class="buy">
-					<button class="btn">Купить</button>
-					<div class="desc link">Подробнее</div>
-				</div>
-			</a>
-			<a class="offer__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<div class="buy">
-					<button class="btn">Купить</button>
-					<div class="desc link">Подробнее</div>
-				</div>
-			</a>
-			<a class="offer__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<div class="buy">
-					<button class="btn">Купить</button>
-					<div class="desc link">Подробнее</div>
-				</div>
-			</a>
-			<a class="offer__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<div class="buy">
-					<button class="btn">Купить</button>
-					<div class="desc link">Подробнее</div>
-				</div>
-			</a>
-			<a class="offer__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<div class="buy">
-					<button class="btn">Купить</button>
-					<div class="desc link">Подробнее</div>
-				</div>
-			</a>
-			
-			
-			
-		</div>
-	</div>
-</section>
-
-<section id="fits">
-	<div class="container">
-		<h2>Почему клиенты выбирают нас</h2>
-		<div class="fits">
-			<div class="fits__item">
-				<img src="assets/img/icons/box.svg" alt="">
-				<span><h4>Доставка</h4>
-					<p>В любую точку
-						России и СНГ</p></span>
-			</div>
-			<div class="fits__item">
-				<img src="assets/img/icons/box.svg" alt="">
-				<span><h4>Доставка</h4>
-					<p>В любую точку
-						России и СНГ</p></span>
-			</div>
-			<div class="fits__item">
-				<img src="assets/img/icons/box.svg" alt="">
-				<span><h4>Доставка</h4>
-					<p>В любую точку
-						России и СНГ</p></span>
-			</div>
-			<div class="fits__item">
-				<img src="assets/img/icons/box.svg" alt="">
-				<span><h4>Доставка</h4>
-					<p>В любую точку
-						России и СНГ</p></span>
-			</div>
-			<div class="fits__item">
-				<img src="assets/img/icons/box.svg" alt="">
-				<span><h4>Доставка</h4>
-					<p>В любую точку
-						России и СНГ</p></span>
-			</div>
-			<div class="fits__item">
-				<img src="assets/img/icons/box.svg" alt="">
-				<span><h4>Доставка</h4>
-					<p>В любую точку
-						России и СНГ</p></span>
-			</div>
-			
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="container">
-		<h2>Категории</h2>
-		<div class="category">
-			<a class="category__item flex category__item__gray" href="catalog.html">
-				<img src="assets/img/icons/excel.svg" alt="">
-				<div class="category__item__footer">
-					<p>Наименование каталога</p>
-					<span>От ХХХХ рублей</span>
-					<img src="assets/img/icons/arrow.svg" alt="">		
-				</div>
-			</a>
-			<a class="category__item flex category__item__red" href="catalog.html">
-				<img src="assets/img/icons/excel.svg" alt="">
-				<div class="category__item__footer">
-					<p>Наименование каталога</p>
-					<span>От ХХХХ рублей</span>
-					<img src="assets/img/icons/arrow.svg" alt="">		
-				</div>
-			</a>
-			<a class="category__item flex category__item__gray" href="catalog.html">
-				<img src="assets/img/icons/excel.svg" alt="">
-				<div class="category__item__footer">
-					<p>Наименование каталога</p>
-					<span>От ХХХХ рублей</span>
-					<img src="assets/img/icons/arrow.svg" alt="">		
-				</div>
-			</a>
-			<a class="category__item flex category__item__white" href="catalog.html">
-				<img src="assets/img/icons/excel.svg" alt="">
-				<div class="category__item__footer">
-					<p>Наименование каталога</p>
-					<span>От ХХХХ рублей</span>
-					<img src="assets/img/icons/arrow.svg" alt="">		
-				</div>
-			</a>
-			<a class="category__item flex category__item__gray" href="catalog.html">
-				<img src="assets/img/icons/excel.svg" alt="">
-				<div class="category__item__footer">
-					<p>Наименование каталога</p>
-					<span>От ХХХХ рублей</span>
-					<img src="assets/img/icons/arrow.svg" alt="">		
-				</div>
-			</a>
-			<a class="category__item flex category__item__white" href="catalog.html">
-				<img src="assets/img/icons/excel.svg" alt="">
-				<div class="category__item__footer">
-					<p>Наименование каталога</p>
-					<span>От ХХХХ рублей</span>
-					<img src="assets/img/icons/arrow.svg" alt="">		
-				</div>
-			</a>
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="container">
-		<h2>Каталог</h2>
-		<div class="catalog flex">
-			<a class="catalog__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<button class="btn">Купить</button>
-			</a>
-			<a class="catalog__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<button class="btn">Купить</button>
-			</a>
-			<a class="catalog__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<button class="btn">Купить</button>
-			</a>
-			<a class="catalog__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<button class="btn">Купить</button>
-			</a>
-			<a class="catalog__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<button class="btn">Купить</button>
-			</a>
-			<a class="catalog__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<button class="btn">Купить</button>
-			</a>
-			<a class="catalog__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<button class="btn">Купить</button>
-			</a>
-			<a class="catalog__item flex" href="product.html">
-				<img src="assets/img/1.jpg" alt="">
-				<h3>Измеритель потока (расходомер) однопотоковый</h3>
-				<span>8 500 ₽</span>
-				<button class="btn">Купить</button>
-			</a>
-			
-		</div>
-	</div>
-</section>
-
-
-<section>
-	<div class="container">
-		<div class="about flex">
-			<div class="about__item">
-				<img src="assets/img/logo.svg" alt="hydromarket">
-			</div>
-			<div class="about__item">
-				<div class="about__text">
-					<h2>О компании</h2>
-					<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="container">
-		<div class="partners__title">
-			<h2>Наши Партнёры</h2>
-			<a class="link" href="#">Смотреть все</a>
-		</div>
-		<div class="partners" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-			<div class="partners__item">
-				<a href="#">
-					<img src="assets/img/partners/Frame 4342.jpg" alt="">
-				</a>				
-			</div>
-			<div class="partners__item">
-				<a href="#">
-					<img src="assets/img/partners/Frame 4343.jpg" alt="">
-				</a>				
-			</div>
-			<div class="partners__item">
-				<a href="#">
-					<img src="assets/img/partners/Frame 4342.jpg" alt="">
-				</a>				
-			</div>
-			<div class="partners__item">
-				<a href="#">
-					<img src="assets/img/partners/Frame 4343.jpg" alt="">
-				</a>				
-			</div>
-			<div class="partners__item">
-				<a href="#">
-					<img src="assets/img/partners/Frame 4342.jpg" alt="">
-				</a>				
-			</div>
-			<div class="partners__item">
-				<a href="#">
-					<img src="assets/img/partners/Frame 4343.jpg" alt="">
-				</a>				
-			</div>
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="container">
-		<div class="feedback__title flex">
-			<div class="feedback__top">
-				<h2>Остались вопросы?</h2>
-				<p>Мы можем с 90% уверенностью продиагностировать по телефону поломку</p>
-			</div>
-			<span>Наши менеджеры вам перезвонят</span>
-		</div>
-		<div class="feedback flex">
-			<div class="feedback__block flex">
-				<form action="#">
-					<input id="text" type="text" placeholder="Как к вам обращаться?">
-					<input id="tel" type="text" placeholder="На какой номер вам перезвонить?">
-					<input id="text" type="text" placeholder="Какой у вас вопрос?">
-				</form>
-				<button class="btn">Перезвоните мне</button>
-			</div>
-		</div>
-		<div class="feedback__bg">
-			<img src="assets/img/feedback bg.png" alt="">
-		</div>
-	</div>	
-</section>
-<!-- Докинуть иконки для Lightbox -->
-<section id="gallary">
-	<div class="gallary">
-		<a href="assets/img/gallary/image 37.jpg" data-lightbox="roadtrip">
-			<img src="assets/img/gallary/image 37.jpg" alt="">
-		</a>
-		<a href="assets/img/gallary/image 38.jpg" data-lightbox="roadtrip">
-			<img src="assets/img/gallary/image 38.jpg" alt="">
-		</a>
-		<a href="assets/img/gallary/image 39.jpg" data-lightbox="roadtrip">
-			<img src="assets/img/gallary/image 39.jpg" alt="">
-		</a>
-		<a href="assets/img/gallary/image 40.jpg" data-lightbox="roadtrip">
-			<img src="assets/img/gallary/image 40.jpg" alt="">
-		</a>
-		<a href="assets/img/gallary/image 41.jpg" data-lightbox="roadtrip">
-			<img src="assets/img/gallary/image 41.jpg" alt="">
-		</a>
-		<a href="assets/img/gallary/image 42.jpg" data-lightbox="roadtrip">
-			<img src="assets/img/gallary/image 42.jpg" alt="">
-		</a>
-		<a href="assets/img/gallary/image 43.jpg" data-lightbox="roadtrip">
-			<img src="assets/img/gallary/image 43.jpg" alt="">
-		</a>
-		<a href="assets/img/gallary/image 44.jpg" data-lightbox="roadtrip">
-			<img src="assets/img/gallary/image 44.jpg" alt="">
-		</a>
-		<a href="assets/img/gallary/image 45.jpg" data-lightbox="roadtrip">
-			<img src="assets/img/gallary/image 45.jpg" alt="">
-		</a>
-		<a href="assets/img/gallary/image 46.jpg" data-lightbox="roadtrip">
-			<img src="assets/img/gallary/image 46.jpg" alt="">
-		</a>
-		
-	</div>
-</section>
-
-
-<section>
-	<div class="container">
-		<h2>Контакты</h2>
-		<div class="contacts flex">
-			<div class="contacts__item flex">
-				<img class="contacts__logo" src="assets/img/logo-w.svg" alt="">
-				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-				<div class="contacts__phone">
-					<div class="header__phone">
-						<a class="header__phone__item flex" href="#">
-							<img src="assets/img/icons/phone.svg" alt="">
-							<p>+7 423 224 24 00</p>
-						</a>
-						<a class="header__phone__item flex" href="#">
-							<img src="assets/img/icons/phone.svg" alt="">
-							<p>+7 423 224 24 00</p>
-						</a>
-						<div class="header__phone__item header__time__item flex">
-							<img src="assets/img/icons/clock.svg" alt="">
-							<p>До 14:00 по МСК</p>
-						</div>
-					</div>
-					<div class="header__adress">
-						<a href="#" class="flex">
-							<img src="assets/img/icons/mappin.svg" alt="">
-							Приморский край г. Владивосток<br>ул. Днепровская 146
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="contacts__item">
-				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11641.384698696158!2d131.9426338!3d43.1602572!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62593891b288174b!2z0JPQuNC00YDQsNCy0LvQuNGH0LXRgdC60LjQuSDRgdGD0L_QtdGA0LzQsNGA0LrQtdGC!5e0!3m2!1sru!2sru!4v1630298520684!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <footer>
 	<div class="container flex">
@@ -740,7 +281,6 @@
 <script src="assets/js/lightbox.js"></script>
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

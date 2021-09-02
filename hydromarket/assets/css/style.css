@@ -6,6 +6,9 @@
 	letter-spacing: 0.03em;
 	line-height: 20px;
 }
+body{
+	/* overflow: hidden; */
+}
 :root{
 	--white-color:#ffffff;
 	--white-lite-color:#F5F8FA;
@@ -24,6 +27,68 @@ ul, li, a{
 	list-style: none;
 	color: var(--black-color);
 	text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+a:hover{
+	color: var(--red-color);
+}
+ol, ul, ol, ul, dl{
+	margin-top: 0;
+    margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+p{
+	margin-bottom: 0;
+}
+#preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5000;
+	/* background: var(--white-color); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	backdrop-filter: blur(5px);
+}
+#preloader::after{
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgb(255 255 255 / 75%);
+	z-index: -1;
+	animation-iteration-count: 1;
+	animation: bgloaded 2s ease-in-out;
+}
+#preloader__bg{
+	background: var(--red-color);
+	width: fit-content;
+	height: fit-content;
+	padding: 10px;
+	animation-iteration-count: 1;
+	animation: opacotyload 1s ease-in-out;
+}
+#preloader__logo{
+	width: 40vw;
+	display: block;
+
+}
+#preloader__logo svg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.out {
+	filter: blur(2px);
+	transition-duration: 1s;
+	opacity: 0;
 }
 section{
 	width: 100%;
@@ -44,10 +109,76 @@ section{
 	border: 2px solid var(--red-color);
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
+	border-radius: 0;
 }
 .btn:hover{
 	background: var(--white-color);
 	color: var(--red-color);
+}
+.crumbs nav ol{
+	display: inline-flex;
+	width: 100%;
+}
+.crumbs nav li{
+	margin-right: 5px;
+}
+#margintop{
+	margin-top: 40px ;
+	margin-bottom: 90px;
+}
+.nav-tabs .nav-link{
+	margin-bottom: 0;
+	border-radius: 0;
+	border-color: none;
+	color: var(--black-lite-color);
+}
+.nav-tabs{
+	border-bottom: transparent;
+}
+.nav-link{
+	padding: 5px;
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{
+	border-color: none;
+	background: transparent;
+	color: var(--red-color);
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+	background: transparent;
+	color: var(--red-color);
+	border-color: transparent;
+}
+.nav-tabs .nav-link::after{
+	content: ' |';
+	color: var(--black-lite-color);
+}
+.nav-tabs .nav-link:last-child:after{
+	content: '';
+}
+.dropdown-menu{
+	position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 20px;
+    margin: 0;
+    font-size: inherit;
+    color: inherit;
+    text-align: left;
+    list-style: none;
+    background-color: var(--white-color);
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+.dropdown-menu li{
+	padding: 5px 10px;
+}
+.dropdown-menu li a{
+	display: flex;
+	justify-content: start;
+	align-items: center;
 }
 .black{
 	animation: 0.3s;
@@ -98,36 +229,7 @@ body{
 	background: var(--white-color);
 	color: var(--black-color);
 }
-.preloader{
-	display: none;
-	background: var(--white-color);
-	height: 100vh;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 50000;
-	overflow: hidden;
-}
-.preloader__logo{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	
-}
-.preloader__logo__bg{
-	padding: 20px;
-	background: var(--red-color);
-	animation: preloaderlogo 3s;
-}
-.preloader__logo span{
-	color: var(--black-color);
-	font-size: 24px;
-	font-weight: bold;
-	animation: preloadertext 3s;
-}
+
 input, select{
 	display: flex;
 	flex-direction: row;
@@ -149,9 +251,7 @@ input:active{
 	border-radius: none;
 	border: 1px solid var(--black-color);
 }
-.done{
-	display: none;
-}
+
 .slick-list{
 	padding: 10px 0;
 }
@@ -300,10 +400,13 @@ header{
 	flex-direction: column;
 	z-index: 501;
 	transition: 0.3s ease-in-out;
+	opacity: 0;
+	cursor: pointer;
 }
 .active__but__personal{
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 	bottom: -60px;
+	opacity: 1;
 }
 .but__personal span{
 	color: var(--red-color);
@@ -340,8 +443,8 @@ header{
 	max-width: 100%;
 	transition-delay: 1s;
 }
-.scroll .header__top,.scroll  .header__bottom{
-	margin-top: 0;
+.scroll .mainmenu li{
+	margin: 0 5px;
 }
 
 .catalog__list{
@@ -782,6 +885,9 @@ header{
 	grid-column: 1 / -1;
 	max-width: 350px;
 	justify-self: center;
+}
+.feedback__block form .form-check-input{
+	width: fit-content;
 }
 .feedback__bg{
 	position: absolute;

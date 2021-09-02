@@ -1,0 +1,7 @@
+.page__catalog{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.page__catalog__list .catalog{
+	grid-template-columns: 1fr 1fr 1fr;
+}
