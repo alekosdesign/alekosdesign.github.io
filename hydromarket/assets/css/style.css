@@ -389,6 +389,9 @@ header{
 .header__profile__login span{
 	padding-left: 10px;
 }
+.header__profile__login img:last-child{
+	display: none;
+}
 .but__personal{
 	position: absolute;
 	width: 100%;

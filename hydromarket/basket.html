@@ -6,12 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Гидравлический супермаркет</title>
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+	<!-- <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css"> -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/lightbox.css">
 	<link rel="stylesheet" href="assets/css/slick.css">
+
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/media.css">
+
+	<!-- add page -->
+	<link rel="stylesheet" href="assets/css/product.css">
+	<link rel="stylesheet" href="assets/css/catalog.css">
+	<link rel="stylesheet" href="assets/css/basket.css">
+	<link rel="stylesheet" href="assets/css/contacts.css">
+	<link rel="stylesheet" href="assets/css/dprice.css">
+	<link rel="stylesheet" href="assets/css/orders.css">
+	<link rel="stylesheet" href="assets/css/pay.css">
+	<link rel="stylesheet" href="assets/css/profile.css">
+
 	<link rel="stylesheet" href="assets/css/animation.css">
+	<link rel="stylesheet" href="assets/css/media.css">
+
 </head>
 <body>
 <!-- PageLoader -->
@@ -35,7 +49,6 @@
 			</svg>				
 		</span>
 	</div>
-
 </div>
 
 	<div id="modal__feedback">
@@ -97,12 +110,18 @@
 			<div class="feedback flex">
 				<div class="feedback__block modal__login flex">
 					<form action="#">
-						<input id="first-name" type="text" required placeholder="Введите ваше имя">
-						<input id="last-name" type="text" required placeholder="Введите вашу фамилию">
-						<input id="tel" type="text" required placeholder="Введите ваш номер телефона">
+						<input type="text" id="first-name" required placeholder="Введите ваше имя">
+						<input type="text" id="last-name" required placeholder="Введите вашу фамилию">
+						<input type="text" id="tel" required placeholder="Введите ваш номер телефона">
 						<input type="email" required placeholder="Ваша электронная почта*">
 						<input type="password" required placeholder="Введите ваш пароль *">
-						<input type="password" required placeholder="Подтвердите пароль *">
+						<input type="password" required placeholder="Введите повторно пароль *">
+						<div class="form-check flex">
+							<input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+							<label class="form-check-label" for="invalidCheck2">
+							  Примите условия и соглашения
+							</label>
+						</div>
 					</form>
 					<a class="red__text" href="#">Забыли пароль?</a>
 					<button class="btn">Войти</button>
@@ -119,7 +138,7 @@
 <header>
 	<div class="container">
 		<div class="header__top flex">
-			<a class="header__logo" href="#">
+			<a class="header__logo" href="index.html">
 				<img src="assets/img/logo.svg" alt="">
 			</a>
 			<input type="text" placeholder="Поиск">
@@ -146,15 +165,25 @@
 		</div>
 		<div class="header__bottom flex">
 			<div class="menu">
-				<button class="btn btn__catalog flex">
-					<div class="menu__burger flex">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					<p id="catalog">Каталог</p>
-				</button>
-				<!-- Каталог -->
+					<button class="btn btn__catalog flex" data-bs-toggle="dropdown" aria-expanded="false">
+						<div class="menu__burger flex">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<p id="catalog">Каталог</p>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a href="#">Пункт</a></li>
+						<li><a href="#">Пункт</a></li>
+						<li><a href="#">Пункт</a></li>
+						<li><a href="#">Пункт</a></li>
+						<li><a href="#">Пункт</a></li>
+						<li><a href="#">Пункт</a></li>
+						<li><a href="#">Пункт</a></li>
+						<li><a href="#">Пункт</a></li>
+						<li><a href="#">Пункт</a></li>
+					</ul>
 				<div class="mainmenu">
 					<ul>
 						<li><a href="#">Специальное предложение</a></li>
@@ -164,25 +193,30 @@
 					</ul>
 				</div>
 			</div>
+			
 			<div class="header__profile flex" >
-				<div class="header__profile__login flex">
+				<div class="header__profile__login header__profile__login__on flex">
 					<img src="assets/img/icons/login.svg" alt="">
-					<span id="personalarea">Личный кабинет</span>
-					
+					<img src="assets/img/icons/user.svg" alt="">
+					<span id="personalarea">Антон Иванович</span>
 				</div>
-				<div class="header__profile__cart flex">
+				<a class="header__profile__cart flex" href="basket.html">
 					<img src="assets/img/icons/cart.svg" alt="">
-				</div>
+				</a>
 				<div class="but__personal">
-					<span id="registration">Зарегистрироваться</span>
-					<span id="login">Вход</span>
+					<span id="registratio2n">Зарегистрироваться</span>
+					<span id="logi2n">Вход</span>
 				</div>
 			</div>
 		</div>
 	</div>
 </header>
 
-
+<section>
+	<div class="container" id="margintop">
+		Корзина
+	</div>
+</section>
 
 
 <footer>
