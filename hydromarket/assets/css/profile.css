@@ -1,0 +1,29 @@
+.profile{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.profile__body a{
+	color: var(--black-color);
+	margin: 10px 0;
+}
+.profile__body{
+	display: flex;
+	flex-direction: column;
+}
+.profile__body .active{
+	font-weight: 600;
+}
+.profile__body__item{
+	display: flex;
+}
+.profile__body__item__product{
+	display: grid;
+	grid-template-columns: 1fr 2fr 0.5fr;
+	grid-row-gap: 15px;
+	grid-column-gap: 15px;
+}
+.profile__body__item img{
+	width: 100%;
+	max-height: 96px;
+	object-fit: cover;
+}
