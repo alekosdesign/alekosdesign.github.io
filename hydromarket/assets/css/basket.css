@@ -1,14 +1,14 @@
-.header__profile__login img:first-child{
+/* .header__profile__login img:first-child{
 	display: none;
-}
-.header__profile__login{
+} */
+/* .header__profile__login{
 	background: var(--white-lite-color);
 	color: var(--blackgray-lite-color);
 }
 .header__profile__login:hover{
 	background: var(--white-lite-gray-color);
 	color: var(--black-lite-color);
-}
+} */
 .basket{
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -67,7 +67,6 @@
 	z-index: 1;
 }
 #calc__product__number{
-	
 	padding: 0;
 	max-width: fit-content;
 	text-align: center;

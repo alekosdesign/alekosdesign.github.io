@@ -181,12 +181,13 @@
 						<li><a href="orders.html">Заказы</a></li>
 						<li><a href="product.html">Продукт</a></li>
 						<li><a href="profile.html">Профиль</a></li>
+						<li><a href="about.html">О компании</a></li>
 					</ul>
 				<div class="mainmenu">
 					<ul>
 						<li><a href="#">Специальное предложение</a></li>
 						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="about.html">Контакты</a></li>
 						<li><a href="#">Прайс</a></li>
 					</ul>
 				</div>
@@ -194,16 +195,16 @@
 			
 			<div class="header__profile flex" >
 				<div class="header__profile__login flex">
-					<img src="assets/img/icons/user.svg" alt="">
-					<span id="personalarea">Антон Иванович</span>
+					<img src="assets/img/icons/login.svg" alt="">
+					<span id="personalarea">Личный кабинет</span>
 					
 				</div>
 				<a class="header__profile__cart flex" href="basket.html">
 					<img src="assets/img/icons/cart.svg" alt="">
 				</a>
 				<div class="but__personal">
-					<a href="profile.html">Мой профиль</a>
-					<a href="index.html">Выход</a>
+					<span id="registration">Зарегистрироваться</span>
+					<span id="login">Вход</span>
 				</div>
 			</div>
 		</div>
@@ -212,29 +213,80 @@
 
 <section>
 	<div class="container" id="margintop">
-		<h2>Здравстуйте Антон Иванович</h2>
-		<div class="profile">
-			<div class="profile__body">
-				<a class="link active" href="profile.html">Мой профиль</a>
-				<a class="link" href="orders.html">Мои заказы</a>
-				<a class="link" href="index.html">Выход</a>
+		<div class="about__page">
+			<div class="about__page__title">
+				<img src="assets/img/logo-w.svg" alt="">
+				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
 			</div>
-			<div class="profile__body">
-				<h3>Мой профиль</h3>
-				<div class="profile__body__item profile__body__edit">
-					<input type="text" placeholder="Антон" value="Антон">
-					<input type="text" placeholder="Иванович" value="Иванович">
-					<input type="text" placeholder="ООО “ГидроМаркет”" value="ООО “ГидроМаркет”">
-					<input type="text" placeholder="hydromarket.net@" value="hydromarket.net@">
-					<input type="text" placeholder="+7 (800) 555-24-00" value="+7 (800) 555-24-00">
-				</div>
-				<button class="btn">Сохранить</button>
+		</div>
+</section>
 
+<section>
+	<div class="container about__page__section">
+		<div class="about__page__body">
+			<h2>Как с нами связаться</h2>
+			<div class="about__page__body__item">
+				<h3>Телефон:</h3>
+				<a href="#">
+					<img src="assets/img/icons/phone.svg" alt="">
+					8 (800) 555 24 00 (многоканальный) до 14.00 по Мск
+				</a>
+				<a href="#">
+					<img src="assets/img/icons/phone.svg" alt="">
+					8 (423) 224 24 00
+				</a>
+			</div>
+			<div class="about__page__body__item">
+				<h3>Whatsapp:</h3>
+				<a href="#">
+					<img src="assets/img/icons/wa.svg" alt="">
+					8 (924) 730 71 60
+				</a>
+			</div>
+			<div class="about__page__body__item">
+				<h3>Email:</h3>
+				<a href="#">
+					<img src="assets/img/icons/mail.svg" alt="">
+					sales@hydromarket.net
+				</a>
+				<a href="#">
+					<img src="assets/img/icons/mail.svg" alt="">
+					hm242400@yandex.ru
+				</a>
+				<a href="#">
+					<img src="assets/img/icons/mail.svg" alt="">
+					kirill242400@gmail.com
+				</a>
+				<a href="#">
+					<img src="assets/img/icons/mail.svg" alt="">
+					myrhydro242400@gmail.com
+				</a>
+			</div>
+			<div class="about__page__body__item">
+				<h3>Адрес:</h3>
+				<a href="#">
+					<img src="assets/img/icons/mappin.svg" alt="">
+					г. Владивосток,  ул. Днепровская 146
+				</a>
+			</div>
+			<div class="about__page__body__item">
+				<h3>Расписание работы:</h3>
+				<span>
+					<img src="assets/img/icons/clock.svg" alt="">
+					Пн–пт: 09:00 - 18:00
+				</span>
+				<span href="#">
+					Cб-Вс: Выходной
+				</span>
+			</div>
+		</div>
+		<div class="about__page__body">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11641.384698696158!2d131.9426338!3d43.1602572!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62593891b288174b!2z0JPQuNC00YDQsNCy0LvQuNGH0LXRgdC60LjQuSDRgdGD0L_QtdGA0LzQsNGA0LrQtdGC!5e0!3m2!1sru!2sru!4v1630298520684!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 		</div>
 	</div>
 </section>
-
 
 <footer>
 	<div class="container flex">
@@ -307,7 +359,7 @@
 
 
 	</div>
-	<span id="copyright">Hydromarket.net 2000 - 2021г.</span>
+	<center>Hydromarket.net 2000 - 2021г.</center>
 </footer>
 
 <script src="assets/js/jquery-3.6.0.min.js"></script>

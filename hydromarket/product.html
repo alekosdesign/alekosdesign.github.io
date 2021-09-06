@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Гидравлический супермаркет</title>
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css"> -->
@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- add page -->
+	<link rel="stylesheet" href="assets/css/404.css">
 	<link rel="stylesheet" href="assets/css/product.css">
 	<link rel="stylesheet" href="assets/css/catalog.css">
 	<link rel="stylesheet" href="assets/css/basket.css">
@@ -174,15 +175,13 @@
 						<p id="catalog">Каталог</p>
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
+						<li><a href="basket.html">Корзина</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="error-404.html">Ошибка 404</a></li>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="orders.html">Заказы</a></li>
+						<li><a href="product.html">Продукт</a></li>
+						<li><a href="profile.html">Профиль</a></li>
 					</ul>
 				<div class="mainmenu">
 					<ul>
@@ -200,9 +199,9 @@
 					<span id="personalarea">Личный кабинет</span>
 					
 				</div>
-				<div class="header__profile__cart flex">
+				<a class="header__profile__cart flex" href="basket.html">
 					<img src="assets/img/icons/cart.svg" alt="">
-				</div>
+				</a>
 				<div class="but__personal">
 					<span id="registration">Зарегистрироваться</span>
 					<span id="login">Вход</span>

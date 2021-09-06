@@ -398,12 +398,12 @@ header{
 	position: relative;
 	z-index: 550;
 }
-.header__profile__login span{
+.header__profile__login span, .header__profile__login a{
 	padding-left: 10px;
 }
-.header__profile__login img:last-child{
+/* .header__profile__login img:last-child{
 	display: none;
-}
+} */
 .but__personal{
 	position: absolute;
 	width: 100%;
@@ -423,14 +423,14 @@ header{
 	bottom: -60px;
 	opacity: 1;
 }
-.but__personal span{
+.but__personal span, .but__personal a{
 	color: var(--red-color);
 	margin: 5px;
 	font-size: 16px;
 	text-align: center;
 	padding: 0;
 }
-.but__personal span:hover{
+.but__personal span:hover, .but__personal a:hover{
 	text-decoration:underline;
 }
 .header__profile__login:hover{
@@ -1017,7 +1017,11 @@ footer .flex{
 .footer__menu ul li, .footer__catalog ul li{
 	margin: 15px 0px;
 }
-
+#copyright{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
 /* Modal */
 #modal__feedback, #modal__login, #modal__reg{
 	display: none;

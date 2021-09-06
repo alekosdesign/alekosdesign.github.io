@@ -44,6 +44,9 @@
 	.mainmenu li{
 		margin: 0 5px;
 	}
+	.fits{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 @media screen and (max-device-width: 940px){
 	.mainmenu li{
@@ -62,17 +65,23 @@
 	.modal__feedback{
 		padding: 20px;
 	}
-	.mainmenu li{
-		margin: 0;
-	}
 	.container{
 		max-width: none;
 	}
 	.fits{
 		grid-template-columns: 1fr 1fr;
 	}
+	#personalarea{
+		display: none;
+	}
+	.but__personal{
+		width: fit-content;
+	}
 }
 @media screen and (max-device-width: 769px){
+	#personalarea{
+		display: block;
+	}
 	.container{
 		max-width: none;
 	}

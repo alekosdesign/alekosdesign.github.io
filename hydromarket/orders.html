@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Гидравлический супермаркет</title>
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css"> -->
@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- add page -->
+	<link rel="stylesheet" href="assets/css/404.css">
 	<link rel="stylesheet" href="assets/css/product.css">
 	<link rel="stylesheet" href="assets/css/catalog.css">
 	<link rel="stylesheet" href="assets/css/basket.css">
@@ -174,15 +175,13 @@
 						<p id="catalog">Каталог</p>
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
-						<li><a href="#">Пункт</a></li>
+						<li><a href="basket.html">Корзина</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="error-404.html">Ошибка 404</a></li>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="orders.html">Заказы</a></li>
+						<li><a href="product.html">Продукт</a></li>
+						<li><a href="profile.html">Профиль</a></li>
 					</ul>
 				<div class="mainmenu">
 					<ul>
@@ -211,30 +210,32 @@
 		</div>
 	</div>
 </header>
-
 <section>
-    <div class="container" id="margintop">
-        <h2>Здравстуйте Антон Иванович</h2>
-        <div class="profile">
-            <div class="profile__body">
-                <a class="link" href="profile.html">Мой профиль</a>
-                <a class="link active" href="orders.html">Мои заказы</a>
-                <a class="link" href="index.html">Выход</a>
-            </div>
-            <div class="profile__body">
+	<div class="container" id="margintop">
+		<h2>Здравстуйте Антон Иванович</h2>
+		<div class="profile">
+			<div class="profile__body">
+				<a class="link" href="profile.html">Мой профиль</a>
+				<a class="link active" href="orders.html">Мои заказы</a>
+				<a class="link" href="index.html">Выход</a>
+			</div>
+			<div class="profile__body">
 				<h3>Мои заказы</h3>
-                <div class="profile__body__item">
-					<div class="profile__body__item__product">
+				<div class="profile__body__item">
+					<div class="order__body__item__product">
 						<img src="assets/img/product.jpg" alt="">
-						<a href="product.html">DIN EN 853/1SN (SAE 100 R1AT)DIN EN 853/1SN (SAE 100 R1AT)DIN EN 853/1SN (SAE 100 R1AT)DIN EN 853/1SN (SAE 100 R1AT)</a>
+						<a class="link" href="product.html">DIN EN 853/1SN (SAE 100 R1AT)</a>
 						<div><span id="calc__product__total">1 800</span> ₽</div>
 					</div>
 
+				</div>
 
-                </div>
+				
+
+
 			</div>
-        </div>
-    </div>
+		</div>
+	</div>
 </section>
 
 
