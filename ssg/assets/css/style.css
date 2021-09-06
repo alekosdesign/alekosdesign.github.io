@@ -137,13 +137,14 @@ header{
 .hero .flex{
 	flex-direction: column;
 }
-.hero__bg{
-	width: 100%;
-	height: 100%;
+.hero__slider{
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100vh;
+	display: block;
+}
+.hero__bg{
+	height: 100vh;
 	z-index: -1;
 }
 .hero__bg img{
@@ -153,6 +154,7 @@ header{
 }
 .hero__logo{
 	width: 70%;
+	z-index: 1;
 }
 .hero::after{
 	z-index: -1;
