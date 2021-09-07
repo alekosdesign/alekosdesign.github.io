@@ -334,6 +334,9 @@ header{
 	height: 100%;
 	position: relative;
 }
+.header__adress a{
+	max-width: 220px;
+}
 .header__adress a, .header__phone__item p{
 	transition: 0.3s ease-in-out;
 }
@@ -901,6 +904,10 @@ header{
 	top:0;
 	right: 5%;
 	z-index: -1;
+}
+.feedback__bg img{
+	max-height: 240px;
+	object-fit: cover;
 }
 
 /* Gallary */
