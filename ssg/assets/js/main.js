@@ -16,3 +16,12 @@
 //         $("body").css("overflow", "auto")
 //     })
 // }),
+$('.hero__slider').slick({
+	infinite: true,
+	speed: 500,
+	// centerMode: true,
+	cssEase: 'linear',
+	autoplay: true,
+	autoplaySpeed: 1500,
+	arrow: false
+});
