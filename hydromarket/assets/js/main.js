@@ -269,7 +269,8 @@ login.hover(function () {
 	}
 })();
 $(function () {
-	var out = $('a').not('#gallary a');
+	// var out = $('a').not('#gallary a');
+	var out = $("a[href^='http']")
 	out.click(function (e) {
 		e.preventDefault();
 		$('body').addClass('out');
