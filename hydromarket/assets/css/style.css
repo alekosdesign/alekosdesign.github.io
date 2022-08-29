@@ -1128,3 +1128,100 @@ footer .flex{
 #modal__reg .modal__feedback{
 	width: 70%;
 }
+
+
+
+/* sevices__page */
+.sevices__page{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* overflow: hidden; */
+}
+.sevices__page__item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s ease-in-out;
+	margin: 20px 0;
+	padding: 20px;
+}
+.service__item__text{
+	margin-left: 15px;
+}
+.sevices__page__item h2{
+	margin-bottom: 0;
+}
+.sevices__page__item img{
+	width: 100%;
+	max-width: 30%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.3s ease-in-out;
+}
+.sevices__page__item:nth-child(2n) {
+	flex-flow: row-reverse;
+}
+.sevices__page__item:hover{
+	z-index: 50;
+	box-shadow: 0px 0px 40px #00000010;
+}
+
+
+
+.pump__feedback_container{
+	margin-bottom: 50px;
+}
+
+
+
+.text__center{
+	text-align: center;
+}
+
+.pump__feedback{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pump__feedback__item{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.pump__feedback__item label{
+	margin-bottom: 20px;
+}
+
+.pump__feedback__item label input{
+	max-width: none;
+    width: 60%;
+}
+.pump__feedback__flex{
+	justify-content: center;
+}
+
+.pump__feedback__flex label{
+	margin: 20px;
+}
+.pump__feedback__flex .flex{
+ flex-direction: column;
+ padding: 0 20px;
+}
+
+.pump__feedback__flex__text{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row-reverse;
+	margin: 10px;
+}
+.pump__feedback__flex__text input{
+	margin-right: 5px;
+}
+.pump__feedback__start{
+	justify-content: flex-start;
+	align-items: flex-start;
+}

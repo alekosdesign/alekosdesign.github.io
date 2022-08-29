@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Гидравлический супермаркет</title>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css"> -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/lightbox.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- add page -->
+	<link rel="stylesheet" href="assets/css/404.css">
+	<link rel="stylesheet" href="assets/css/product.css">
+	<link rel="stylesheet" href="assets/css/catalog.css">
+	<link rel="stylesheet" href="assets/css/basket.css">
+	<link rel="stylesheet" href="assets/css/contacts.css">
+	<link rel="stylesheet" href="assets/css/dprice.css">
+	<link rel="stylesheet" href="assets/css/pay.css">
+	<link rel="stylesheet" href="assets/css/profile.css">
+	<link rel="stylesheet" href="assets/css/delivery.css">
+
+	<link rel="stylesheet" href="assets/css/animation.css">
+	<link rel="stylesheet" href="assets/css/media.css">
+
+</head>
+
+<body>
+
+	<div id="modal__feedback">
+		<div class="modal__feedback">
+			<div class="feedback__title flex">
+				<div class="feedback__top">
+					<h2>Остались вопросы?</h2>
+					<p>Мы можем с 90% уверенностью продиагностировать по телефону поломку</p>
+				</div>
+				<span>Наши менеджеры вам перезвонят</span>
+			</div>
+			<div class="feedback flex">
+				<div class="feedback__block flex">
+					<form action="#">
+						<input id="text" type="text" required placeholder="Как к вам обращаться?">
+						<input id="tel" type="text" required placeholder="На какой номер вам перезвонить?">
+						<input id="text" type="text" required placeholder="Какой у вас вопрос?">
+					</form>
+					<button class="btn">Перезвоните мне</button>
+				</div>
+			</div>
+			<div class="feedback__bg">
+				<img src="assets/img/feedback bg.png" alt="">
+			</div>
+			<span class="modal__feedback__close"><img src="assets/img/icons/close-white.svg" alt=""></span>
+		</div>
+	</div>
+
+
+	<div id="modal__login">
+		<div class="modal__feedback">
+			<div class="feedback__title flex">
+				<div class="feedback__top">
+					<h2>Личный кабинет</h2>
+				</div>
+			</div>
+			<div class="feedback flex">
+				<div class="feedback__block modal__login flex">
+					<form action="#">
+						<input id="text" type="email" required placeholder="Ваша электронная почта">
+						<input id="tel" type="password" required placeholder="Введите ваш пароль">
+					</form>
+					<a class="red__text" href="#">Забыли пароль?</a>
+					<button class="btn">Войти</button>
+					<span class="red__text" id="open__modal__reg">Впервые у нас? Зарегистрироваться</span>
+				</div>
+			</div>
+			<span class="modal__feedback__close"><img src="assets/img/icons/close-white.svg" alt=""></span>
+		</div>
+	</div>
+
+	<div id="modal__reg">
+		<div class="modal__feedback">
+			<div class="feedback__title flex">
+				<div class="feedback__top">
+					<h2>Регистрация</h2>
+				</div>
+			</div>
+			<div class="feedback flex">
+				<div class="feedback__block modal__login flex">
+					<form action="#">
+						<input type="text" id="first-name" required placeholder="Введите ваше имя">
+						<input type="text" id="last-name" required placeholder="Введите вашу фамилию">
+						<input type="text" id="tel" required placeholder="Введите ваш номер телефона">
+						<input type="email" required placeholder="Ваша электронная почта*">
+						<input type="password" required placeholder="Введите ваш пароль *">
+						<input type="password" required placeholder="Введите повторно пароль *">
+						<div class="form-check flex">
+							<input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+							<label class="form-check-label" for="invalidCheck2">
+								Примите условия и соглашения
+							</label>
+						</div>
+					</form>
+					<a class="red__text" href="#">Забыли пароль?</a>
+					<button class="btn">Войти</button>
+					<span class="red__text" id="open__modal__login">Уже регистрировались? Войти</span>
+				</div>
+			</div>
+			<span class="modal__feedback__close"><img src="assets/img/icons/close-white.svg" alt=""></span>
+		</div>
+	</div>
+
+
+
+
+	<header>
+		<div class="container">
+			<div class="header__top flex">
+				<a class="header__logo" href="index.html">
+					<img src="assets/img/logo.svg" alt="">
+				</a>
+				<input type="text" placeholder="Поиск">
+				<div class="header__phone">
+					<a class="header__phone__item flex" href="#">
+						<img src="assets/img/icons/phone.svg" alt="">
+						<p>+7 423 224 24 00</p>
+					</a>
+					<a class="header__phone__item flex" href="#">
+						<img src="assets/img/icons/phone.svg" alt="">
+						<p>+7 423 224 24 00</p>
+					</a>
+					<div class="header__phone__item header__time__item flex">
+						<img src="assets/img/icons/clock.svg" alt="">
+						<p>До 14:00 по МСК</p>
+					</div>
+				</div>
+				<div class="header__adress">
+					<a href="#" class="flex">
+						<img src="assets/img/icons/mappin.svg" alt="">
+						Приморский край<br>г. Владивосток<br>ул. Днепровская 146
+					</a>
+				</div>
+			</div>
+			<div class="header__bottom flex">
+				<div class="menu">
+					<button class="btn btn__catalog flex" data-bs-toggle="dropdown" aria-expanded="false">
+						<div class="menu__burger flex">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<p id="catalog">Каталог</p>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a href="basket.html">Корзина</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="error-404.html">Ошибка 404</a></li>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="orders.html">Заказы</a>
+							<ul class="sub-menu" aria-labelledby="navbarDropdown">
+								<li><a href="basket.html">11</a></li>
+								<li><a href="catalog.html">22</a></li>
+								<li><a href="error-404.html">33</a></li>
+								<li><a href="index.html">44</a></li>
+								<li><a href="orders.html">55</a></li>
+								<li><a href="product.html">66</a></li>
+								<li><a href="profile.html">77</a></li>
+								<li><a href="about.html">88</a></li>
+								<li><a href="delivery.html">99</a></li>
+								<li><a href="downloadprice.html">00</a></li>
+							</ul>
+						</li>
+						<li><a href="product.html">Продукт</a>
+							<ul class="sub-menu" aria-labelledby="navbarDropdown">
+								<li><a href="basket.html">111</a></li>
+								<li><a href="catalog.html">222</a></li>
+								<li><a href="error-404.html">333</a></li>
+								<li><a href="index.html">444</a></li>
+								<li><a href="orders.html">555</a></li>
+								<li><a href="product.html">666</a></li>
+								<li><a href="profile.html">777</a></li>
+								<li><a href="about.html">888</a></li>
+								<li><a href="delivery.html">999</a></li>
+								<li><a href="downloadprice.html">000</a></li>
+							</ul>
+						</li>
+						</li>
+						<li><a href="profile.html">Профиль</a></li>
+						<li><a href="about.html">О компании</a>
+							<ul class="sub-menu" aria-labelledby="navbarDropdown">
+								<li><a href="basket.html">1</a></li>
+								<li><a href="catalog.html">2</a></li>
+								<li><a href="error-404.html">3 404</a></li>
+								<li><a href="index.html">4</a></li>
+								<li><a href="orders.html">5</a></li>
+								<li><a href="product.html">6</a></li>
+								<li><a href="profile.html">7</a></li>
+								<li><a href="about.html">8</a></li>
+								<li><a href="delivery.html">9</a></li>
+								<li><a href="downloadprice.html">0</a></li>
+							</ul>
+						</li>
+						</li>
+						<li><a href="delivery.html">Доставка и оплата</a></li>
+						<li><a href="downloadprice.html">Прайс-лист</a></li>
+					</ul>
+					<div class="mainmenu">
+						<ul>
+							<li><a href="#">Специальное предложение</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="about.html">Контакты</a></li>
+							<li><a href="#">Прайс</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header__profile flex">
+					<div class="header__profile__login flex">
+						<img src="assets/img/icons/login.svg" alt="">
+						<span id="personalarea">Личный кабинет</span>
+
+					</div>
+					<a class="header__profile__cart flex" href="basket.html">
+						<img src="assets/img/icons/cart.svg" alt="">
+					</a>
+					<div class="but__personal">
+						<span id="registration">Зарегистрироваться</span>
+						<span id="login">Вход</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+
+	<section>
+		<div class="container" id="margintop">
+			<h2>Страница для мастерской</h2>
+			<div class="sevices__page">
+				<a href="#" class="sevices__page__item">
+					<img src="assets/img/1.jpg" alt="">
+					<div class="service__item__text">
+						<h2>Ремонт шлангов гур</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur vel soluta, exercitationem sequi dolor asperiores dolorem recusandae ad enim voluptas.</p>
+					</div>
+				</a>
+				<a href="#" class="sevices__page__item">
+					<img src="assets/img/1.jpg" alt="">
+					<div class="service__item__text">
+						<h2>Ремонт шлангов гур</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur vel soluta, exercitationem sequi dolor asperiores dolorem recusandae ad enim voluptas.</p>
+					</div>
+				</a>
+				<a href="#" class="sevices__page__item">
+					<img src="assets/img/1.jpg" alt="">
+					<div class="service__item__text">
+						<h2>Ремонт шлангов гур</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur vel soluta, exercitationem sequi dolor asperiores dolorem recusandae ad enim voluptas.</p>
+					</div>
+				</a>
+				<a href="#" class="sevices__page__item">
+					<img src="assets/img/1.jpg" alt="">
+					<div class="service__item__text">
+						<h2>Ремонт шлангов гур</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur vel soluta, exercitationem sequi dolor asperiores dolorem recusandae ad enim voluptas.</p>
+					</div>
+				</a>
+				
+			</div>
+		</div>
+	</section>
+
+<footer>
+	<div class="container flex">
+		<div class="footer__item flex">
+			<div class="footer__logo flex">
+				<img src="assets/img/logo.svg" alt="">
+				<img src="assets/img/logo-w.svg" alt="">
+			</div>
+			<div class="contacts__phone">
+				<div class="header__phone">
+					<a class="header__phone__item flex" href="#">
+						<img src="assets/img/icons/phone-white.svg" alt="">
+						<p>+7 423 224 24 00</p>
+					</a>
+					<a class="header__phone__item flex" href="#">
+						<img src="assets/img/icons/phone-white.svg" alt="">
+						<p>+7 423 224 24 00</p>
+					</a>
+					<div class="header__phone__item header__time__item flex">
+						<img src="assets/img/icons/clock-white.svg" alt="">
+						<p>До 14:00 по МСК</p>
+					</div>
+				</div>
+				<div class="header__adress">
+					<a href="#" class="flex">
+						<img src="assets/img/icons/mappin-white.svg" alt="">
+						Приморский край г. Владивосток<br>ул. Днепровская 146
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__item flex">
+			<span>Меню сайта</span>
+			<div class="footer__menu">
+				<ul>
+					<li><a href="#">Специальное предложение</a></li>
+					<li><a href="#">Для предприятий</a></li>
+					<li><a href="#">Производители</a></li>
+					<li><a href="#">Партнеры</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">О компании</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__item flex">
+			<span>Каталог</span>
+			<div class="footer__catalog">
+				<ul>
+					<li><a href="#">Пневматика RPK</a></li>
+					<li><a href="#">Гидрораспределители</a></li>
+					<li><a href="#">Электромагнитные катушки</a></li>
+					<li><a href="#">Гидроклапана</a></li>
+					<li><a href="#">Гидродроссели</a></li>
+					<li><a href="#">Гидрозамки</a></li>
+					<li><a href="#">Плиты монтажные гидравлические</a></li>
+					<li><a href="#">Фильтра гидравлические</a></li>
+					<li><a href="#">Уровнемеры и горловины</a></li>
+					<li><a href="#">Манометры гидравлические</a></li>
+					<li><a href="#">Гидростанции</a></li>
+					<li><a href="#">Теплообменники (маслоохладитель)</a></li>
+					<li><a href="#">Насосы для подачи СОЖ</a></li>
+					<li><a href="#">Гидронасосы Китай</a></li>
+					<li><a href="#">Гидронасосы Гидромоторы</a></li>
+					<li><a href="#">Пневматика E.MC</a></li>
+					<li><a href="#">Пневматика CAMOZZI</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+
+	</div>
+	<center>Hydromarket.net 2000 - 2021г.</center>
+</footer>
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/jquery.maskedinput.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
