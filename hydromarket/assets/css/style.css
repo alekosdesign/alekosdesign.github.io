@@ -62,6 +62,7 @@ input[type="number"] {
 	z-index: 5000;
 	/* background: var(--white-color); */
 	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
