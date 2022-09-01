@@ -1,12 +1,12 @@
 // // Preloader
-// document.body.onload = function(){ 
-// 	setTimeout(function() { 
-// 		var preloader = document.getElementById('page-preloader'); 
+// document.body.onload = function(){
+// 	setTimeout(function() {
+// 		var preloader = document.getElementById('page-preloader');
 // 		if(!preloader.classList.contains('done') )
-// 		{ 
+// 		{
 // 			preloader.classList.add('done');
-// 		} 
-// 	}, 500); 
+// 		}
+// 	}, 500);
 // };
 // // Mainmenu Scroll Min
 // $(window).scroll(function(){
@@ -42,37 +42,28 @@
 // 	})
 // });
 
-$('.slider__low').slick({
-	infinite: false,
-	speed: 300,
-	slidesToShow: 4,
-	slidesToScroll: 4,
-	responsive: [
-	  {
-		breakpoint: 1024,
-		settings: {
-		  slidesToShow: 3,
-		  slidesToScroll: 3,
-		  infinite: true,
-		  dots: true
-		}
-	  },
-	  {
-		breakpoint: 600,
-		settings: {
-		  slidesToShow: 2,
-		  slidesToScroll: 2
-		}
-	  },
-	  {
-		breakpoint: 480,
-		settings: {
-		  slidesToShow: 1,
-		  slidesToScroll: 1
-		}
-	  }
-	  // You can unslick at a given breakpoint now by adding:
-	  // settings: "unslick"
-	  // instead of a settings object
-	]
-  });
+// Mainmenu Scroll Min
+$(window).scroll(function(){
+	var height = $(window).scrollTop();
+	if (height>500){
+		$('.header').addClass('scroll');
+	}else{
+		$('.header').removeClass('scroll');
+	}
+});
+$(document).ready(function() {
+	var $page = $('html, body');
+	$('a[href*="#"]').click(function() {
+		$page.animate({
+			scrollTop: $($.attr(this, 'href')).offset().top
+		}, 1000);
+		return false;
+	});
+});
+jQuery(".slider__low").slick({
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+
+});
