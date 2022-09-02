@@ -16,9 +16,24 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css" />
   </head>
   <body>
-
+<div id="page-preloader">
+	<img src="assets/img/Logo.png" alt="">
+	<span>Загружаем для вас машины</span>
+</div>
+<div class="feedback__modal">
+	<div class="feedback__modal__form feedback">
+		<form action="">
+			<input type="text" placeholder="Ваше имя">
+			<input type="text" placeholder="Номер телефона">
+			<input type="text" placeholder="Сообщение">
+			<button class="btn__red">Отправить</button>
+		</form>
+		<span class="feedback__close"></span>
+	</div>
+</div>
     <header>
       <div class="header">
 
@@ -63,13 +78,13 @@
 <!-- About -->
 <section id="section__about">
 	<div class="container">
-		<div class="row">
+		<div class="row about__mob">
 			
-			<div class="col-md-6 about">
+			<div class="col-lg-6 col-md-12 col-sm-12 about">
 				<h2 class="title">О компании</h2>
 				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
 			</div>
-			<div class="col-md-6 about">
+			<div class="col-lg-6 col-md-12 col-sm-12 about">
 				<img src="assets/img/Logo.png" alt="">
 			</div>
 		</div>
@@ -85,22 +100,22 @@
 	<div class="container">
 		<div class="row">
 
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-3 col-sm-6">
 				<span><img src="assets/img/mail.png" alt=""></span>
 				<h3>Все марки машин</h3>
 				<p>Подбор машин под ваш бюджет</p>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-3 col-sm-6">
 				<span><img src="assets/img/mail.png" alt=""></span>
 				<h3>Все марки машин</h3>
 				<p>Подбор машин под ваш бюджет</p>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-3 col-sm-6">
 				<span><img src="assets/img/mail.png" alt=""></span>
 				<h3>Все марки машин</h3>
 				<p>Подбор машин под ваш бюджет</p>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-3 col-sm-6">
 				<span><img src="assets/img/mail.png" alt=""></span>
 				<h3>Все марки машин</h3>
 				<p>Подбор машин под ваш бюджет</p>
@@ -119,7 +134,7 @@
 		<h3 class="title">Заголовок (пока не придумал)</h3>
 		<div class="row">
 
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
 				<div class="slider__low">
 					<img src="assets/img/test.jpg" alt="">
 					<img src="assets/img/test.jpg" alt="">
@@ -127,10 +142,11 @@
 				</div>
 				<div class="slider__title">
 					<h4>До 500 00 рублей</h4>
+					<span class="btn__red">Заказать машину</span>
 				</div>
 				
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
 				<div class="slider__low">
 					<img src="assets/img/test.jpg" alt="">
 					<img src="assets/img/test.jpg" alt="">
@@ -139,9 +155,11 @@
 				<div class="slider__title">
 					<h4>от 500 000 рублей<br>
 						до 800 000 рублей</h4>
+					<span class="btn__red">Заказать машину</span>
+
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
 				<div class="slider__low">
 					<img src="assets/img/test.jpg" alt="">
 					<img src="assets/img/test.jpg" alt="">
@@ -150,9 +168,11 @@
 				<div class="slider__title">
 					<h4>от 800 000 рублей<br>
 						до 1 200 000 рублей</h4>
+					<span class="btn__red">Заказать машину</span>
+
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
 				<div class="slider__low">
 					<img src="assets/img/test.jpg" alt="">
 					<img src="assets/img/test.jpg" alt="">
@@ -160,6 +180,8 @@
 				</div>
 				<div class="slider__title">
 					<h4>от 1 200 000 рублей</h4>
+					<span class="btn__red">Заказать машину</span>
+
 				</div>
 			</div>
 
@@ -242,7 +264,7 @@
 			<div class="logo">
 				<img src="assets/img/Logofooter.png" alt="">
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 footer__contact">
 				<a href="#">Адресс: г. Владивосток<br>Какой то там адрес дом 1 </a>
 				<a class="icon" href="#"><span><img src="assets/img/phone.png" alt=""></span>+7 (999) 999 99 99</a>
 				<a class="icon" href="#"><span><img src="assets/img/wa.png" alt=""></span>+7 (999) 999 99 99</a>
@@ -268,17 +290,12 @@
 				</form>
 			</div>
 		</div>
-
+		<a href="#" class="copyright">YouCar 2022г.</a>
 	</div>
 	
 </footer>
-
-
-
-
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-	<script src="assets/js/slick.js"></script>
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/main.js"></script>
   </body>
 </html>

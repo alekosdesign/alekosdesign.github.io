@@ -14,14 +14,88 @@
 	.header__right a{
 		display: none;
 	}
+	.logo{
+		width: 100px;
+	}
+	footer .logo{
+		width: 100%;
+	}
 }
 @media screen and (max-device-width: 768px){
-
+	footer{
+		text-align: center;
+	}
+	.footer__contact{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin: 10px 0;
+	}
+	footer .icon{
+		margin: 5px 0;
+	}
+	.header__right{
+		display: none;
+	}
+	.about__mob{
+		flex-direction: column-reverse;
+	}
+	.about, .feedback{
+		margin: 10px 0;
+	}
+	.pos span{
+		margin: 0 auto;
+	}
+	.pos{
+		text-align: center;
+	}
+	.rew{
+		text-align: center;
+	}
+	.hero__title{
+		height: 80vh;
+	}
+	.hero__title h1{
+		font-size: 4em;
+	}
 }
 @media screen and (max-device-width: 640px){
+	header .menu{
+		display: none;
+	}
+	.logo{
+		padding: 5px;
+	}
+	.header__right{
+		display: flex;
+	}
+	.logo{
+		width: 100px;
+	}
+	.header{
+		height: auto;
+	}
+	footer .logo{
+		width: 100%;
+	}
+	.hero__title{
+		width: 90%;
+		margin: 0 5px;
+		text-align: center;
+	}
+	.hero .btn__red{
+		margin: 0 auto;
+	}
 
 }
 @media screen and (max-device-width: 480px){
+	.header__right .icon:nth-child(2n){
+		display: none;
+	}
+	.rew img{
+		width: 50%;
+	}
 
 }
 @media screen and (max-device-width: 320px){
