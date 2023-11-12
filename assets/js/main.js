@@ -1,15 +1,5 @@
 // Animation GSAP
-gsap.from(".plug h1:nth-child(1)",{
-	y: 600,
-	opacity: 0,
-	ease: Expo.easeInOut
-}),
-gsap.from(".plug h1:nth-child(2)",{
-	y: 600,
-	opacity: 0,
-	ease: Expo.easeInOut,
-	duration: 1
-});
+
 
 $(document).ready(function() {
 	$('.black__white').click(function(){

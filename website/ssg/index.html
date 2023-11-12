@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SSG</title>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media.css">
+	<link rel="stylesheet" href="assets/css/animation.css">
+</head>
+<body>
+
+
+<header>
+	<div class="container header__line flex">
+		<div class="header__left flex">
+			<a class="header__logo" href="#">
+				<img src="assets/img/header-logo.svg" alt="ssg logo">
+			</a>
+			<div class="mainmenu">
+				<ul class="flex">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Как начать играть</a></li>
+					<li class="sub"><a href="#">Рейтинг играков<img src="assets/img/icons/arror.svg" alt=""></a>
+						<ul class="submenu">
+							<li><a href="#">OGORODNIKI</a></li>
+							<li><a href="#">KONTRABANDA</a></li>
+						</ul>
+					</li>
+					<li class="sub"><a href="#">KillFeed Карта<img src="assets/img/icons/arror.svg" alt=""></a>
+						<ul class="submenu">
+							<li><a href="#">OGORODNIKI</a></li>
+							<li><a href="#">KONTRABANDA</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Донат</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header__right flex">
+			<a href="#">
+				<span>Профиль</span>
+				<img src="assets/img/icons/profile.svg" alt="">
+			</a>
+		</div>
+	</div>
+</header>
+
+<div class="hero flex">
+	<div class="container">
+		<div class="flex">
+			<img class="hero__logo" src="assets/img/index-logo.svg" alt="">
+			<div class="title flex">
+				<h1>Добро пожаловать на проект SSG</h1>
+				<a class="btn" href="#">Начни играть легко и просто!</a>
+				<a class="title__link" href="#">SSG/OGORODNIKI : 185.189.255.82:2402</a>
+				<a class="title__link" href="#">SSG/KONTRABANDA : 185.66.84.249:2302</a>
+				<div class="other__page">
+					<a class="btn" href="#">OGORODNIKI</a>
+					<a class="btn" href="#">KONTRABANDA</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="hero__slider">
+
+		<div class="hero__bg">
+			<img src="assets/img/bg/0.jpg" alt="">
+		</div>
+		<div class="hero__bg">
+			<img src="assets/img/bg/1.jpg" alt="">
+		</div>
+		<div class="hero__bg">
+			<img src="assets/img/bg/2.jpg" alt="">
+		</div>
+	</div>
+
+</div>
+
+
+
+<section>
+	<div class="container">
+		<h2>Список лучших по убийствам на **************</h2>
+		<div class="best__table">
+			<span>Name 147 Убийств / самый дальний выстрел 834 метров</span>
+			<span>Name 147 Убийств / самый дальний выстрел 834 метров</span>
+			<span>Name 147 Убийств / самый дальний выстрел 834 метров</span>
+			<span>Name 147 Убийств / самый дальний выстрел 834 метров</span>
+			<span>Name 147 Убийств / самый дальний выстрел 834 метров</span>
+			<span>Name 147 Убийств / самый дальний выстрел 834 метров</span>
+			<span>Name 147 Убийств / самый дальний выстрел 834 метров</span>
+			<span>Name 147 Убийств / самый дальний выстрел 834 метров</span>
+			<span>Name 147 Убийств / самый дальний выстрел 834 метров</span>
+			<span>Name 147 Убийств / самый дальний выстрел 834 метров</span>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="killfeed">
+			<div class="killfeed__map flex">
+				<!-- При нажатии на  killfeed__item появляется этот спан -->
+				<span></span>
+				<img src="assets/img/map.jpg" alt="">
+			</div>
+			<div class="killfeed__side">
+				<div class="killfeed__item">
+					<spann class="killfeed__time">01.01.2021 11:58</spann>
+					<spann class="killfeed__kill">1234 убил 2321 с HK416 (209m)</spann>
+				</div>
+				<div class="killfeed__item">
+					<spann class="killfeed__time">01.01.2021 11:58</spann>
+					<spann class="killfeed__kill">1234 убил 2321 с HK416 (209m)</spann>
+				</div>
+				<div class="killfeed__item">
+					<spann class="killfeed__time">01.01.2021 11:58</spann>
+					<spann class="killfeed__kill">1234 убил 2321 с HK416 (209m)</spann>
+				</div>
+				<div class="killfeed__item">
+					<spann class="killfeed__time">01.01.2021 11:58</spann>
+					<spann class="killfeed__kill">1234 убил 2321 с HK416 (209m)</spann>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="blog">
+		<a class="blog__item" href="#">
+			<div href="#" class="blog__item__footer flex">
+				<h2>Статья #1</h2>
+			</div>	
+			<img src="assets/img/blog/image 5.jpg" alt="">	
+		</a>
+		<a class="blog__item" href="#">
+			<div href="#" class="blog__item__footer flex">
+				<h2>Статья #1</h2>
+			</div>	
+			<img src="assets/img/blog/image 5.jpg" alt="">	
+		</a>
+		<a class="blog__item" href="#">
+			<div href="#" class="blog__item__footer flex">
+				<h2>Статья #1</h2>
+			</div>	
+			<img src="assets/img/blog/image 5.jpg" alt="">	
+		</a>
+		<a class="blog__item" href="#">
+			<div href="#" class="blog__item__footer flex">
+				<h2>Статья #1</h2>
+			</div>	
+			<img src="assets/img/blog/image 5.jpg" alt="">	
+		</a>
+		<a class="blog__item" href="#">
+			<div href="#" class="blog__item__footer flex">
+				<h2>Статья #1</h2>
+			</div>	
+			<img src="assets/img/blog/image 5.jpg" alt="">	
+		</a>
+	</div>
+</section>
+
+<section>
+	
+	<div class="container donate">
+		<div class="donate__item">
+			<div class="donate__item__header">
+				<h3>Донат 1</h3>
+				<span>Список добавлений:</span>
+			</div>
+			<div class="donate__item__body">
+				<ul>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+				</ul>
+			</div>
+			<div class="donate__item__footer">
+				<a class="btn" href="#">200 рублей</a>
+			</div>
+		</div>
+		<div class="donate__item">
+			<div class="donate__item__header">
+				<h3>Донат 1</h3>
+				<span>Список добавлений:</span>
+			</div>
+			<div class="donate__item__body">
+				<ul>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+				</ul>
+			</div>
+			<div class="donate__item__footer">
+				<a class="btn" href="#">200 рублей</a>
+			</div>
+		</div>
+		<div class="donate__item">
+			<div class="donate__item__header">
+				<h3>Донат 1</h3>
+				<span>Список добавлений:</span>
+			</div>
+			<div class="donate__item__body">
+				<ul>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+				</ul>
+			</div>
+			<div class="donate__item__footer">
+				<a class="btn" href="#">200 рублей</a>
+			</div>
+		</div>
+		<div class="donate__item">
+			<div class="donate__item__header">
+				<h3>Донат 1</h3>
+				<span>Список добавлений:</span>
+			</div>
+			<div class="donate__item__body">
+				<ul>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+				</ul>
+			</div>
+			<div class="donate__item__footer">
+				<a class="btn" href="#">200 рублей</a>
+			</div>
+		</div>
+		<div class="donate__item">
+			<div class="donate__item__header">
+				<h3>Донат 1</h3>
+				<span>Список добавлений:</span>
+			</div>
+			<div class="donate__item__body">
+				<ul>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+				</ul>
+			</div>
+			<div class="donate__item__footer">
+				<a class="btn" href="#">200 рублей</a>
+			</div>
+		</div>
+		<div class="donate__item">
+			<div class="donate__item__header">
+				<h3>Донат 1</h3>
+				<span>Список добавлений:</span>
+			</div>
+			<div class="donate__item__body">
+				<ul>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+					<li>Член</li>
+				</ul>
+			</div>
+			<div class="donate__item__footer">
+				<a class="btn" href="#">200 рублей</a>
+			</div>
+		</div>
+		
+	</div>
+	<div class="donate__bg">
+		<img src="assets/img/donate bg.jpg" alt="">
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+<footer>
+	<div class="social flex">
+		<a href="#"><img src="assets/img/icons/Steam_icon_logo.svg" alt=""></a>
+		<a href="#"><img src="assets/img/icons/VK.com-logo.svg" alt=""></a>
+		<a href="#"><img src="assets/img/icons/Discord-Logo-White.svg" alt=""></a>
+	</div>
+	<div class="footer__logo flex">
+		<img src="assets/img/index-logo.svg" alt="">
+	</div>
+	<span>2021г</span>
+</footer>
+
+
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

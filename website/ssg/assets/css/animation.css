@@ -1,0 +1,24 @@
+@keyframes preloaderlogo {
+	from{
+		background: white;
+	}
+	to{
+		background: #F32D1A;
+	}
+}
+@keyframes preloadertext {
+	from{
+		color: white;
+	}
+	to{
+		color: #263640;
+	}
+}
+@keyframes killfeeddot {
+	from{
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+}

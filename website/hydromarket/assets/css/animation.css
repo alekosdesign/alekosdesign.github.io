@@ -1,0 +1,32 @@
+@keyframes preloaderlogo {
+	from{
+		background: white;
+	}
+	to{
+		background: #F32D1A;
+	}
+}
+@keyframes preloadertext {
+	from{
+		color: white;
+	}
+	to{
+		color: #263640;
+	}
+}
+@keyframes opacotyload {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes bgloaded {
+	from{
+		background: rgb(255 255 255);
+	}
+	to{
+		background: rgb(255 255 255 / 75%);
+	}
+}

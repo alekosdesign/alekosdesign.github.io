@@ -1,0 +1,26 @@
+:root{
+	--white-color:#ffffff;
+	--black-color:#181818;
+	--gray-color: rgba(231, 231, 231, 0.5);
+	--red-color:#D72E1E;
+}
+*, *::after, *::before{
+	transition: 0.3s ease-in-out;
+}
+a:hover{
+	color: var(--red-color);
+}
+.but:hover{
+	color: var(--black-color);
+}
+.but:hover::after{
+	background: var(--white-color);
+}
+#stage :hover > .stage:not(:hover){
+	filter: blur(2px);
+	opacity: 0.4;
+}
+
+.buy__item:hover img{
+	transform: scale(1.4);
+}
