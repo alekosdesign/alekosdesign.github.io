@@ -152,8 +152,12 @@ header{
 	display: flex;
     justify-content: center;
     align-items: center;
+	position: relative;
 }
-
+.hero__lines{
+	position: absolute;
+	bottom: -10px;
+}
 
 
 .about{
@@ -613,8 +617,55 @@ header{
     z-index: -1;
 }
 
+
+.faq__section{
+	padding: 200px 0;
+	background: #e3e3e3;
+	z-index: -1;
+	position: relative;
+}
+.faq__title h2{
+	text-align: center;
+	font-size: 40px;
+	font-weight: 900;
+}
+.faq{
+	margin-top: 80px;
+	font-size: 16px;
+	background: var(--white-color);
+	border-radius: 20px;
+}
+.faq__item__title, .faq__body{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding: 0 40px;
+}
+	/* padding: 50px 40px; */
+.faq__item{
+	padding: 50px 0px;
+}
+.faq__body{
+	color: var(--black-color);
+	padding: 40px;
+	background: #e3e3e3;
+	box-shadow: inset 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
+}
+.faq__item__title span, .faq__body span{
+	width: 20px;
+}
+.faq__item__title h3{
+	font-size: 16px;
+	text-align: center;
+	font-weight: 600;
+	text-align: left;
+	margin-left: 30px;
+}
+.faq__item__title h3, .faq__body p{
+	margin-left: 30px;
+}
 footer{
-	margin-top: 200px;
+	/* margin-top: 200px; */
 	background: var(--black-color);
 	position: relative;
 	padding: 95px 0 65px;
@@ -667,4 +718,8 @@ footer *{
 	position: absolute;
 	bottom: 0;
 	z-index: 0;
+}
+.footer__lines{
+	position: absolute;
+	top: -11px;
 }
