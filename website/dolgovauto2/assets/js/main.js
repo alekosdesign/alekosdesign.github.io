@@ -93,41 +93,19 @@ jQuery(document).ready(function() {
 });
 
 
-// jQuery(document).ready(function(){
-// 	jQuery(window).scroll(function(){
-// 	  if (document.body.scrollTop >= 10) {
-// 		jQuery(".hero").css({
-// 		  'background':'#181818'
-// 		});
-// 	  };
-// 	});
-//   });
-  
-
-// // Запрет на компировани
-// jQuery(function(){
-// 	jQuery('body *').attr('oncopy', 'return false;');
-// 	jQuery('body').on('contextmenu', false);
-// });
-
-// Прокрутка до начала страницы
-// jQuery(document).ready(function(jQuery) {
-//     jQuery(this).scrollTop(0);
-// });
-
-
-
-// jQuery(document).ready(function(jQuery) {
-// 	var windowWidth = jQuery(window).width();
-// 	jQuery('.error').mousemove(function (event) {
-// 		var moveX = ((jQuery(window).width() / 2) - event.pageX) * 0.02;
-// 		var moveY = ((jQuery(window).height() / 2) - event.pageY) * 0.02;
-// 		jQuery('.error__404 svg').css('transform', 'translate(' + moveX + 'px,' + moveY + 'px)'),
-// 		jQuery('.error__404 h4, .error__404 p').css('transform', 'translate(' + moveX + 'px,' + moveY + 'px)'),
-// 		jQuery('.error::after').css('transform', 'translate(' + moveX + 'px,0px)')
-// 	})
-// });
-
+var acc = jQuery('.faq__item__accordion');
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+	this.classList.toggle("active");
+	var panel = this.nextElementSibling;
+	if (panel.style.maxHeight) {
+		panel.style.maxHeight = null;
+	} else {
+		panel.style.maxHeight = panel.scrollHeight + "px";
+	} 
+  });
+}
 
 
 
