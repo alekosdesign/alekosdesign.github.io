@@ -187,6 +187,10 @@ header{
 	position: absolute;
 	bottom: -10px;
 }
+.hero__lines svg{
+	fill: var(--white-color);
+	width: 100vw;
+}
 
 
 .about{
@@ -195,7 +199,6 @@ header{
 	justify-content: center;
 	align-items: center;
     transform: skewY(-15deg);
-    /* background: var(--gray-color); */
     overflow: hidden;
 	margin-top: 200px;
 }
