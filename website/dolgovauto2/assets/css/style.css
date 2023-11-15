@@ -287,7 +287,7 @@ header{
 	font-size: 16px;
 }
 .about__item__text h3{
-	font-size: 32px;
+	font-size: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -388,6 +388,7 @@ header{
 	font-size: 30px;
 	text-align: center;
 	font-weight: 900;
+
 }
 .stage__item p{
 	font-size: 16px;
@@ -431,6 +432,7 @@ header{
 	text-transform: uppercase;
 	font-size: 40px;
 	font-weight: 900;
+	text-align: right;
 }
 .manager__item__info p{
 	font-size: 16px;
