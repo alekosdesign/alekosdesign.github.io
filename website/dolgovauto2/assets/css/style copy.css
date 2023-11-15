@@ -34,6 +34,27 @@ p{
 section{
 	position: relative;
 }
+h1{
+	font-size: 42px;
+	font-weight: 900;
+}
+h2{
+	font-size: 32px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h4{
+	font-size: 20px;
+	font-weight: 500;
+}
+p{
+	font-size: 16px;
+}
 .nopd{
 	padding: 0;
 }
@@ -45,7 +66,17 @@ section{
 	border-radius: 6px;
 	width: fit-content;
 }
-
+.title__section{
+	font-size: 100px;
+	font-weight: 900;
+}
+.advant__title{
+	color: var(--black-color);
+	text-align: center;
+}
+.advant__title .title__section span{
+	color: var(--red-color);
+}
 
 
 
@@ -283,11 +314,6 @@ header{
 .about__item__text p{
 	font-size: 16px;
 }
-.about__item__text h3{
-	font-size: 32px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
 
 .info{
 	background: var(--red-color);
@@ -334,22 +360,12 @@ header{
 	width: fit-content;
     max-width: 40vw;
 }
-.info__item__text h2{
-	font-size: 30px;
-	font-weight: 900;
-	text-transform: uppercase;
-}
-.info__item__text p{
-}
 
 
 
 
-#stage h2{
-	font-size: 100px;
-	font-weight: 900;
+#stage .title__section{
 	text-align: right;
-
 }
 .stage__item{
 	margin: 35px 0;
@@ -474,31 +490,16 @@ header{
 	padding: 150px 0;
 }
 
-.stat__item h2{
-	color: var(--red-color);
-	font-size: 50px;
-	font-weight: 900;
-	margin-bottom: 30px;
-}
 .stat__item span{
-	color: var(--black-color);
-}
-
-
-
-#advant{
-
-}
-.advant__title h2{
-	text-transform: uppercase;
-	font-size: 100px;
-	color: var(--black-color);
-	font-weight: 900;
-	text-align: center;
-}
-.advant__title h2 span{
 	color: var(--red-color);
+	font-size: 42px;
+	margin-bottom: 30px;
+	font-weight: 900;
 }
+.stat__item p{
+	color: var(--black-color);
+}
+
 .advant__subtitle{
 	display: flex;
 	flex-direction: row;
@@ -525,9 +526,6 @@ header{
 	padding: 50px 40px;
 }
 .advant__item h3{
-	text-transform: uppercase;
-	font-size: 30px;
-	font-weight: 900;
 	margin: 50px 0;
 	text-align: center;
 }
@@ -700,14 +698,14 @@ header{
 .faq__item__title span, .faq__body span{
 	width: 20px;
 }
-.faq__item__title h3{
+.faq__item__title p{
 	font-size: 16px;
 	text-align: center;
 	font-weight: 600;
 	text-align: left;
 	margin-left: 30px;
 }
-.faq__item__title h3, .faq__body p{
+.faq__item__title p, .faq__body p{
 	margin-left: 30px;
 }
 footer{
