@@ -1,14 +1,132 @@
-@media screen and (max-width: 1024px){
+@media screen and (max-device-width: 1368px) {
+	.review__item{
+		width: 80%;
+	}
+}
+
+@media screen and (max-device-width: 1280px){
+	h2{
+		font-size: 24px;
+	}
+	.manager__item__link{
+		padding: 5%;
+	}
 	
 }
-@media screen and (max-width: 980px){
+
+@media screen and (max-device-width: 1024px){
+	.mainmenu ul li a{
+		margin: 0 15px;
+		font-size: 14px;
+	}
+	.about__item__text h3{
+		font-size: 20px;
+		line-height: 34px;
+	}
+	.about__item__text p{
+		font-size: 14px;
+	}
+	.about__img__text{
+		bottom: 100px;
+		right: 100px;
+	}
+	.info__item__sub span{
+		font-size: 70px;
+	}
+	.manager__item__info p{
+		font-size: 12px;
+	}
+	.stat__item{
+		padding: 60px 0;
+	}
+
 	
+}
+@media screen and (max-device-width: 980px){
+	.header__logo, .about__img__bg, .about__img__bg__white span, .info__item__img{
+		display: none;
+	}
+	.header__logo__table{
+		display: flex;
+	}
+	.about, .about__row, .info, .info__item{
+		transform: skewY(0deg);
+	}
+	.about__item__text{
+		padding: 0;
+	}
+	.manager__item{
+		height: 50vw;
+	}
+	.manager{
+		grid-template-columns: 1fr 1fr;
+	}
+	.manager__item__info p{
+		font-size: 14px;	
+	}
+	.manager__item__country h2{
+		font-size: 42px;
+	}
+	.advant__subtitle p{
+		font-size: 24px;
+	}
+	.review{
+		width: 30%;
+	}
+	.review__text, .review__bg{
+		width: 70%;
+	}
+	.footer__menu__right, .footer__menu{
+		text-align: center;
+	}
+	.footer__social{
+		margin: 10px 0;
+		justify-content: center;
+	}
+	.info__item{
+		width: 100%;
+	}
+	.info__item__text{
+		max-width: none;
+		padding: 30px;
+	}
+
+
 }
 @media screen and (max-device-width: 769px){
+	.mainmenu, .header__feedback, .review{
+		display: none;
+	}
+	.review__section, .review{
+		transform: skewY(0deg);
+	}
+	.review__text{
+		display: flex;
+		align-items: center;
+	}
+	.review{
+		margin: 20px 0;
+		padding: 0;
+	}
+	.review__text, .review__bg{
+		width: 100%;
+
+	}
 
 }
 @media screen and (max-device-width: 560px){
-	
+	.about__img__text {
+		bottom: 30%;
+		right: 50%;
+		transform: translate(50%, 50%);
+	}
+	.stat__item {
+		padding: 30px 0;
+	}
+	.advant__subtitle{
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
 }
 @media screen and (max-device-width: 425px){
 

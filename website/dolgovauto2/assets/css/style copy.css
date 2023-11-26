@@ -16,6 +16,10 @@
 	--red-color:#FF0000;
 	--gray-color:#f3f3f3;
 }
+body{
+	font-size: 16px;
+	line-height: 21px;
+}
 ul, li, a{
 	list-style: none;
 	color: var(--black-color);
@@ -28,9 +32,7 @@ ol, ul, ol, ul, dl{
 	padding-left: 0;
 	padding-right: 0;
 }
-p{
-	margin-bottom: 0;
-}
+
 section{
 	position: relative;
 }
@@ -39,22 +41,27 @@ h1, h2{
 	text-transform: uppercase;
 }
 h1{
-	font-size: 42px;
+	font-size: 68px;
+	line-height: 84px;
 }
 h2{
-	font-size: 32px;
+	font-size: 42px;
 }
 h3{
 	font-size: 26px;
+	line-height: 42px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 h4{
-	font-size: 20px;
+	font-size: 16px;
+	line-height: 21px;
 	font-weight: 500;
 }
-p{
+h5, p{
+	line-height: 21px;
 	font-size: 16px;
+	margin-bottom: 0;
 }
 .nopd{
 	padding: 0;
@@ -79,7 +86,14 @@ p{
 	color: var(--red-color);
 }
 
-
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: var(--black-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--red-color);
+	border-radius: 20px;
+}
 
 header{
 	text-align: center;
@@ -133,6 +147,7 @@ header{
 .header__logo img, .header__feedback p{
 	position: absolute;
 }
+
 .header__bg svg{
 	fill: var(--red-color);
 }
@@ -147,7 +162,7 @@ header{
 	color: var(--gray-color);
 }
 .header__feedback p{
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 900;
 }
@@ -161,6 +176,12 @@ header{
 .header__feedback{
 	cursor: pointer;
 }
+.header__logo__table{
+	display: none;
+}
+.header__logo__table a img{
+	max-width: 54px;
+}
 .mainmenu{
 	display: flex;
 	justify-content: center;
@@ -173,10 +194,9 @@ header{
     justify-content: center;
 }
 .mainmenu ul li a{
-	line-height: 20px;
+	font-size: 16px;
 	margin: 0 30px;
 	color: var(--white-color);
-	font-size: 16px;
 	font-weight: 700;
 	display: flex;
 	justify-content: center;
@@ -185,6 +205,7 @@ header{
 }
 .mainmenu span{
 	color: var(--white-color);
+	font-size: 16px;
 	font-size: 10px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -194,7 +215,8 @@ header{
 
 
 .hero{
-	height: 600px;
+	/* height: 600px; */
+	height: 60vh;
 	width: 100%;
 	overflow: hidden;
 	display: flex;
@@ -202,7 +224,13 @@ header{
     align-items: center;
 	position: relative;
 }
+.hero img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .hero__lines{
+	display: none;
 	position: absolute;
 	bottom: -10px;
 }
@@ -215,7 +243,7 @@ header{
 	align-items: center;
     transform: skewY(-15deg);
     overflow: hidden;
-	margin-top: 200px;
+	margin-top: 160px;
 }
 .about::after{
 	content: '';
@@ -352,9 +380,10 @@ header{
 
 
 
-#stage h1{
+#stage h2{
 	text-align: right;
 	font-size: 68px;
+
 }
 .stage__item{
 	margin: 35px 0;
@@ -403,7 +432,7 @@ header{
 .manager{
 	position: relative;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .manager__item{
@@ -435,30 +464,33 @@ header{
 	font-size: 14px;
 }
 .manager__item__link{
-	background: #282828;
-	color: #b8b8b8;
+	background: var(--gray-color);
+	color: var(--black-color);
 	font-size: 16px;
 	text-align: left;
+	padding: 20%;
+}
+.manager__item__youtube{
+	background: var(--black-color);
+	color: var(--white-color);
 }
 .manager__item__link a{
-	/* margin: 20px auto; */
-	display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0 auto;
 }
 .manager__item__link a img{
 	max-width: 65px;
 }
-
-
-
-/* .manager__item__info h4, .manager__item__info p{
-	width: 80%;
-} */
+.manager__item__country{
+	align-items:center;
+}
+.manager__item__country h2{
+	text-align: left;
+	
+}
 
 .stat{
 	text-align: center;
@@ -476,10 +508,10 @@ header{
 	padding: 150px 0;
 }
 
-.stat__item span{
+.stat__item h2{
 	color: var(--red-color);
 	font-size: 42px;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	font-weight: 900;
 }
 .stat__item p{
@@ -512,8 +544,13 @@ header{
 	padding: 50px 40px;
 }
 .advant__item h3{
-	margin: 50px 0;
+	min-height: 100px;
+    margin: 20px 0;
+	font-weight: 900;
 	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .advant__item P{
 	font-size: 16px;
