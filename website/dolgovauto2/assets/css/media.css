@@ -1,3 +1,9 @@
+:root{
+	--white-color:#ffffff;
+	--black-color:#3C3C3B;
+	--red-color:#FF0000;
+	--gray-color:#f3f3f3;
+}
 @media screen and (max-device-width: 1368px) {
 	.review__item{
 		width: 80%;
@@ -45,6 +51,9 @@
 @media screen and (max-device-width: 980px){
 	.header__logo, .about__img__bg, .about__img__bg__white span, .info__item__img{
 		display: none;
+	}
+	.about__row{
+		background: var(--white-color);
 	}
 	.header__logo__table{
 		display: flex;
@@ -94,8 +103,11 @@
 
 }
 @media screen and (max-device-width: 769px){
-	.mainmenu, .header__feedback, .review{
+	.mainmenu, .header__feedback, .review, .header__bg__left, .header__bg__right{
 		display: none;
+	}
+	.header{
+		background: transparent;
 	}
 	.review__section, .review{
 		transform: skewY(0deg);
@@ -129,5 +141,52 @@
 	}
 }
 @media screen and (max-device-width: 425px){
-
+	.about{
+		margin-top: 50px;
+	}
+	#manager{
+		padding: 50px 0;
+	}
+	.info__item__text{
+		padding: 10px;
+	}
+	h1{
+		font-size: 56px;
+		line-height: 84px;
+	}
+	h2, #stage h2{
+		font-size: 32px;
+	}
+	h3{
+		font-size: 18px;
+		line-height: 42px;
+	}
+	h4{
+		font-size: 14px;
+		line-height: 21px;
+	}
+	h5, p{
+		line-height: 21px;
+		font-size: 14px;
+	}
+	.advant__subtitle img{
+		margin-left: 0;
+	}
+	.info__item{
+		max-height: none;
+	}
+	.manager {
+		grid-template-columns: 1fr;
+	}
+	.manager__item {
+		height: 70vw;
+	}
+	.advant__subtitle img{
+		width: 100%;
+		height: auto;
+	}
+	.advant__item h3{
+		min-height: auto;
+		margin: 0;
+	}
 }

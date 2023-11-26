@@ -182,6 +182,16 @@ header{
 .header__logo__table a img{
 	max-width: 54px;
 }
+
+.header__logo__table{
+	position: relative;
+}
+
+.header__logo__table svg{
+	fill: var(--white-color);
+
+}
+
 .mainmenu{
 	display: flex;
 	justify-content: center;
@@ -234,7 +244,6 @@ header{
 	position: absolute;
 	bottom: -10px;
 }
-
 
 .about{
 	position: relative;
@@ -528,6 +537,7 @@ header{
 .advant__subtitle img{
 	height: 77px;
 	margin-left: 26px;
+	object-fit: cover;
 }
 .advant__subtitle p{
 	font-size: 40px;
