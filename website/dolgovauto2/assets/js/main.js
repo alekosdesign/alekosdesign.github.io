@@ -8,11 +8,19 @@
 // 	}, 0);
 // },
 jQuery(document).ready(function () {
-	jQuery("body").on("click", ".burger", function (){
-		jQuery('.menu').addClass('menuactive');
+	jQuery(".header__call").click(function () {
+		jQuery("#feedback__modal").addClass('open');
+	});
+	jQuery("#feedback__cross").click(function () {
+		jQuery("#feedback__modal").removeClass('open');
+	});
+	
+	jQuery("body").on("click", ".mobile__menu", function (){
+		jQuery('.mainmenu__mobile').addClass('mainmenu__mobile__active');
 	}),
 	jQuery("body").on("click", "#cross", function (){
-		jQuery('.menu').removeClass('menuactive');
+		jQuery('.mainmenu__mobile').removeClass('mainmenu__mobile__active');
+		console.log('Close');
 	})	
 });
 

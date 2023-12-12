@@ -12,38 +12,31 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/slick-theme.css">
-
 	<link rel="stylesheet" href="assets/css/style copy.css">
 
 	<!-- add page -->
 	<!-- <link rel="stylesheet" href="assets/css/404.css"> -->
-	<link rel="stylesheet" href="assets/css/media.css">
-
-
-
-
-
-
+	<!-- <link rel="stylesheet" href="assets/css/media.css"> -->
 </head>
 
 <body>
 	<header>
-		<div class="flex container">
+		<div class="flex container-lg header__mobile">
 			<svg class="header__bg__left" xmlns="http://www.w3.org/2000/svg" width="39" height="50" fill="none">
 				<path fill-rule="evenodd" d="M0 0h39v50H26c-6 0-11-5-13-10L0 0Z" clip-rule="evenodd"/>
 			</svg>
 			<div class="header__container flex">
 				<div class="header__item flex">
 					<a href="#" class="header__logo flex">
-					<svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" fill="none">
-						<path fill-rule="evenodd" d="M0 0h33v60c-7 0-15-6-17-12L0 0Z" clip-rule="evenodd"/>
-					</svg>
-					<span class="flex">
-						<img src="assets/img/logo black vertical.png" alt="">
-					</span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" fill="none">
-						<path fill-rule="evenodd" d="M33 0H0v60c7 0 15-6 17-12L33 0Z" clip-rule="evenodd"/>
-					</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" fill="none">
+							<path fill-rule="evenodd" d="M0 0h33v60c-7 0-15-6-17-12L0 0Z" clip-rule="evenodd"/>
+						</svg>
+						<span class="flex">
+							<img src="assets/img/logo black vertical.png" alt="">
+						</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" fill="none">
+							<path fill-rule="evenodd" d="M33 0H0v60c7 0 15-6 17-12L33 0Z" clip-rule="evenodd"/>
+						</svg>
 					</a>
 					<div class="mainmenu">
 						<ul>
@@ -67,12 +60,36 @@
 				<path fill-rule="evenodd" d="M39 0H0v50h13c6 0 11-5 13-10L39 0Z" clip-rule="evenodd"/>
 			</svg>
 		</div>
-		
+		<div class="mobile__menu">
+			<span id="mobile__menu">
+				<svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" fill="none">
+					<path fill-rule="evenodd" d="M0 0h33v60c-7 0-15-6-17-12L0 0Z" clip-rule="evenodd"/>
+				</svg>
+				<span class="flex mobile__menu__logo">
+					<img src="assets/img/logo mob.png" alt="">
+				</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" fill="none">
+					<path fill-rule="evenodd" d="M33 0H0v60c7 0 15-6 17-12L33 0Z" clip-rule="evenodd"/>
+				</svg>
+			</span>
+			<div class="flex mainmenu__mobile">
+				<ul>
+					<li><a href="#"><span>АВТО ИЗ</span>Китай</a></li>
+					<li><a href="#"><span>АВТО ИЗ</span>Кореи</a></li>
+					<li><a href="#"><span>АВТО ИЗ</span>Японии</a></li>
+					<li><a href="#"><span>АВТО НА</span>Сахалин</a></li>
+					<li><a href="#"><span>DOLGOV</span>Инфо</a></li>
+				</ul>
+				<span id="cross">
+
+				</span>
+			</div>
+		</div>
 	</header>
 
 
 
-<div class="wrap container">
+<div class="wrap container-lg">
 	<div class="hero">
 		<img src="assets/img/hero/72.jpeg" alt="">
 		<div class="hero__text">
@@ -85,12 +102,12 @@
 	</div>
 
 	<div class="about flex row">
-		<div class="about__item col-6">
+		<div class="about__item col-lg-6 col-md-6 col-sm-12">
 			<div class="about__img">
 				<img src="assets/img/director.png" alt="">
 			</div>
 		</div>
-		<div class="about__item col-6">
+		<div class="about__item col-lg-6 col-md-6 col-sm-12">
 			<div class="about__item__text">
 				<h3>Все рассказывают о компании, а я расскажу о себе</h3>
 				<p>Меня зовут Александр, я владелец компании “DolgovAuto”. До работы в авто бизнесе, учился я в военном летном училище. С 2017 года начал подрабатывать авто подборщиком. Ключевым моментом стал, когда я раскачал свой профиль в Instagram и потихоньку пошли заказ по привозу авто из Японии, позднее открыл направление Кореи и Китая. И на данный момент у меня моя компания входит в топ самых крупных компаний по России.</p>
@@ -123,21 +140,21 @@
 		</div>
 		<div class="row">
 
-			<div class="col-4 stage__item">
+			<div class="col-lg-4 col-md-6 col-sm-12 stage__item">
 				<div class="stage__item__title">
 					<span class="stage__num" style="background: #1C1C1C;">01</span>
 					<span class="stage__num__text">ЗАЯВКА ОТ ВАС</span>
 				</div>
 				<p>Анализируем вашу заявку в ходе бесплатной консультации Определяем ваши предпочтения и конечный бюджет</p>
 			</div>
-			<div class="col-4 stage__item">
+			<div class="col-lg-4 col-md-6 col-sm-12 stage__item">
 				<div class="stage__item__title">
 					<span class="stage__num" style="background: #F11313;">02</span>
 					<span class="stage__num__text">ЗАЯВКА ОТ ВАС</span>
 				</div>
 				<p>Анализируем вашу заявку в ходе бесплатной консультации Определяем ваши предпочтения и конечный бюджет</p>
 			</div>
-
+			
 
 
 		</div>
@@ -190,22 +207,22 @@
 		</div>
 		<div class="stat">
 			<div class="row">
-				<div class="col-3 stat__item">
+				<div class="col-md-3 col-6 stat__item">
 					<span>с 2017</span>
 					<p>года<br>
 						На рынке</p>
 				</div>
-				<div class="col-3 stat__item">
+				<div class="col-md-3 col-6 stat__item">
 					<span>4 000+</span>
 					<p>Довольных<br>
 						клиентов</p>
 				</div>
-				<div class="col-3 stat__item">
+				<div class="col-md-3 col-6 stat__item">
 					<span>2 451</span>
 					<p>Привезено за<br>
 						последний год</p>
 				</div>
-				<div class="col-3 stat__item">
+				<div class="col-md-3 col-6 stat__item">
 					<span>50 000₽</span>
 					<p>Фиксированная<br>
 						комиссия</p>
@@ -262,32 +279,32 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="advant__item col-4">
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
 				<img src="assets/img/advant/Layer 509.png" alt="">
 				<h3>чистая история</h3>
 				<p>Зарубежом на законодательном уровне запрещено делать любые махинации с пробегом автомобиля. Километраж на приборной панели, является подлинным, чего часто не встретишь на российских машинах.</p>
 			</div>
-			<div class="advant__item col-4">
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
 				<img src="assets/img/advant/Layer 510.png" alt="">
 				<h3>бережная Эксплуатация</h3>
 				<p>Минимальный износ ходовой, силового агрегата и бережное отношение к салону, сохраняют автомобиль в приятном состоянии для пользования долгие годы.</p>
 			</div>
-			<div class="advant__item col-4">
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
 				<img src="assets/img/advant/Layer 511.png" alt="">
 				<h3>Машины без пробега по РФ</h3>
 				<p>Минимальный износ ходовой, силового агрегата и бережное отношение к салону, сохраняют автомобиль в приятном состоянии для пользования долгие годы.</p>
 			</div>
-			<div class="advant__item col-4">
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
 				<img src="assets/img/advant/Layer 512.png" alt="">
 				<h3>Полное Т.О. перед торгами</h3>
 				<p>Гарантией исправности автомобиля и соответствие товара ожиданиям покупателя служит полная техническая проверка машины перед покупкой на торгах.</p>
 			</div>
-			<div class="advant__item col-4">
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
 				<img src="assets/img/advant/Layer 513.png" alt="">
 				<h3>Все марки машин</h3>
 				<p>Мы привезём любой автомобиль с экономией до 1 млн. рублей.</p>
 			</div>
-			<div class="advant__item col-4">
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
 				<img src="assets/img/advant/Layer 514.png" alt="">
 				<h3>Сохраним авто до вручения</h3>
 				<p>Минимальный износ ходовой, силового агрегата и бережное отношение к салону, сохраняют автомобиль в приятном состоянии для пользования долгие годы.</p>
@@ -371,7 +388,7 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-4">
+			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="footer__menu">
 					<ul>
 						<li><a href="#">Главная</a></li>
@@ -387,7 +404,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="footer__menu">
 					<ul>
 						<li><a href="#">Адрес</a></li>
@@ -401,7 +418,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="footer__menu footer__menu__right">
 					<ul>
 						<li><a href="#">8 (800) 250-00-00</a></li>
@@ -414,11 +431,11 @@
 			</div>			
 		</div>
 		<div class="footer__container__social row">
-			<div class="col-4"></div>
-			<div class="footer__but col-4">
+			<div class="col-lg-4 col-md-12 col-sm-12"></div>
+			<div class="footer__but col-lg-4 col-md-12 col-sm-12">
 				<div class="but">Заказать звонок</div>
 			</div>
-			<div class="footer__social col-4">
+			<div class="footer__social col-lg-4 col-md-12 col-sm-12">
 				<a href="#"><img src="assets/img/icons/tg.png" alt=""></a>
 				<a href="#"><img src="assets/img/icons/yt.png" alt=""></a>
 				<a href="#"><img src="assets/img/icons/wa.png" alt=""></a>
