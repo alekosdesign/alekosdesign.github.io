@@ -64,8 +64,7 @@ jQuery(document).ready(function() {
     jQuery(window).scroll(function() {
         var sl = jQuery(window).scrollTop();
         if (sl > 0) {
-			// jQuery('.logo__hero').css({transform : 'translateY(' + sl / 6 + 'px)' });
-            // jQuery('.logo__hero img').css('transform', '0, ' sl / 2 + 'px')
+			jQuery('.hero__text').css({transform : 'translate(-50%,' + sl / 6 + 'px)' });
 			// $('.containe2r').css({transform : 'scale('+ $resizerWidth +')'});
         };
     })
