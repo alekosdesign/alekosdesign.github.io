@@ -592,21 +592,6 @@ header{
 	color: var(--white-color);
 	margin: 150px 0;
 }
-.review__img__text{
-	z-index: 2;
-	height: 100%;
-	width: 100%;
-}
-.review__img__text h4{
-	transform: rotate(-90deg);
-	text-align: center;
-	font-size: 64px;
-	font-weight: 900;
-	text-transform: uppercase;
-	margin: 0;
-	position: absolute;
-	right: 0;
-}
 .review__bg{
 	position: absolute;
 	width: 100%;
