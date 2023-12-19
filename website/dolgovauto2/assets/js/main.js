@@ -20,7 +20,6 @@ jQuery(document).ready(function () {
 	}),
 	jQuery("body").on("click", "#cross", function (){
 		jQuery('.mainmenu__mobile').removeClass('mainmenu__mobile__active');
-		console.log('Close');
 	})	
 });
 
