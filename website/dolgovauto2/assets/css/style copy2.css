@@ -524,6 +524,7 @@ header{
 	align-items: center;
 	overflow: hidden;
 	transition: var(--animate);
+	filter: grayscale(0.6);
 }
 .hero__car{
 	object-fit: cover;
@@ -566,6 +567,7 @@ header{
 }
 .hero__item:hover{
 	width: 70vw;
+	filter: grayscale(0);
 }
 .hero__link svg{
 	transition: var(--animate);
