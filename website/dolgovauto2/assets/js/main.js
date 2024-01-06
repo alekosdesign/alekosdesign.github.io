@@ -22,14 +22,14 @@ jQuery(".mobile__menu").click(function () {
 jQuery(document).on("click", "#cross", function (){
 	jQuery(".mainmenu__mobile.mainmenu__active").removeClass('mainmenu__active');
 });
-jQuery(document).ready(function() {
-    jQuery(window).scroll(function() {
-        var sl = jQuery(window).scrollTop();
-        if (sl > 0) {
-			jQuery('.hero__text').css({transform : 'translate(-50%,' + sl / 6 + 'px)' });
-        };
-    })
-});
+// jQuery(document).ready(function() {
+//     jQuery(window).scroll(function() {
+//         var sl = jQuery(window).scrollTop();
+//         if (sl > 0) {
+// 			jQuery('.hero__text').css({transform : 'translate(-50%,' + sl / 6 + 'px)' });
+//         };
+//     })
+// });
 jQuery(document).ready(function () {
 	// jQuery(".header__call").click(function () {
 	// 	jQuery("#feedback__modal").addClass('open');
@@ -56,25 +56,26 @@ for (i = 0; i < acc.length; i++) {
 		panel.style.maxHeight = null;
 	} else {
 		panel.style.maxHeight = panel.scrollHeight * 5 + "px";
-		// panel.css({'padding' : '5px 25px'});
 	} 
   });
 }
-jQuery('.slider__other').slick({
-	dots: true,
+
+jQuery('.social__slider').slick({
+	// centerMode: true,
+	slidesToShow: 1,
 	infinite: true,
-	speed: 700,
-	autoplay: false,
+	speed: 1200,
+	autoplay: true,
+	arrows: true,
+	prevArrow: jQuery('.social__slider__arrow .arrow__prev'),
+	nextArrow: jQuery('.social__slider__arrow .arrow__next')
+});
+jQuery('.hero__slider').slick({
 	centerMode: true,
-	focusOnSelect: true,
-	arrows: true
+	slidesToShow: 1,
+	infinite: true,
+	speed: 1200,
+	autoplay: false,
+	arrows: false,
 });
 
-// jQuery(function(){
-// 	jQuery('body *').attr('oncopy', 'return false;');
-// 	jQuery('body').on('contextmenu', false);
-// });
-
-// jQuery(document).ready(function(jQuery) {
-//     jQuery(this).scrollTop(0);
-// });

@@ -603,7 +603,7 @@ header{
 }
 .about__item{
 	/* overflow: hidden; */
-	/* padding: 70px 0; */
+	padding-top: 70px;
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -626,8 +626,9 @@ header{
 	position: relative;
 }
 .about__img img{
-	bottom: -200px;
+	bottom: -30px;
 	height: 100%;
+	width: 100%;
 	position: relative;
 	-o-object-fit: cover;
 	   object-fit: cover;
@@ -1519,6 +1520,43 @@ footer .container{
 	        filter: drop-shadow(0 0 8px var(--red-color));
 }
 
+/* Arrow Slider */
+.about__slider__arrow{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: var(--skewone);
+	z-index: 50;
+}
+.about__slider__arrow .arrow__prev,
+.about__slider__arrow .arrow__next{
+	cursor: pointer;
+	position: absolute;
+    top: 100%;
+    background: var(--red-color);
+    width: 50px;
+    height: 50px;
+	z-index: 5;
+	transition: 0.1s ease-in-out;
+}
+.arrow__prev svg, .arrow__next svg{
+	fill: var(--white-color);
+	transition: 0.1s ease-in-out;
+	transform: var(--skewtwo);
+}
+.arrow__prev{
+    transform: translate(-50%, -50%);
+}
+.arrow__next{
+    transform: translate(50%, -50%);
+}
+.arrow__prev:hover, .arrow__prev:hover svg,
+.arrow__next:hover, .arrow__next:hover svg,
+.arrow__prev:focus, .arrow__prev:focus svg,
+.arrow__next:focus, .arrow__next:focus svg{
+	background: var(--white-color);
+	fill: var(--red-color);
+}
 
 /* OtherTemplate */
 .hero__color{
@@ -1528,7 +1566,10 @@ footer .container{
 .hero__color img{
 	height: auto;
 }
-
+.about__slider .slick-slide img{
+	width: 70%;
+    margin: 0 auto;
+}
 /* Slider */
 .slider__section{
 	background: blue;

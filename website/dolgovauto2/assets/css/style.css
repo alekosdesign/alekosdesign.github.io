@@ -7,6 +7,9 @@
 	border: 0;
 	letter-spacing: -0.6px
 }
+.warp{
+	
+}
 *:hover, *:active, *:checked, *:focus{
 	outline: none;
 }
@@ -198,13 +201,13 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    transform: skewY(-15deg);
+    /* transform: skewY(-15deg); */
     overflow: hidden;
 	margin-top: 200px;
 }
-.about::before{
+/* .about::before{
 
-}
+} */
 .about::after{
 	content: '';
 	width: 100%;
@@ -216,7 +219,7 @@ header{
 }
 .about__row{
 	display: flex;
-	transform: skewY(15deg);
+	/* transform: skewY(15deg); */
 }
 .about__item{
 	position: relative;

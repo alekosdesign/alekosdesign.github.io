@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Tic Tac Toe</title>
+    <style>
+      .board {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+      }
+      #board {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 1px;
+      }
+      .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        animation: scaleUp 0.3s ease-in-out forwards;
+      }
+
+      .cell:hover {
+        background-color: #f0f0f0;
+        transition: background-color 0.3s;
+      }
+
+      @keyframes scaleUp {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .cell:hover {
+        background-color: #f0f0f0;
+        transition: background-color 0.3s;
+      }
+      #reset {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.3s, transform 0.3s;
+      }
+
+      #reset:hover {
+        background-color: #555;
+      }
+
+      body:hover #reset {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      body:hover #reset {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      #playerName {
+        top: 0;
+        left: 0;
+        position: fixed;
+        font-size: 24px;
+        color: red;
+      }
+      dialog {
+        width: 200px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .close {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      .close:hover {
+        color: #777;
+      }
+	  .game-over{
+		filter: brightness(50%);
+	  }
+    </style>
+  </head>
+  <body>
+    <div class="board">
+      <h2 id="playerName"></h2>
+      <div id="board"></div>
+
+      <button id="reset">Сбросить игру</button>
+    </div>
+    <script>
+      function updatePlayerName() {
+        document.getElementById("playerName").innerText = player;
+      }
+      let isGameOver = false;
+      let board = document.getElementById("board");
+      let cells = [];
+      let player = "Игрок";
+
+      // Инициализация игрового поля
+      for (let i = 0; i < 9; i++) {
+        let cell = document.createElement("div");
+        cell.setAttribute("class", "cell");
+        cell.setAttribute("id", i);
+        cell.addEventListener("click", function () {
+          if (isGameOver) {
+            return;
+          }
+          cell.innerHTML = player;
+          updatePlayerName(); // обновление имени игрока
+
+          if (checkWin(player)) {
+            popup(player + " Выйграл!");
+            resetBoard();
+          } else if (checkDraw()) {
+            popup("It's a draw!");
+            resetBoard();
+          } else {
+            player = player === "Игрок" ? "O" : "Игрок";
+          }
+        });
+        cells.push(cell);
+        board.appendChild(cell);
+      }
+
+      function checkWin(currentPlayer) {
+        let wins = [
+          [0, 1, 2],
+          [3, 4, 5],
+          [6, 7, 8],
+          [0, 3, 6],
+          [1, 4, 7],
+          [2, 5, 8],
+          [0, 4, 8],
+          [2, 4, 6],
+        ];
+
+        for (let i = 0; i < wins.length; i++) {
+          let win = wins[i];
+
+          // проверка выигрыша для текущего игрока
+          if (cells[win[0]].innerText === currentPlayer &&
+              cells[win[1]].innerText === currentPlayer &&
+              cells[win[2]].innerText === currentPlayer) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      function checkDraw() {
+        // проверка наравлицание всех клеток
+        for (let i = 0; i < cells.length; i++) {
+          if (cells[i].innerText === "") {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      function resetBoard() {
+        isGameOver = false;
+        player = "Игрок";
+        for (let i = 0; i < cells.length; i++) {
+          cells[i].innerText = "";
+        }
+      }
+
+      document.getElementById("reset").addEventListener("click", function () {
+        resetBoard();
+      });
+      function popup(message) {
+        var dialog = document.createElement("dialog");
+        dialog.innerHTML = message + '<button class="close">Закрыть</button>';
+        document.body.appendChild(dialog);
+        dialog.showModal();
+        dialog.querySelector(".close").addEventListener("click", function () {
+          dialog.close();
+        });
+      }
+    </script>
+  </body>
+</html>
