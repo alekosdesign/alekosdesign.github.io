@@ -79,3 +79,19 @@ jQuery('.hero__slider').slick({
 	arrows: false,
 });
 
+// let toggleButton = document.querySelector('.dark__mode'); // Предполагается, что у вас есть кнопка с id="toggle"
+
+// toggleButton.addEventListener('click', function() {
+//    document.body.classList.toggle('dark-mode');
+// });
+
+
+
+
+jQuery.getJSON("http://ip-api.com/json/{query}?fields=city,timezone", function(data) {
+	var table_body = "";
+	jQuery.each(data, function(k, v) {
+		table_body += "<tr><td>" + k + "</td><td><b>" + v + "</b></td></tr>";
+	});
+	jQuery("#GeoResults").html(table_body);
+});
