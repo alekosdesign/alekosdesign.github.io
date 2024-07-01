@@ -1,0 +1,30 @@
+.error{
+	height: 100vh;
+	min-height: 900px;
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+.error__404 svg{
+	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+	margin-bottom: 15px;
+	width: 80%;
+}
+.error__404 p{
+	font-size: 18px;
+	color: var(--gray-color);
+}
+.error__404 a{
+	margin-top: 15px;
+	display: block;
+}
+.error::after{
+	content: '';
+	width: 100%;
+	height: 50%;
+	top: 0;
+	position: absolute;
+	background: var(--black-color);
+	z-index: -1;
+}

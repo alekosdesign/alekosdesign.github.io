@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>DOLGOV AUTO</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/style copy2.css">
+	<!-- <link rel="stylesheet" href="assets/css/dark.css"> -->
+	<!-- add page -->
+	<!-- <link rel="stylesheet" href="assets/css/404.css"> -->
+	<!-- <link rel="stylesheet" href="assets/css/media.css"> -->
+</head>
+
+<body>
+	<header>
+		<!-- <div class="dark__mode">
+			<img src="assets/img/darkmode.png" alt="">
+		</div> -->
+		<div class="flex container-lg header__mobile">
+			<svg class="header__bg__left" xmlns="http://www.w3.org/2000/svg" width="39" height="50" fill="none">
+				<path fill-rule="evenodd" d="M0 0h39v50H26c-6 0-11-5-13-10L0 0Z" clip-rule="evenodd"/>
+			</svg>
+			<div class="header__container flex">
+				<div class="header__item flex">
+					<a href="#" class="header__logo flex">
+						<svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" fill="none">
+							<path fill-rule="evenodd" d="M0 0h33v60c-7 0-15-6-17-12L0 0Z" clip-rule="evenodd"/>
+						</svg>
+						<span class="flex">
+							<img src="assets/img/logo black vertical.png" alt="">
+						</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" fill="none">
+							<path fill-rule="evenodd" d="M33 0H0v60c7 0 15-6 17-12L33 0Z" clip-rule="evenodd"/>
+						</svg>
+					</a>
+					<div class="mainmenu">
+						<ul>
+							<li><a href="#"><span>АВТО ИЗ</span>Китай</a></li>
+							<li><a href="#"><span>АВТО ИЗ</span>Кореи</a></li>
+							<li><a href="#"><span>АВТО ИЗ</span>Японии</a></li>
+							<li><a href="#"><span>АВТО НА</span>Сахалин</a></li>
+							<li><a href="#"><span>DOLGOV</span>Инфо</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="header__item">
+					<a href="#" class="header__feedback flex">
+						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="50" fill="none"><path fill-rule="evenodd" d="M0 50h27.5V0c-5.844 0-12.153 4.645-14.103 10.409L0 50Z" clip-rule="evenodd"/></svg>
+						<span class="flex">Заказать звонок</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="50" fill="none"><path fill-rule="evenodd" d="M28 0H.5v50c5.844 0 12.153-4.645 14.103-10.409L28 0Z" clip-rule="evenodd"/></svg>
+					</a>
+				</div> -->
+			</div>
+			<svg class="header__bg__right" xmlns="http://www.w3.org/2000/svg" width="39" height="50" fill="none">
+				<path fill-rule="evenodd" d="M39 0H0v50h13c6 0 11-5 13-10L39 0Z" clip-rule="evenodd"/>
+			</svg>
+
+		</div>
+		<div class="mobile__menu">
+			<span id="mobile__menu">
+				<svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" fill="none">
+					<path fill-rule="evenodd" d="M0 0h33v60c-7 0-15-6-17-12L0 0Z" clip-rule="evenodd"/>
+				</svg>
+				<span class="flex mobile__menu__logo">
+					<img src="assets/img/logo mob.png" alt="">
+				</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" fill="none">
+					<path fill-rule="evenodd" d="M33 0H0v60c7 0 15-6 17-12L33 0Z" clip-rule="evenodd"/>
+				</svg>
+			</span>
+			<div class="flex mainmenu__mobile">
+				<ul>
+					<li><a href="#"><span>АВТО ИЗ</span>Китай</a></li>
+					<li><a href="#"><span>АВТО ИЗ</span>Кореи</a></li>
+					<li><a href="#"><span>АВТО ИЗ</span>Японии</a></li>
+					<li><a href="#"><span>АВТО НА</span>Сахалин</a></li>
+					<li><a href="#"><span>DOLGOV</span>Инфо</a></li>
+				</ul>
+				<span id="cross">
+
+				</span>
+			</div>
+			
+		</div>
+		
+	</header>
+
+
+<div class="hero">
+	<div class="hero__item" style="background: url(assets/img/hero/urban-view-with-people-street.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;">
+		<img class="hero__car" src="assets/img/hero/Japancar.png" alt="">
+		<img class="hero__title" src="assets/img/hero/Group 1948756483.png" alt="">
+		<a class="hero__link" href="#">Перейти<svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" fill="none"><path d="M25 13v-3l-9-9a1 1 0 1 0-3 2l9 9-9 8a1 1 0 1 0 3 2l9-9ZM0 13h24v-3H0v3Z"/></svg></a>
+	</div>
+	<div class="hero__item" style="background: url(assets/img/hero/China.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;">
+		<img class="hero__car" src="assets/img/hero/chinacar.png" alt="">
+		<img class="hero__title" src="assets/img/hero/Group 1948756497.png" alt="">
+		<a class="hero__link" href="#">Перейти<svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" fill="none"><path d="M25 13v-3l-9-9a1 1 0 1 0-3 2l9 9-9 8a1 1 0 1 0 3 2l9-9ZM0 13h24v-3H0v3Z"/></svg></a>
+	</div>
+	<div class="hero__item" style="background: url(assets/img/hero/korea.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;">
+		<img class="hero__car" src="assets/img/hero/koreacar.png" alt="">
+		<img class="hero__title" src="assets/img/hero/Group 1948756498.png" alt="">
+		<a class="hero__link" href="#">Перейти<svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" fill="none"><path d="M25 13v-3l-9-9a1 1 0 1 0-3 2l9 9-9 8a1 1 0 1 0 3 2l9-9ZM0 13h24v-3H0v3Z"/></svg></a>
+		
+	</div>
+</div>
+<div class="hero__slider">
+	<div>
+		<div class="hero__slider__item" style="background: url(assets/img/hero/China.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;">
+			<img class="hero__car" src="assets/img/hero/chinacar.png" alt="">
+			<img class="hero__title" src="assets/img/hero/Group 1948756497.png" alt="">
+			<a class="hero__link" href="#">Перейти<svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" fill="none"><path d="M25 13v-3l-9-9a1 1 0 1 0-3 2l9 9-9 8a1 1 0 1 0 3 2l9-9ZM0 13h24v-3H0v3Z"/></svg></a>
+		</div>
+	</div>
+	<div>
+		<div class="hero__slider__item" style="background: url(assets/img/hero/korea.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;">
+			<img class="hero__car" src="assets/img/hero/koreacar.png" alt="">
+			<img class="hero__title" src="assets/img/hero/Group 1948756498.png" alt="">
+			<a class="hero__link" href="#">Перейти<svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" fill="none"><path d="M25 13v-3l-9-9a1 1 0 1 0-3 2l9 9-9 8a1 1 0 1 0 3 2l9-9ZM0 13h24v-3H0v3Z"/></svg></a>
+		</div>
+	</div>
+	<div>
+		<div class="hero__slider__item" style="background: url(assets/img/hero/Japan.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;">
+			<img class="hero__car" src="assets/img/hero/Japancar.png" alt="">
+			<img class="hero__title" src="assets/img/hero/Group 1948756483.png" alt="">
+			<a class="hero__link" href="#">Перейти<svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" fill="none"><path d="M25 13v-3l-9-9a1 1 0 1 0-3 2l9 9-9 8a1 1 0 1 0 3 2l9-9ZM0 13h24v-3H0v3Z"/></svg></a>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="second">
+	<div class="container-lg">
+		<div class="second__item">
+			<div class="second__title">
+				<img src="assets/img/Group 1948756478.png" alt="">				
+			</div>
+			<div class="second__text">
+				<p>В 2023 году мы доставили более 2 000 автомобилей и успешно открыли Три новых филиала.
+					<br><br>
+					Наша собственная транспортная компания ‘Долгов-Логистик‘, уже обслуживает наших клиентов и готовится к сотрудничеству с представителями других компаний.
+					<br><br>
+					В 2024 году мы планируем открыть ещё Два филиала — в Новосибирске и Екатеринбурге, расширяя наше присутствие по всей России для вашего удобства!
+					<br><br>
+					Также в планах установка собственного таможенного представителя во Владивостоке.</p>
+			</div>
+
+		</div>
+	</div>
+	<div class="second__img">
+		<img src="assets/img/Group 1948756347.png" alt="">
+		<span id="red__line"></span>
+	</div>
+</div>
+
+
+<div class="wrap container-lg">
+	<div class="about flex row">
+		<div class="about__item col-lg-6 col-md-6 col-sm-12">
+			<div class="about__inner flex">
+				<div class="about__text">
+					<span class="flex about__text__name">
+						<h5>Павел</h5>
+						<h5>Ежов</h5>
+					</span>
+					<span class="flex about__text__bus">
+						<p>Учредитель компании <span>“TACHKIRU”</span></p>
+					</span>
+					<span class="flex about__text__city">
+						<p>г. Краснодар</p>
+					</span>
+					<span class="flex about__text__text">
+						<p>Задача организации, в особенности же консультация с широким активом требуют от нас анализа новых предложений. Таким образом дальнейшее развитие различных форм деятельности играет важную роль в формировании дальнейших направлений развития.</p>
+					</span>
+				</div>
+				<img src="assets/img/director 2.jpg" alt="">
+			</div>
+		</div>
+		<div class="about__item col-lg-6 col-md-6 col-sm-12">
+			<div class="about__inner about__inner__grid flex">
+				<div class="about__grid about__city">
+					<img src="assets/img/horz white.png" alt="">
+					<p>Твой <span>маркетплейс</span>
+						автомобилей</p>
+						<h4>г. Краснодар </h4>
+				</div>
+				<div class="about__grid">
+					<img src="assets/img/manager/grid (1).jpg" alt="">
+				</div>
+				<div class="about__grid">
+					<img src="assets/img/manager/grid (2).jpg" alt="">
+				</div>
+				<div class="about__grid">
+					<img src="assets/img/manager/grid (3).jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<!-- <div class="wrap container-lg">
+	<div class="about flex row">
+		<div class="about__item col-lg-6 col-md-6 col-sm-12">
+			<div class="about__img">
+				<img src="assets/img/director 2.png" alt="">
+			</div>
+		</div>
+		<div class="about__item col-lg-6 col-md-6 col-sm-12">
+			<div class="about__item__text">
+				<img src="assets/img/horz black.png" alt="">
+				<h3>Все рассказывают о компании, а я расскажу о себе</h3>
+				<p>Меня зовут Александр, я владелец компании “DolgovAuto”. До работы в авто бизнесе, учился я в военном летном училище. С 2017 года начал подрабатывать авто подборщиком. Ключевым моментом стал, когда я раскачал свой профиль в Instagram и потихоньку пошли заказ по привозу авто из Японии, позднее открыл направление Кореи и Китая. И на данный момент у меня моя компания входит в топ самых крупных компаний по России.</p>
+				<a class="but" href="#">узнать о компании<svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" fill="none"><path d="M25 13v-3l-9-9a1 1 0 1 0-3 2l9 9-9 8a1 1 0 1 0 3 2l9-9ZM0 13h24v-3H0v3Z"/></svg></a>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+
+
+<div class="margin__tb container">
+	<div class="social__slider">
+
+		<div>
+			<div class="flex social__slider__item">
+				<div class="social__slider__item__inner">
+					<img src="assets/img/social/ORH8S61 2.png" alt="">
+				</div>
+				<div class="social__slider__item__inner">
+					<h4>Все актуальные новости в youtube</h4>
+					<p>На нашем youtube канале мы выкладываем все актуальные новости из жизни компании, покупки, выдачи, отзывы клиентов и многое другое. Подписывайтесь и будете в курсе всех событий.</p>
+					<a class="but" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 7-1-1H5L4 7v10l1 1h14l1-1V7Zm2-1v12l-2 2H4l-2-2V6l2-2h16l2 2ZM10 16V9l6 3-6 4Z"/></svg>подписаться на youtube</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="flex social__slider__item">
+				<div class="social__slider__item__inner">
+					<img src="assets/img/social/ORH8S61 2.png" alt="">
+				</div>
+				<div class="social__slider__item__inner">
+					<h4>Все актуальные новости в youtube</h4>
+					<p>На нашем youtube канале мы выкладываем все актуальные новости из жизни компании, покупки, выдачи, отзывы клиентов и многое другое. Подписывайтесь и будете в курсе всех событий.</p>
+					<a class="but" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 7-1-1H5L4 7v10l1 1h14l1-1V7Zm2-1v12l-2 2H4l-2-2V6l2-2h16l2 2ZM10 16V9l6 3-6 4Z"/></svg>подписаться на youtube</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="flex social__slider__item">
+				<div class="social__slider__item__inner">
+					<img src="assets/img/social/ORH8S61 2.png" alt="">
+				</div>
+				<div class="social__slider__item__inner">
+					<h4>Все актуальные новости в youtube</h4>
+					<p>На нашем youtube канале мы выкладываем все актуальные новости из жизни компании, покупки, выдачи, отзывы клиентов и многое другое. Подписывайтесь и будете в курсе всех событий.</p>
+					<a class="but" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 7-1-1H5L4 7v10l1 1h14l1-1V7Zm2-1v12l-2 2H4l-2-2V6l2-2h16l2 2ZM10 16V9l6 3-6 4Z"/></svg>подписаться на youtube</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="slider__arrow social__slider__arrow flex">
+		<span class="arrow__prev flex">
+			<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" fill="none"><path d="M1 11v2l9 10a1 1 0 1 0 3-3l-9-8 9-8a1 1 0 1 0-3-3L1 11Zm25 0H2v3h24v-3Z"/></svg>
+		</span>
+		<span class="arrow__next flex">
+			<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" fill="none"><path d="M25 13v-2L16 1a1 1 0 1 0-3 3l9 8-9 8a1 1 0 1 0 3 3l9-10ZM0 14h24v-3H0v3Z"/></svg>
+		</span>
+	</div>
+</div>
+
+
+<div class="wrap container-lg">
+	<div class="container-lg">
+		<div id="GeoResults"></div>
+	</div>
+	<div class="stage">
+		<div class="flex">
+			<h1 class="title">Этапы подбора</h1>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12 stage__item">
+				<div class="stage__item__title">
+					<span class="stage__num" style="background: #1C1C1C;">01</span>
+					<span class="stage__num__text">ЗАЯВКА ОТ ВАС</span>
+				</div>
+				<p>Анализируем вашу заявку в ходе бесплатной консультации Определяем ваши предпочтения и конечный бюджет</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 stage__item">
+				<div class="stage__item__title">
+					<span class="stage__num" style="background: #F11313;">02</span>
+					<span class="stage__num__text">ЗАЯВКА ОТ ВАС</span>
+				</div>
+				<p>Анализируем вашу заявку в ходе бесплатной консультации Определяем ваши предпочтения и конечный бюджет</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 stage__item">
+				<div class="stage__item__title">
+					<span class="stage__num" style="background: #1C1C1C;">03</span>
+					<span class="stage__num__text">ЗАЯВКА ОТ ВАС</span>
+				</div>
+				<p>Анализируем вашу заявку в ходе бесплатной консультации Определяем ваши предпочтения и конечный бюджет</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 stage__item">
+				<div class="stage__item__title">
+					<span class="stage__num" style="background: #F11313;">04</span>
+					<span class="stage__num__text">ЗАЯВКА ОТ ВАС</span>
+				</div>
+				<p>Анализируем вашу заявку в ходе бесплатной консультации Определяем ваши предпочтения и конечный бюджет</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 stage__item">
+				<div class="stage__item__title">
+					<span class="stage__num" style="background: #1C1C1C;">05</span>
+					<span class="stage__num__text">ЗАЯВКА ОТ ВАС</span>
+				</div>
+				<p>Анализируем вашу заявку в ходе бесплатной консультации Определяем ваши предпочтения и конечный бюджет</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 stage__item">
+				<div class="stage__item__title">
+					<span class="stage__num" style="background: #F11313;">06</span>
+					<span class="stage__num__text">ЗАЯВКА ОТ ВАС</span>
+				</div>
+				<p>Анализируем вашу заявку в ходе бесплатной консультации Определяем ваши предпочтения и конечный бюджет</p>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="wrap container-lg">
+	<div class="map__city flex">
+		<div class="map__city__image">
+			<img class="map__logo" src="assets/img/horz white.png" alt="">
+			<img src="assets/img/Group 1948756375.png" alt="">
+		</div>
+		<div class="map__city__list map__city__list__left">
+			<p>
+				Москва<br>
+				Санкт-Петербург<br>
+				Новосибирск<br>
+				Екатеринбург<br>
+				Нижний Новгород<br>
+				Самара<br>
+				Омск<br>
+				Казань<br>
+				Челябинск<br>
+				Ростов-на-Дону<br>
+				Уфа<br>
+			</p>
+		</div>
+		<div class="map__city__list map__city__list__right">
+			<p>
+				Волгоград<br>
+				Пермь<br>
+				Красноярск<br>
+				Воронеж<br>
+				Саратов<br>
+				Владивосток<br>
+				Краснодар<br>
+				Тольятти<br>
+				Ижевск<br>
+				Ульяновск<br>
+				Иркутск<br>
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="wrap container-lg">
+	<div class="manager__seciton">
+		<div class="manager">
+			<div class="manager__item flex">
+				<img src="assets/img/manager/manager (2).jpg" alt="">
+			</div>
+			<div class="manager__item manager__item__info">
+				<h3>ВСЕГДА ОТКРЫТЫ</h3>
+				<p>ОПЫТНЫЕ МЕНЕДЖЕРЫ DOLGOVAUTO</p>
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (3).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (4).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (5).jpg" alt="">
+			</div>
+
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (6).jpg" alt="">
+			</div>
+			<div class="manager__item manager__item__info manager__item__info__black">
+				<p>За время работы, мы накопили огромный опыт и заработали репутацию, высокий уровень сервиса, все прозрачные платежи и решение любых проблем.</p>
+				
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (7).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (8).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (1).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (2).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (3).jpg" alt="">
+			</div>
+		</div>
+		<div class="stat">
+			<div class="row">
+				<div class="col-md-3 col-6 stat__item">
+					<span>с 2017</span>
+					<p>года<br>
+						На рынке</p>
+				</div>
+				<div class="col-md-3 col-6 stat__item">
+					<span>4 000+</span>
+					<p>Довольных<br>
+						клиентов</p>
+				</div>
+				<div class="col-md-3 col-6 stat__item">
+					<span>2 451</span>
+					<p>Привезено за<br>
+						последний год</p>
+				</div>
+				<div class="col-md-3 col-6 stat__item">
+					<span>50 000₽</span>
+					<p>Фиксированная<br>
+						комиссия</p>
+				</div>
+			</div>
+		</div>
+		<div class="manager">
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (3).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (4).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (5).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (7).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (8).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (1).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (2).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (3).jpg" alt="">
+			</div>
+			<div class="manager__item">
+				<img src="assets/img/manager/manager (4).jpg" alt="">
+			</div>
+			<div class="manager__item manager__item__info manager__item__info__black">
+				<p>Транспортировка автомобиля до клиента самый главный этап. Мы тоже берем его на себя и находим Транспортные компании. А вам останется только получить свой долгожданный автомобиль.</p>
+			</div>
+			<div class="manager__item manager__item__info">
+				<h3>ДОСТАВКА<br>В ЛЮБУЮ<br>ТОЧКУ<br>СТРАНЫ</h3>
+			</div>
+			<div class="manager__item manager__item__info">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="margin__tb wrap container-lg">
+	<div class="advant">
+		<div class="row">
+
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
+				<div class="advant__item__title flex">
+					<span></span>
+					<h3>чистая история</h3>
+				</div>
+				<p>Зарубежом на законодательном уровне запрещено делать любые махинации с пробегом автомобиля. Километраж на приборной панели, является подлинным, чего часто не встретишь на российских машинах.</p>
+			</div>
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
+				<div class="advant__item__title flex">
+					<span></span>
+					<h3>чистая история</h3>
+				</div>
+				<p>Зарубежом на законодательном уровне запрещено делать любые махинации с пробегом автомобиля. Километраж на приборной панели, является подлинным, чего часто не встретишь на российских машинах.</p>
+			</div>
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
+				<div class="advant__item__title flex">
+					<span></span>
+					<h3>чистая история</h3>
+				</div>
+				<p>Зарубежом на законодательном уровне запрещено делать любые махинации с пробегом автомобиля. Километраж на приборной панели, является подлинным, чего часто не встретишь на российских машинах.</p>
+			</div>
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
+				<div class="advant__item__title flex">
+					<span></span>
+					<h3>ПОЛНОЕ ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ
+						ПЕРЕД ТОРГАМИ</h3>
+				</div>
+				<p>Зарубежом на законодательном уровне запрещено делать любые махинации с пробегом автомобиля. Километраж на приборной панели, является подлинным, чего часто не встретишь на российских машинах.</p>
+			</div>
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
+				<div class="advant__item__title flex">
+					<span></span>
+					<h3>чистая история</h3>
+				</div>
+				<p>Зарубежом на законодательном уровне запрещено делать любые махинации с пробегом автомобиля. Километраж на приборной панели, является подлинным, чего часто не встретишь на российских машинах.</p>
+			</div>
+			<div class="advant__item col-lg-4 col-md-6 col-sm-12">
+				<div class="advant__item__title flex">
+					<span></span>
+					<h3>чистая история</h3>
+				</div>
+				<p>Зарубежом на законодательном уровне запрещено делать любые махинации с пробегом автомобиля. Километраж на приборной панели, является подлинным, чего часто не встретишь на российских машинах.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="margin__tb wrap container-lg">
+	<div class="feedback flex">
+		<div class="feedback__form">
+			<h4 class="title__lines">Рассчитаем стоимость бесплатно</h4>
+			<p>Оставьте заявку и наши менеджеры свяжутся с вами в<br> ближайшее время для подбора вам самых вкусных вариантов</p>
+			<form action="#">
+				<input type="text" placeholder="Имя">
+				<input type="text" placeholder="Телефон">
+				<input type="text" placeholder="Вопрос">
+			</form>
+			<button>получить<br>варианты</button>
+		</div>
+		<img class="feedback__map" src="assets/img/map.svg" alt="">
+	</div>
+</div>
+
+
+<div class="margin__tb wrap container-lg">
+	<div class="faq">
+		<h4 class="title__lines">Часто задаваемые вопросы</h4>
+		<div class="faq__body flex">
+
+			<div class="faq__item accordion">
+				<button class="accordion__item flex">
+					<div class="faq__cross flex">
+						<span></span>
+						<span></span>
+					</div>
+					<p>Как можно рассчитаться за автомобиль</p>
+				</button>
+				<div class="accordion__text flex">
+					<p>
+						Меня зовут Александр, я владелец компании “DolgovAuto”.
+До работы в автобизнесе, учился я в военном летном училище. С 2017 года начал подрабатывать авто подборщиком. Ключевым моментом стал, когда я раскачал свой профиль в Instagram и потихоньку пошли заказ по привозу авто из Японии, позднее открыл направление Кореи и Китая. И на данный момент у меня моя компания входит в топ самых крупных компаний по России.
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+</div>
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<div class="footer__menu">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Автомобили на сахалин</a></li>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Главная</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<div class="footer__menu">
+					<ul>
+						<li><a href="#">Адрес</a></li>
+						<li><a href="#">г. Владивосток, ул. Адмирала Кузнецова, 52Бст3</a></li>
+						<li><a href="#">г. Владивосток, ул. Адмирала Кузнецова, 52Бст3</a></li>
+						<li><a href="#">г. Владивосток, ул. Адмирала Кузнецова, 52Бст3</a></li>
+						<li><a href="#">г. Владивосток, ул. Адмирала Кузнецова, 52Бст3</a></li>
+						<li><a href="#">г. Владивосток, ул. Адмирала Кузнецова, 52Бст3</a></li>
+						<li><a href="#">г. Владивосток, ул. Адмирала Кузнецова, 52Бст3</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<div class="footer__menu footer__menu__right">
+					<ul>
+						<li><a href="#">8 (800) 250-00-00</a></li>
+						<li><a href="#">8 (924) 250-00-00</a></li>
+						<li><a href="#">dolgov_auto@mail.ru</a></li>
+						<li><a href="#">dolgovauto@gmail.com</a></li>
+
+					</ul>
+				</div>
+			</div>			
+		</div>
+		<div class="footer__container__social row">
+			<div class="col-lg-4 col-md-12 col-sm-12"></div>
+			<div class="footer__but col-lg-4 col-md-12 col-sm-12">
+				<div class="but">Заказать звонок</div>
+			</div>
+			<div class="footer__social col-lg-4 col-md-12 col-sm-12">
+				<a href="#"><img src="assets/img/icons/tg.png" alt=""></a>
+				<a href="#"><img src="assets/img/icons/yt.png" alt=""></a>
+				<a href="#"><img src="assets/img/icons/wa.png" alt=""></a>
+				<a href="#"><img src="assets/img/icons/vk.png" alt=""></a>
+			</div>
+		</div>
+		<div class="copyright">
+			<a href="#"><img src="assets/img/horz white.png" alt=""></a>
+			<p>2017 @ DOLGOVAUTO Все права защищены</p>
+		</div>
+	</div>
+	<img class="footer__bg" src="assets/img/footer-logo.png" alt="">
+</footer>
+	
+
+
+
+
+
+
+
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/slick.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

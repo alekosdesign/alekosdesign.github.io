@@ -1,0 +1,9 @@
+:root{
+	--white-color:#ffffff;
+	--black-color:#181818;
+	--gray-color: rgba(231, 231, 231, 0.5);
+	--red-color:#D72E1E;
+}
+*, *::after, *::before{
+	transition: 0.3s ease-in-out;
+}
