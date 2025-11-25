@@ -1,0 +1,41 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: 
+	Template URI: 
+	Description: 
+	Author: design_grid
+	Author URI:
+	Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+			[ All Css Plugins & Helper Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import url("bootstrap-grid.min.css");
+
+/* == fontawesome == */
+@import url("fontawesome-all.min.css");
+
+/* == animate == */
+@import url("animate.css");
+
+/* == slick == */
+@import url("slick.css");
+
+/* == Swiper == */
+@import url("swiper.min.css");
+
+/* == aos == */
+@import url("aos.css");
+
+/* == justifiedGallery == */
+@import url("justifiedGallery.min.css");
+
+/* == magnific popup == */
+@import url("magnific-popup.css");
+
+/* == magnific popup == */
+@import url("youtubepopup.css");
